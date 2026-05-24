@@ -540,8 +540,8 @@
         if (emailEl) { emailEl.textContent = data.site.contact_email; emailEl.href = 'mailto:' + data.site.contact_email; }
       }
 
-      // Build tier tabs and panels
-      const tiers = [data.tier1, data.tier2, data.tier3];
+      // Build tier tabs and panels — read keys dynamically, skip 'site'
+      const tiers = Object.entries(data).filter(([key]) => key !== 'site').map(([, val]) => val);
       const tabsEl = document.getElementById('tier-tabs');
       const panelsEl = document.getElementById('tier-panels');
       tabsEl.innerHTML = '';
