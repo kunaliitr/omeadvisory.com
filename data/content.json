@@ -84,3 +84,49 @@
     "badge": "Article 6 · ITMOs · Decarbonisation — End-to-End",
     "intro": "Specialised carbon market advisory grounded in direct UNFCCC Secretariat experience. From Paris Agreement Article 6 navigation to full decarbonisation roadmaps — the most differentiated service line in the portfolio.",
     "items": [
+      {
+        "id": "01",
+        "title": "Article 6 / Carbon Market Strategy",
+        "scope": "Paris Agreement Art. 6.2/6.4 advisory; host country agreement navigation; ITMOs strategy. Advisory grounded in direct UNFCCC secretariat experience from rule-making to implementation.",
+        "target": "Energy/utility companies; carbon project developers; government agencies"
+      },
+      {
+        "id": "02",
+        "title": "Decarbonisation Roadmap",
+        "scope": "Technology pathway analysis, CAPEX/OPEX modelling, carbon abatement curves, 2030/2050 targets. Sector-calibrated for chemicals, cement, and steel.",
+        "target": "Industrial manufacturers; energy-intensive sectors (chemicals, cement, steel)"
+      }
+    ]
+  },
+  "Training": {
+    "label": "Training",
+    "badge": "Half-Day & Full-Day Workshops",
+    "intro": "Practical, management-level training on CSRD, LkSG, ISO 14064, and carbon markets. Delivered in-house or through industry associations. Tailored to sector, regulatory context, and audience seniority.",
+    "items": [
+      {
+        "id": "01",
+        "title": "CSRD & ESRS Reporting Workshop",
+        "scope": "Half or full-day workshop covering CSRD scope, double materiality, ESRS disclosure requirements, and reporting roadmap. Practical exercises with sector-specific examples.",
+        "target": "Sustainability teams, CFO offices, board members facing FY2025 reporting deadline"
+      },
+      {
+        "id": "02",
+        "title": "LkSG Supply Chain Due Diligence Workshop",
+        "scope": "Full-day training on German Supply Chain Act obligations, risk analysis methodology, grievance mechanisms, and annual reporting requirements.",
+        "target": "Procurement, legal, and sustainability teams at companies with 1,000+ employees"
+      },
+      {
+        "id": "03",
+        "title": "GHG Accounting & ISO 14064 Workshop",
+        "scope": "Half or full-day workshop on GHG Protocol methodology, Scope 1/2/3 accounting, verification requirements under ISO 14064-3, and CSRD alignment.",
+        "target": "Corporate sustainability and finance teams; operations managers"
+      },
+      {
+        "id": "04",
+        "title": "Carbon Markets & Article 6 Workshop",
+        "scope": "Full-day workshop on voluntary and compliance carbon markets, Paris Agreement Article 6 mechanics, ITMOs, carbon credit quality, and corporate offsetting strategy.",
+        "target": "Industry associations; chambers of commerce (IHK Hamburg); corporate strategy teams"
+      }
+    ]
+  }
+}
