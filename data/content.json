@@ -7,7 +7,7 @@
   },
   "ISO Services": {
     "label": "ISO Prep Audit",
-    "badge": "ISO 14001/14064/50001 gap assessment",
+    "badge": "ISO 14001 / 14064 / 50001 Gap Assessment",
     "intro": "Entry-point engagements for companies at the start of their compliance or certification journey. High-certainty mandates, rapid deployment.",
     "items": [
       {
@@ -31,8 +31,8 @@
     ]
   },
   "Sustainability Services": {
-    "label": "Sustainability and Climate",
-    "badge": "GHG accounting, CSRD, EU Taxonomy, CSDDD regulations",
+    "label": "Sustainability & Climate",
+    "badge": "GHG Accounting · CSRD · EU Taxonomy · CSDDD",
     "intro": "Strategic mandates with substantive deliverables. Technically intensive, high-impact engagements that form the backbone of the advisory practice.",
     "items": [
       {
@@ -51,7 +51,7 @@
         "id": "03",
         "title": "LkSG Compliance Programme",
         "scope": "Risk analysis, policy development, grievance mechanism design, and first annual report. Full compliance architecture for German Supply Chain Act obligations.",
-        "target": "German companies ≥1,000 employees; supply chain of large clients"
+        "target": "German companies with 1,000 or more employees; supply chain of large clients"
       },
       {
         "id": "04",
@@ -69,8 +69,8 @@
   },
   "Carbon Market Services": {
     "label": "Carbon Market",
-    "badge": "Carbon Market (end to end consulting services)",
-    "intro": "Complex, high-stakes mandates requiring deep technical specialism. Retained and project-based formats. The highest-value work in the portfolio. Provide services from project development to credit issuance stage",
+    "badge": "Carbon Market — End-to-End Consulting",
+    "intro": "Complex, high-stakes mandates requiring deep technical specialism. Retained and project-based formats. Services span from project development to credit issuance stage.",
     "items": [
       {
         "id": "01",
@@ -87,7 +87,7 @@
       {
         "id": "03",
         "title": "Retained ESG Advisor",
-        "scope": "Monthly retainer: board-level ESG strategy, regulator horizon scanning, peer benchmarking, ad hoc support.",
+        "scope": "Monthly retainer: board-level ESG strategy, regulator horizon scanning, peer benchmarking, ad hoc support. Your most stable and continuous advisory relationship.",
         "target": "Mid-large corporates seeking continuous strategic ESG counsel"
       },
       {
