@@ -7,262 +7,290 @@
 <meta name="description" content="OME Advisory delivers rigorous ESG strategy, GHG verification, CSRD compliance, and carbon market advisory for European corporates.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
-<!-- Netlify Identity Widget -->
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <style>
-  :root {
-    --forest:   #0b2318;
-    --emerald:  #163d27;
-    --mid:      #1e5234;
-    --brass:    #b8952a;
-    --brass-lt: #d4af5a;
-    --cream:    #f5f0e6;
-    --cream-dk: #ede6d8;
-    --white:    #ffffff;
-    --text:     #1a1a1a;
-    --text-mid: #4a4a4a;
-    --text-lt:  #7a7a7a;
-  }
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  html { scroll-behavior: smooth; font-size: 16px; }
-  body { background: var(--cream); color: var(--text); font-family: 'DM Sans', sans-serif; font-weight: 300; line-height: 1.7; overflow-x: hidden; }
-  body::before { content:''; position:fixed; inset:0; background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E"); pointer-events:none; z-index:9999; opacity:0.5; }
-  h1,h2,h3,h4 { font-family:'Cormorant Garamond',serif; font-weight:500; line-height:1.15; letter-spacing:-0.01em; }
-  .eyebrow { font-family:'DM Sans',sans-serif; font-size:0.7rem; font-weight:500; letter-spacing:0.2em; text-transform:uppercase; color:var(--brass); }
+:root{--forest:#0b2318;--emerald:#163d27;--mid:#1e5234;--brass:#b8952a;--brass-lt:#d4af5a;--cream:#f5f0e6;--cream-dk:#ede6d8;--white:#ffffff;--text:#1a1a1a;--text-mid:#4a4a4a;--text-lt:#7a7a7a;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;font-size:16px;}
+body{background:var(--cream);color:var(--text);font-family:"DM Sans",sans-serif;font-weight:300;line-height:1.7;overflow-x:hidden;}
+body::before{content:"";position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:9999;opacity:0.5;}
+h1,h2,h3,h4{font-family:"Cormorant Garamond",serif;font-weight:500;line-height:1.15;letter-spacing:-0.01em;}
+.eyebrow{font-family:"DM Sans",sans-serif;font-size:0.7rem;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--brass);}
 
-  /* NAV */
-  nav { position:fixed; top:0; left:0; right:0; z-index:100; display:flex; align-items:center; justify-content:space-between; padding:1.25rem 4rem; transition:background 0.4s, box-shadow 0.4s; }
-  nav.scrolled { background:rgba(11,35,24,0.97); backdrop-filter:blur(12px); box-shadow:0 1px 0 rgba(184,149,42,0.2); }
-  .nav-logo { display:flex; align-items:baseline; gap:0.4rem; text-decoration:none; }
-  .nav-logo-mark { font-family:'Cormorant Garamond',serif; font-size:1.6rem; font-weight:600; color:var(--brass-lt); letter-spacing:0em; }
-  .nav-logo-text { font-family:'Cormorant Garamond',serif; font-size:1.3rem; font-weight:400; color:rgba(255,255,255,0.85); letter-spacing:0.05em; }
-  .nav-links { display:flex; align-items:center; gap:2.5rem; list-style:none; }
-  .nav-links a { font-size:0.78rem; letter-spacing:0.12em; text-transform:uppercase; color:rgba(255,255,255,0.7); text-decoration:none; transition:color 0.2s; }
-  .nav-links a:hover { color:var(--brass-lt); }
-  .nav-cta { background:transparent; border:1px solid var(--brass); color:var(--brass-lt) !important; padding:0.55rem 1.4rem; border-radius:2px; font-size:0.72rem !important; letter-spacing:0.15em !important; transition:background 0.2s, color 0.2s !important; }
-  .nav-cta:hover { background:var(--brass) !important; color:var(--forest) !important; }
+/* LANGUAGE SWITCHING */
+body.de .lang-en{display:none !important;}
+body.en .lang-de{display:none !important;}
+.lang-de{display:block;}
+span.lang-de{display:inline;}
+span.lang-en{display:inline;}
 
-  /* HERO */
-  #hero { min-height:100vh; background:var(--forest); display:grid; grid-template-columns:1fr 1fr; position:relative; overflow:hidden; }
-  .hero-bg-pattern { position:absolute; inset:0; background-image:radial-gradient(ellipse 60% 80% at 70% 50%,rgba(30,82,52,0.5) 0%,transparent 70%),radial-gradient(ellipse 40% 40% at 20% 80%,rgba(184,149,42,0.08) 0%,transparent 60%); }
-  .hero-grid { position:absolute; inset:0; background-image:linear-gradient(rgba(184,149,42,0.06) 1px,transparent 1px),linear-gradient(90deg,rgba(184,149,42,0.06) 1px,transparent 1px); background-size:80px 80px; animation:gridShift 20s linear infinite; }
-  @keyframes gridShift { 0%{transform:translate(0,0)} 100%{transform:translate(80px,80px)} }
-  .hero-left { display:flex; flex-direction:column; justify-content:center; padding:8rem 4rem 5rem; position:relative; z-index:2; }
-  .hero-eyebrow { margin-bottom:2rem; margin-top:3rem; display:flex; align-items:center; gap:1rem; }
-  .hero-eyebrow::before { content:''; display:block; width:40px; height:1px; background:var(--brass); }
-  .hero-wordmark { font-family:'Cormorant Garamond',serif; font-size:clamp(4rem,7vw,7rem); font-weight:300; line-height:1; margin-bottom:0.5rem; }
-  .hero-wordmark-om { color:var(--brass-lt); }
-  .hero-wordmark-e { color:rgba(255,255,255,0.9); }
-  .hero-wordmark-advisory { display:block; font-size:clamp(1.2rem,2vw,1.8rem); font-weight:300; color:rgba(255,255,255,0.5); letter-spacing:0.25em; text-transform:uppercase; font-family:'DM Sans',sans-serif; margin-top:0.3rem; }
-  .hero-h1 { font-size:clamp(2rem,3vw,3rem); font-weight:300; color:var(--white); margin:1.5rem 0 0; }
-  .hero-h1 em { font-style:italic; color:var(--brass-lt); }
-  .hero-tagline { font-family:'DM Sans',sans-serif; font-size:1rem; font-weight:300; color:rgba(255,255,255,0.6); max-width:420px; margin:1.5rem 0 3rem; line-height:1.8; }
-  .hero-actions { display:flex; gap:1.2rem; align-items:center; flex-wrap:wrap; }
-  .btn-primary { display:inline-block; background:var(--brass); color:var(--forest); padding:0.85rem 2.2rem; font-size:0.78rem; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; text-decoration:none; border-radius:2px; transition:background 0.2s,transform 0.2s; }
-  .btn-primary:hover { background:var(--brass-lt); transform:translateY(-1px); }
-  .btn-ghost { display:inline-flex; align-items:center; gap:0.5rem; color:rgba(255,255,255,0.6); font-size:0.78rem; letter-spacing:0.1em; text-transform:uppercase; text-decoration:none; transition:color 0.2s; }
-  .btn-ghost:hover { color:var(--brass-lt); }
-  .btn-ghost svg { transition:transform 0.2s; }
-  .btn-ghost:hover svg { transform:translateX(4px); }
-  .hero-right { position:relative; z-index:2; display:flex; align-items:flex-end; justify-content:center; padding-bottom:4rem; }
-  .hero-visual { width:420px; height:480px; position:relative; }
-  .hero-visual-card { position:absolute; background:rgba(22,61,39,0.85); border:1px solid rgba(184,149,42,0.2); backdrop-filter:blur(8px); border-radius:4px; padding:1.4rem 1.6rem; }
-  .hvc-1{width:260px;top:40px;left:0} .hvc-2{width:220px;top:160px;right:0} .hvc-3{width:240px;bottom:60px;left:30px}
-  .hvc-label { font-size:0.62rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--brass); margin-bottom:0.6rem; }
-  .hvc-value { font-family:'Cormorant Garamond',serif; font-size:2rem; font-weight:600; color:var(--white); line-height:1; }
-  .hvc-sub { font-size:0.7rem; color:rgba(255,255,255,0.45); margin-top:0.3rem; }
-  .hvc-bar { height:3px; background:rgba(184,149,42,0.15); border-radius:2px; margin-top:0.8rem; overflow:hidden; }
-  .hvc-bar-fill { height:100%; background:linear-gradient(90deg,var(--brass),var(--brass-lt)); border-radius:2px; animation:barGrow 2.5s ease-out forwards; }
-  @keyframes barGrow { from{width:0} }
-  .hero-scroll { position:absolute; bottom:2.5rem; left:4rem; display:flex; align-items:center; gap:0.8rem; color:rgba(255,255,255,0.3); font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase; z-index:2; }
-  .scroll-line { width:40px; height:1px; background:rgba(255,255,255,0.2); position:relative; overflow:hidden; }
-  .scroll-line::after { content:''; position:absolute; top:0; left:-100%; width:100%; height:100%; background:var(--brass); animation:scrollLine 2s ease-in-out infinite; }
-  @keyframes scrollLine { 0%,100%{left:-100%} 50%{left:100%} }
+/* LANGUAGE TOGGLE */
+.lang-toggle{display:flex;align-items:center;gap:0.4rem;}
+.lang-btn{background:none;border:none;cursor:pointer;font-family:"DM Sans",sans-serif;font-size:0.72rem;font-weight:500;letter-spacing:0.1em;color:rgba(255,255,255,0.4);padding:0.2rem 0.4rem;transition:color 0.2s;border-bottom:1px solid transparent;}
+.lang-btn.active{color:var(--brass-lt);border-bottom-color:var(--brass);}
+.lang-btn:hover{color:rgba(255,255,255,0.8);}
+.lang-sep{color:rgba(255,255,255,0.2);font-size:0.75rem;}
 
-  /* SHARED */
-  section { position:relative; }
-  .section-inner { max-width:1200px; margin:0 auto; padding:0 4rem; }
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0.8rem 4rem;transition:background 0.4s,box-shadow 0.4s;}
+nav.scrolled{background:rgba(11,35,24,0.97);backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(184,149,42,0.2);}
+.nav-logo{text-decoration:none;display:flex;align-items:center;}
+.nav-right{display:flex;align-items:center;gap:2rem;}
+.nav-links{display:flex;align-items:center;gap:2rem;list-style:none;}
+.nav-links a{font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.7);text-decoration:none;transition:color 0.2s;}
+.nav-links a:hover{color:var(--brass-lt);}
+.nav-cta{border:1px solid var(--brass);color:var(--brass-lt) !important;padding:0.5rem 1.2rem;border-radius:2px;transition:background 0.2s,color 0.2s !important;}
+.nav-cta:hover{background:var(--brass) !important;color:var(--forest) !important;}
 
-  /* MARQUEE */
-  .marquee-strip { background:var(--emerald); border-top:1px solid rgba(184,149,42,0.2); border-bottom:1px solid rgba(184,149,42,0.2); padding:0.9rem 0; overflow:hidden; }
-  .marquee-track { display:flex; width:max-content; animation:marquee 30s linear infinite; }
-  @keyframes marquee { from{transform:translateX(0)} to{transform:translateX(-50%)} }
-  .marquee-item { display:flex; align-items:center; gap:1.5rem; padding:0 2.5rem; font-size:0.72rem; letter-spacing:0.15em; text-transform:uppercase; color:rgba(255,255,255,0.5); white-space:nowrap; }
-  .marquee-dot { width:4px; height:4px; background:var(--brass); border-radius:50%; }
+/* HAMBURGER */
+.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px;}
+.hamburger span{display:block;width:22px;height:2px;background:rgba(255,255,255,0.8);border-radius:2px;transition:all 0.3s;}
+.hamburger.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px);}
+.hamburger.open span:nth-child(2){opacity:0;}
+.hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px);}
 
-  /* ABOUT */
-  #about { padding:8rem 0; background:var(--cream); }
-  .about-grid { display:grid; grid-template-columns:1fr 1fr; gap:6rem; align-items:start; }
-  .about-left h2 { font-size:clamp(2.5rem,3.5vw,3.8rem); color:var(--forest); margin:1rem 0 1.5rem; line-height:1.1; }
-  .about-left h2 em { color:var(--brass); font-style:italic; }
-  .about-left p { color:var(--text-mid); font-size:0.95rem; line-height:1.85; margin-bottom:1.2rem; }
-  .creds-list { margin-top:2.5rem; display:flex; flex-direction:column; gap:0.8rem; }
-  .cred-item { display:flex; align-items:flex-start; gap:1rem; padding:1rem 1.2rem; background:var(--cream-dk); border-left:2px solid var(--brass); }
-  .cred-icon { width:18px; height:18px; flex-shrink:0; margin-top:1px; color:var(--brass); }
-  .cred-text { font-size:0.82rem; color:var(--text-mid); line-height:1.5; }
-  .cred-text strong { color:var(--text); font-weight:500; }
-  .about-right { padding-top:3.5rem; }
-  .stat-grid { display:grid; grid-template-columns:1fr 1fr; gap:1px; background:rgba(184,149,42,0.15); margin-bottom:2.5rem; }
-  .stat-box { background:var(--cream); padding:2rem; }
-  .stat-num { font-family:'Cormorant Garamond',serif; font-size:3rem; font-weight:600; color:var(--forest); line-height:1; }
-  .stat-num span { font-size:1.5rem; color:var(--brass); }
-  .stat-label { font-size:0.75rem; color:var(--text-lt); letter-spacing:0.08em; margin-top:0.4rem; }
-  .differentiator-block { background:var(--forest); padding:2rem 2.2rem; border-left:3px solid var(--brass); }
-  .differentiator-block p { font-family:'Cormorant Garamond',serif; font-size:1.25rem; font-style:italic; color:rgba(255,255,255,0.85); line-height:1.6; }
-  .differentiator-block cite { display:block; margin-top:0.8rem; font-style:normal; font-size:0.72rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--brass); font-family:'DM Sans',sans-serif; }
+/* HERO */
+#hero{min-height:100vh;background:var(--forest);display:grid;grid-template-columns:1fr 1fr;position:relative;overflow:hidden;}
+.hero-bg-pattern{position:absolute;inset:0;background-image:radial-gradient(ellipse 60% 80% at 70% 50%,rgba(30,82,52,0.5) 0%,transparent 70%),radial-gradient(ellipse 40% 40% at 20% 80%,rgba(184,149,42,0.08) 0%,transparent 60%);}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(184,149,42,0.06) 1px,transparent 1px),linear-gradient(90deg,rgba(184,149,42,0.06) 1px,transparent 1px);background-size:80px 80px;animation:gridShift 20s linear infinite;}
+@keyframes gridShift{0%{transform:translate(0,0)}100%{transform:translate(80px,80px)}}
+.hero-left{display:flex;flex-direction:column;justify-content:center;padding:8rem 4rem 5rem;position:relative;z-index:2;}
+.hero-eyebrow{margin-bottom:1.5rem;margin-top:2rem;display:flex;align-items:center;gap:1rem;}
+.hero-eyebrow::before{content:"";display:block;width:40px;height:1px;background:var(--brass);}
+.hero-h1{font-size:clamp(2rem,3.5vw,3.5rem);font-weight:300;color:var(--white);}
+.hero-h1 em{font-style:italic;color:var(--brass-lt);}
+.hero-tagline{font-family:"DM Sans",sans-serif;font-size:0.95rem;font-weight:300;color:rgba(255,255,255,0.6);max-width:420px;margin:1.5rem 0 3rem;line-height:1.8;}
+.hero-actions{display:flex;gap:1.2rem;align-items:center;flex-wrap:wrap;}
+.btn-primary{display:inline-block;background:var(--brass);color:var(--forest);padding:0.85rem 2.2rem;font-size:0.78rem;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;border-radius:2px;transition:background 0.2s,transform 0.2s;}
+.btn-primary:hover{background:var(--brass-lt);transform:translateY(-1px);}
+.btn-ghost{display:inline-flex;align-items:center;gap:0.5rem;color:rgba(255,255,255,0.6);font-size:0.78rem;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;transition:color 0.2s;}
+.btn-ghost:hover{color:var(--brass-lt);}
+.hero-right{position:relative;z-index:2;display:flex;align-items:flex-end;justify-content:center;padding-bottom:4rem;}
+.hero-visual{width:400px;height:460px;position:relative;}
+.hero-visual-card{position:absolute;background:rgba(22,61,39,0.85);border:1px solid rgba(184,149,42,0.2);backdrop-filter:blur(8px);border-radius:4px;padding:1.4rem 1.6rem;}
+.hvc-1{width:250px;top:40px;left:0}.hvc-2{width:210px;top:155px;right:0}.hvc-3{width:230px;bottom:60px;left:30px}
+.hvc-label{font-size:0.62rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--brass);margin-bottom:0.6rem;}
+.hvc-value{font-family:"Cormorant Garamond",serif;font-size:2rem;font-weight:600;color:var(--white);line-height:1;}
+.hvc-sub{font-size:0.7rem;color:rgba(255,255,255,0.45);margin-top:0.3rem;}
+.hvc-bar{height:3px;background:rgba(184,149,42,0.15);border-radius:2px;margin-top:0.8rem;overflow:hidden;}
+.hvc-bar-fill{height:100%;background:linear-gradient(90deg,var(--brass),var(--brass-lt));border-radius:2px;animation:barGrow 2.5s ease-out forwards;}
+@keyframes barGrow{from{width:0}}
+.hero-scroll{position:absolute;bottom:2.5rem;left:4rem;display:flex;align-items:center;gap:0.8rem;color:rgba(255,255,255,0.3);font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;z-index:2;}
+.scroll-line{width:40px;height:1px;background:rgba(255,255,255,0.2);position:relative;overflow:hidden;}
+.scroll-line::after{content:"";position:absolute;top:0;left:-100%;width:100%;height:100%;background:var(--brass);animation:scrollLine 2s ease-in-out infinite;}
+@keyframes scrollLine{0%,100%{left:-100%}50%{left:100%}}
 
-  /* SERVICES */
-  #services { padding:8rem 0; background:var(--forest); }
-  #services .eyebrow { color:var(--brass); }
-  .services-header { display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:end; margin-bottom:5rem; }
-  .services-header h2 { font-size:clamp(2.5rem,3.5vw,3.8rem); color:var(--white); margin-top:1rem; }
-  .services-header h2 em { color:var(--brass-lt); font-style:italic; }
-  .services-header p { color:rgba(255,255,255,0.55); font-size:0.92rem; line-height:1.85; }
-  .tier-tabs { display:flex; border-bottom:1px solid rgba(184,149,42,0.2); margin-bottom:3rem; }
-  .tier-tab { padding:0.9rem 2rem; background:none; border:none; cursor:pointer; font-family:'DM Sans',sans-serif; font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; color:rgba(255,255,255,0.4); border-bottom:2px solid transparent; margin-bottom:-1px; transition:color 0.2s,border-color 0.2s; }
-  .tier-tab:hover { color:rgba(255,255,255,0.7); }
-  .tier-tab.active { color:var(--brass-lt); border-bottom-color:var(--brass); }
-  .tier-panel { display:none; }
-  .tier-panel.active { display:block; }
-  .tier-intro { margin-bottom:2rem; padding-bottom:1.5rem; border-bottom:1px solid rgba(184,149,42,0.1); }
-  .tier-intro-badge { display:inline-block; background:rgba(184,149,42,0.12); border:1px solid rgba(184,149,42,0.25); color:var(--brass-lt); font-size:0.68rem; letter-spacing:0.15em; text-transform:uppercase; padding:0.3rem 0.8rem; border-radius:2px; margin-bottom:0.6rem; }
-  .tier-intro p { color:rgba(255,255,255,0.45); font-size:0.85rem; }
-  .services-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); gap:1px; background:rgba(184,149,42,0.1); }
-  .service-card { background:rgba(22,61,39,0.6); padding:2rem 2rem 2.2rem; transition:background 0.2s; border:1px solid transparent; }
-  .service-card:hover { background:rgba(30,82,52,0.9); border-color:rgba(184,149,42,0.25); }
-  .sc-number { font-family:'Cormorant Garamond',serif; font-size:0.85rem; color:rgba(184,149,42,0.4); margin-bottom:1rem; }
-  .sc-title { font-family:'Cormorant Garamond',serif; font-size:1.4rem; font-weight:500; color:var(--white); margin-bottom:0.8rem; line-height:1.2; }
-  .sc-scope { font-size:0.82rem; color:rgba(255,255,255,0.5); line-height:1.75; margin-bottom:1rem; }
-  .sc-target-label { font-size:0.62rem; letter-spacing:0.15em; text-transform:uppercase; color:rgba(184,149,42,0.5); margin-top:1.2rem; padding-top:1.2rem; border-top:1px solid rgba(184,149,42,0.1); margin-bottom:0.3rem; }
-  .sc-target { font-size:0.78rem; color:rgba(255,255,255,0.38); line-height:1.5; }
+/* SHARED */
+section{position:relative;}
+.section-inner{max-width:1200px;margin:0 auto;padding:0 4rem;}
 
-  /* APPROACH */
-  #approach { padding:8rem 0; background:var(--cream-dk); }
-  .approach-header { text-align:center; max-width:600px; margin:0 auto 5rem; }
-  .approach-header h2 { font-size:clamp(2.2rem,3vw,3.2rem); color:var(--forest); margin:0.8rem 0 1rem; }
-  .approach-header p { color:var(--text-lt); font-size:0.9rem; }
-  .steps-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:0; position:relative; }
-  .steps-grid::before { content:''; position:absolute; top:36px; left:12.5%; right:12.5%; height:1px; background:linear-gradient(90deg,transparent,var(--brass),var(--brass),transparent); opacity:0.3; }
-  .step-item { text-align:center; padding:0 2rem; }
-  .step-num { width:72px; height:72px; border-radius:50%; background:var(--cream); border:1px solid rgba(184,149,42,0.3); display:flex; align-items:center; justify-content:center; margin:0 auto 1.5rem; font-family:'Cormorant Garamond',serif; font-size:1.5rem; font-weight:600; color:var(--brass); position:relative; z-index:1; }
-  .step-title { font-family:'Cormorant Garamond',serif; font-size:1.25rem; font-weight:500; color:var(--forest); margin-bottom:0.6rem; }
-  .step-desc { font-size:0.82rem; color:var(--text-lt); line-height:1.7; }
+/* MARQUEE */
+.marquee-strip{background:var(--emerald);border-top:1px solid rgba(184,149,42,0.2);border-bottom:1px solid rgba(184,149,42,0.2);padding:0.9rem 0;overflow:hidden;}
+.marquee-track{display:flex;width:max-content;animation:marquee 30s linear infinite;}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.marquee-item{display:flex;align-items:center;gap:1.5rem;padding:0 2.5rem;font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.5);white-space:nowrap;}
+.marquee-dot{width:4px;height:4px;background:var(--brass);border-radius:50%;}
 
-  /* WHY */
-  #why { padding:8rem 0; background:var(--forest); overflow:hidden; }
-  .why-grid { display:grid; grid-template-columns:1fr 1.2fr; gap:6rem; align-items:center; }
-  .why-left h2 { font-size:clamp(2.5rem,3.5vw,3.8rem); color:var(--white); margin:0.8rem 0 1.5rem; }
-  .why-left h2 em { color:var(--brass-lt); font-style:italic; }
-  .why-left p { color:rgba(255,255,255,0.55); font-size:0.92rem; line-height:1.85; margin-bottom:1rem; }
-  .pillars { display:flex; flex-direction:column; gap:1px; margin-top:3rem; }
-  .pillar { display:flex; align-items:flex-start; gap:1.2rem; padding:1.4rem 1.6rem; background:rgba(22,61,39,0.5); border:1px solid transparent; transition:border-color 0.2s,background 0.2s; }
-  .pillar:hover { border-color:rgba(184,149,42,0.2); background:rgba(30,82,52,0.6); }
-  .pillar-icon { width:36px; height:36px; flex-shrink:0; background:rgba(184,149,42,0.1); border:1px solid rgba(184,149,42,0.2); border-radius:2px; display:flex; align-items:center; justify-content:center; color:var(--brass); }
-  .pillar-body h4 { font-family:'DM Sans',sans-serif; font-size:0.85rem; font-weight:500; color:var(--white); margin-bottom:0.3rem; }
-  .pillar-body p { font-size:0.78rem; color:rgba(255,255,255,0.45); line-height:1.6; }
-  .ecosystem-visual { background:rgba(22,61,39,0.4); border:1px solid rgba(184,149,42,0.15); padding:3rem; }
-  .eco-title { font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--brass); margin-bottom:2rem; }
-  .eco-node { display:flex; align-items:center; gap:1rem; padding:1rem; margin-bottom:0.5rem; background:rgba(11,35,24,0.6); border-left:2px solid transparent; transition:border-color 0.2s; }
-  .eco-node:hover { border-left-color:var(--brass); }
-  .eco-node-dot { width:8px; height:8px; border-radius:50%; background:var(--brass); flex-shrink:0; }
-  .eco-node-text { font-size:0.82rem; color:rgba(255,255,255,0.7); }
-  .eco-connector { width:1px; height:24px; background:rgba(184,149,42,0.2); margin-left:1.25rem; }
-  .eco-badge { margin-top:2rem; padding-top:1.5rem; border-top:1px solid rgba(184,149,42,0.15); font-size:0.72rem; color:rgba(255,255,255,0.35); line-height:1.6; }
+/* ABOUT */
+#about{padding:8rem 0;background:var(--cream);}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:start;}
+.about-left h2{font-size:clamp(2.2rem,3vw,3.5rem);color:var(--forest);margin:1rem 0 1.5rem;line-height:1.1;}
+.about-left h2 em{color:var(--brass);font-style:italic;}
+.about-left p{color:var(--text-mid);font-size:0.92rem;line-height:1.85;margin-bottom:1.2rem;}
+.creds-list{margin-top:2.5rem;display:flex;flex-direction:column;gap:0.8rem;}
+.cred-item{display:flex;align-items:flex-start;gap:1rem;padding:1rem 1.2rem;background:var(--cream-dk);border-left:2px solid var(--brass);}
+.cred-icon{width:18px;height:18px;flex-shrink:0;margin-top:2px;color:var(--brass);}
+.cred-text{font-size:0.8rem;color:var(--text-mid);line-height:1.5;}
+.cred-text strong{color:var(--text);font-weight:500;}
+.about-right{padding-top:3.5rem;}
+.stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(184,149,42,0.15);margin-bottom:2.5rem;}
+.stat-box{background:var(--cream);padding:2rem;}
+.stat-num{font-family:"Cormorant Garamond",serif;font-size:3rem;font-weight:600;color:var(--forest);line-height:1;}
+.stat-num span{font-size:1.5rem;color:var(--brass);}
+.stat-label{font-size:0.72rem;color:var(--text-lt);letter-spacing:0.08em;margin-top:0.4rem;}
+.differentiator-block{background:var(--forest);padding:2rem 2.2rem;border-left:3px solid var(--brass);}
+.differentiator-block p{font-family:"Cormorant Garamond",serif;font-size:1.2rem;font-style:italic;color:rgba(255,255,255,0.85);line-height:1.6;}
+.differentiator-block cite{display:block;margin-top:0.8rem;font-style:normal;font-size:0.68rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--brass);font-family:"DM Sans",sans-serif;}
 
-  /* CLIENTS */
-  #clients { padding:6rem 0; background:var(--cream); }
-  .clients-header { text-align:center; margin-bottom:4rem; }
-  .clients-header h2 { font-size:clamp(1.8rem,2.5vw,2.8rem); color:var(--forest); margin:0.6rem 0; }
-  .sector-grid { display:grid; grid-template-columns:repeat(5,1fr); gap:1px; background:rgba(184,149,42,0.12); }
-  .sector-item { background:var(--cream); padding:2rem 1.5rem; text-align:center; transition:background 0.2s; }
-  .sector-item:hover { background:var(--cream-dk); }
-  .sector-icon { font-size:1.8rem; margin-bottom:0.8rem; display:block; }
-  .sector-name { font-family:'Cormorant Garamond',serif; font-size:1rem; font-weight:500; color:var(--forest); margin-bottom:0.3rem; }
-  .sector-desc { font-size:0.72rem; color:var(--text-lt); line-height:1.5; }
+/* SERVICES */
+#services{padding:8rem 0;background:var(--forest);}
+#services .eyebrow{color:var(--brass);}
+.services-header{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:end;margin-bottom:4rem;}
+.services-header h2{font-size:clamp(2.2rem,3vw,3.5rem);color:var(--white);margin-top:1rem;}
+.services-header h2 em{color:var(--brass-lt);font-style:italic;}
+.services-header p{color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.85;}
+.tier-tabs{display:flex;flex-wrap:wrap;border-bottom:1px solid rgba(184,149,42,0.2);margin-bottom:3rem;}
+.tier-tab{padding:0.8rem 1.5rem;background:none;border:none;cursor:pointer;font-family:"DM Sans",sans-serif;font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.4);border-bottom:2px solid transparent;margin-bottom:-1px;transition:color 0.2s,border-color 0.2s;}
+.tier-tab:hover{color:rgba(255,255,255,0.7);}
+.tier-tab.active{color:var(--brass-lt);border-bottom-color:var(--brass);}
+.tier-panel{display:none;}
+.tier-panel.active{display:block;}
+.tier-intro{margin-bottom:2rem;padding-bottom:1.5rem;border-bottom:1px solid rgba(184,149,42,0.1);}
+.tier-intro-badge{display:inline-block;background:rgba(184,149,42,0.12);border:1px solid rgba(184,149,42,0.25);color:var(--brass-lt);font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;padding:0.3rem 0.8rem;border-radius:2px;margin-bottom:0.6rem;}
+.tier-intro p{color:rgba(255,255,255,0.45);font-size:0.85rem;}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1px;background:rgba(184,149,42,0.1);}
+.service-card{background:rgba(22,61,39,0.6);padding:2rem;transition:background 0.2s;border:1px solid transparent;}
+.service-card:hover{background:rgba(30,82,52,0.9);border-color:rgba(184,149,42,0.25);}
+.sc-number{font-family:"Cormorant Garamond",serif;font-size:0.85rem;color:rgba(184,149,42,0.4);margin-bottom:1rem;}
+.sc-title{font-family:"Cormorant Garamond",serif;font-size:1.35rem;font-weight:500;color:var(--white);margin-bottom:0.8rem;line-height:1.2;}
+.sc-scope{font-size:0.8rem;color:rgba(255,255,255,0.5);line-height:1.75;margin-bottom:1rem;}
+.sc-target-label{font-size:0.62rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(184,149,42,0.5);margin-top:1.2rem;padding-top:1.2rem;border-top:1px solid rgba(184,149,42,0.1);margin-bottom:0.3rem;}
+.sc-target{font-size:0.78rem;color:rgba(255,255,255,0.38);line-height:1.5;}
+.services-loading{text-align:center;padding:3rem;color:rgba(255,255,255,0.3);font-size:0.85rem;}
 
-  /* CONTACT */
-  #contact { padding:8rem 0; background:var(--emerald); }
-  .contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:6rem; }
-  .contact-left h2 { font-size:clamp(2.5rem,3.5vw,3.8rem); color:var(--white); margin:0.8rem 0 1.5rem; }
-  .contact-left h2 em { color:var(--brass-lt); font-style:italic; }
-  .contact-left p { color:rgba(255,255,255,0.55); font-size:0.9rem; line-height:1.85; margin-bottom:2rem; }
-  .contact-detail { display:flex; align-items:center; gap:1rem; margin-bottom:1.2rem; color:rgba(255,255,255,0.7); font-size:0.85rem; }
-  .contact-detail svg { color:var(--brass); flex-shrink:0; }
-  .contact-detail a { color:rgba(255,255,255,0.7); text-decoration:none; }
-  .contact-detail a:hover { color:var(--brass-lt); }
-  .contact-form { display:flex; flex-direction:column; gap:1.2rem; }
-  .form-row { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
-  .form-group { display:flex; flex-direction:column; gap:0.4rem; }
-  .form-group label { font-size:0.68rem; letter-spacing:0.15em; text-transform:uppercase; color:rgba(255,255,255,0.45); }
-  .form-group input,.form-group select,.form-group textarea { background:rgba(11,35,24,0.6); border:1px solid rgba(184,149,42,0.2); color:var(--white); padding:0.8rem 1rem; font-family:'DM Sans',sans-serif; font-size:0.85rem; border-radius:2px; outline:none; transition:border-color 0.2s; resize:vertical; }
-  .form-group input::placeholder,.form-group textarea::placeholder { color:rgba(255,255,255,0.2); }
-  .form-group input:focus,.form-group select:focus,.form-group textarea:focus { border-color:rgba(184,149,42,0.5); }
-  .form-group select { cursor:pointer; }
-  .form-group select option { background:var(--forest); }
-  .form-submit { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; }
-  .form-submit-btn { background:var(--brass); color:var(--forest); border:none; padding:0.9rem 2.5rem; font-family:'DM Sans',sans-serif; font-size:0.78rem; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; cursor:pointer; border-radius:2px; transition:background 0.2s,transform 0.2s; }
-  .form-submit-btn:hover { background:var(--brass-lt); transform:translateY(-1px); }
-  .form-note { font-size:0.72rem; color:rgba(255,255,255,0.3); }
+/* APPROACH */
+#approach{padding:8rem 0;background:var(--cream-dk);}
+.approach-header{text-align:center;max-width:600px;margin:0 auto 5rem;}
+.approach-header h2{font-size:clamp(2rem,3vw,3rem);color:var(--forest);margin:0.8rem 0 1rem;}
+.approach-header p{color:var(--text-lt);font-size:0.9rem;}
+.steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative;}
+.steps-grid::before{content:"";position:absolute;top:36px;left:12.5%;right:12.5%;height:1px;background:linear-gradient(90deg,transparent,var(--brass),var(--brass),transparent);opacity:0.3;}
+.step-item{text-align:center;padding:0 1.5rem;}
+.step-num{width:72px;height:72px;border-radius:50%;background:var(--cream);border:1px solid rgba(184,149,42,0.3);display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;font-family:"Cormorant Garamond",serif;font-size:1.5rem;font-weight:600;color:var(--brass);position:relative;z-index:1;}
+.step-title{font-family:"Cormorant Garamond",serif;font-size:1.2rem;font-weight:500;color:var(--forest);margin-bottom:0.6rem;}
+.step-desc{font-size:0.8rem;color:var(--text-lt);line-height:1.7;}
 
-  /* FOOTER */
-  footer { background:var(--forest); border-top:1px solid rgba(184,149,42,0.15); padding:4rem 0 2.5rem; }
-  .footer-grid { display:grid; grid-template-columns:1.5fr 1fr 1fr 1fr; gap:3rem; margin-bottom:3rem; }
-  .footer-brand-wordmark { font-family:'Cormorant Garamond',serif; font-size:1.8rem; font-weight:600; margin-bottom:0.3rem; }
-  .footer-brand-wordmark-om { color:var(--brass-lt); }
-  .footer-brand-wordmark-e { color:rgba(255,255,255,0.85); }
-  .footer-brand-wordmark-rest { color:rgba(255,255,255,0.6); font-weight:300; font-size:1.2rem; letter-spacing:0.05em; }
-  .footer-brand-tagline { font-size:0.68rem; letter-spacing:0.15em; text-transform:uppercase; color:rgba(255,255,255,0.3); margin-bottom:1rem; }
-  .footer-brand-desc { font-size:0.8rem; color:rgba(255,255,255,0.35); line-height:1.7; }
-  .footer-col h4 { font-family:'DM Sans',sans-serif; font-size:0.68rem; font-weight:500; letter-spacing:0.15em; text-transform:uppercase; color:var(--brass); margin-bottom:1.2rem; }
-  .footer-col ul { list-style:none; display:flex; flex-direction:column; gap:0.6rem; }
-  .footer-col ul li a { font-size:0.8rem; color:rgba(255,255,255,0.4); text-decoration:none; transition:color 0.2s; }
-  .footer-col ul li a:hover { color:var(--brass-lt); }
-  .footer-bottom { padding-top:2rem; border-top:1px solid rgba(184,149,42,0.1); display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; }
-  .footer-copy { font-size:0.72rem; color:rgba(255,255,255,0.25); }
-  .footer-legal { display:flex; gap:2rem; }
-  .footer-legal a { font-size:0.72rem; color:rgba(255,255,255,0.25); text-decoration:none; transition:color 0.2s; }
-  .footer-legal a:hover { color:var(--brass); }
+/* WHY */
+#why{padding:8rem 0;background:var(--forest);overflow:hidden;}
+.why-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:6rem;align-items:center;}
+.why-left h2{font-size:clamp(2.2rem,3vw,3.5rem);color:var(--white);margin:0.8rem 0 1.5rem;}
+.why-left h2 em{color:var(--brass-lt);font-style:italic;}
+.why-left p{color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.85;margin-bottom:1rem;}
+.pillars{display:flex;flex-direction:column;gap:1px;margin-top:3rem;}
+.pillar{display:flex;align-items:flex-start;gap:1.2rem;padding:1.4rem 1.6rem;background:rgba(22,61,39,0.5);border:1px solid transparent;transition:border-color 0.2s,background 0.2s;}
+.pillar:hover{border-color:rgba(184,149,42,0.2);background:rgba(30,82,52,0.6);}
+.pillar-icon{width:36px;height:36px;flex-shrink:0;background:rgba(184,149,42,0.1);border:1px solid rgba(184,149,42,0.2);border-radius:2px;display:flex;align-items:center;justify-content:center;color:var(--brass);}
+.pillar-body h4{font-family:"DM Sans",sans-serif;font-size:0.85rem;font-weight:500;color:var(--white);margin-bottom:0.3rem;}
+.pillar-body p{font-size:0.78rem;color:rgba(255,255,255,0.45);line-height:1.6;}
+.ecosystem-visual{background:rgba(22,61,39,0.4);border:1px solid rgba(184,149,42,0.15);padding:2.5rem;}
+.eco-title{font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--brass);margin-bottom:2rem;}
+.eco-node{display:flex;align-items:center;gap:1rem;padding:1rem;margin-bottom:0.5rem;background:rgba(11,35,24,0.6);border-left:2px solid transparent;transition:border-color 0.2s;}
+.eco-node:hover{border-left-color:var(--brass);}
+.eco-node-dot{width:8px;height:8px;border-radius:50%;background:var(--brass);flex-shrink:0;}
+.eco-node-text{font-size:0.8rem;color:rgba(255,255,255,0.7);}
+.eco-connector{width:1px;height:20px;background:rgba(184,149,42,0.2);margin-left:1.25rem;}
+.eco-badge{margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid rgba(184,149,42,0.15);font-size:0.72rem;color:rgba(255,255,255,0.35);line-height:1.6;}
 
-  /* LOADING STATE */
-  .services-loading { text-align:center; padding:3rem; color:rgba(255,255,255,0.3); font-size:0.85rem; letter-spacing:0.1em; }
+/* CLIENTS */
+#clients{padding:6rem 0;background:var(--cream);}
+.clients-header{text-align:center;margin-bottom:4rem;}
+.clients-header h2{font-size:clamp(1.8rem,2.5vw,2.8rem);color:var(--forest);margin:0.6rem 0;}
+.sector-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:rgba(184,149,42,0.12);}
+.sector-item{background:var(--cream);padding:2rem 1.5rem;text-align:center;transition:background 0.2s;}
+.sector-item:hover{background:var(--cream-dk);}
+.sector-icon{font-size:1.8rem;margin-bottom:0.8rem;display:block;}
+.sector-name{font-family:"Cormorant Garamond",serif;font-size:1rem;font-weight:500;color:var(--forest);margin-bottom:0.3rem;}
+.sector-desc{font-size:0.72rem;color:var(--text-lt);line-height:1.5;}
 
-  /* ANIMATIONS */
-  .fade-up { opacity:0; transform:translateY(30px); transition:opacity 0.7s ease,transform 0.7s ease; }
-  .fade-up.visible { opacity:1; transform:translateY(0); }
+/* CONTACT */
+#contact{padding:8rem 0;background:var(--emerald);}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:6rem;}
+.contact-left h2{font-size:clamp(2.2rem,3vw,3.5rem);color:var(--white);margin:0.8rem 0 1.5rem;}
+.contact-left h2 em{color:var(--brass-lt);font-style:italic;}
+.contact-left p{color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.85;margin-bottom:2rem;}
+.contact-detail{display:flex;align-items:center;gap:1rem;margin-bottom:1.2rem;color:rgba(255,255,255,0.7);font-size:0.85rem;}
+.contact-detail svg{color:var(--brass);flex-shrink:0;}
+.contact-detail a{color:rgba(255,255,255,0.7);text-decoration:none;}
+.contact-detail a:hover{color:var(--brass-lt);}
+.contact-form{display:flex;flex-direction:column;gap:1.2rem;}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
+.form-group{display:flex;flex-direction:column;gap:0.4rem;}
+.form-group label{font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.45);}
+.form-group input,.form-group select,.form-group textarea{background:rgba(11,35,24,0.6);border:1px solid rgba(184,149,42,0.2);color:var(--white);padding:0.8rem 1rem;font-family:"DM Sans",sans-serif;font-size:0.85rem;border-radius:2px;outline:none;transition:border-color 0.2s;resize:vertical;}
+.form-group input::placeholder,.form-group textarea::placeholder{color:rgba(255,255,255,0.2);}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:rgba(184,149,42,0.5);}
+.form-group select{cursor:pointer;}
+.form-group select option{background:var(--forest);}
+.form-submit{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;}
+.form-submit-btn{background:var(--brass);color:var(--forest);border:none;padding:0.9rem 2.5rem;font-family:"DM Sans",sans-serif;font-size:0.78rem;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;cursor:pointer;border-radius:2px;transition:background 0.2s,transform 0.2s;}
+.form-submit-btn:hover{background:var(--brass-lt);transform:translateY(-1px);}
+.form-note{font-size:0.72rem;color:rgba(255,255,255,0.3);}
 
-  /* MOBILE */
-  @media (max-width:900px) {
-    nav { padding:1.2rem 1.5rem; }
-    .nav-links { display:none; }
-    #hero { grid-template-columns:1fr; }
-    .hero-left { padding:7rem 1.5rem 3rem; }
-    .hero-right { display:none; }
-    .hero-scroll { left:1.5rem; }
-    .section-inner { padding:0 1.5rem; }
-    .about-grid,.services-header,.why-grid,.contact-grid { grid-template-columns:1fr; gap:3rem; }
-    .steps-grid { grid-template-columns:1fr 1fr; }
-    .steps-grid::before { display:none; }
-    .sector-grid { grid-template-columns:repeat(2,1fr); }
-    .footer-grid { grid-template-columns:1fr 1fr; }
-    .form-row { grid-template-columns:1fr; }
-  }
+/* FOOTER */
+footer{background:var(--forest);border-top:1px solid rgba(184,149,42,0.15);padding:4rem 0 2.5rem;}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem;}
+.footer-brand-name{font-family:"Cormorant Garamond",serif;font-size:1.6rem;font-weight:600;color:var(--white);margin-bottom:0.3rem;}
+.footer-brand-name span{color:var(--brass-lt);}
+.footer-brand-tagline{font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:1rem;}
+.footer-brand-desc{font-size:0.8rem;color:rgba(255,255,255,0.35);line-height:1.7;}
+.footer-col h4{font-family:"DM Sans",sans-serif;font-size:0.68rem;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:var(--brass);margin-bottom:1.2rem;}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:0.6rem;}
+.footer-col ul li a{font-size:0.8rem;color:rgba(255,255,255,0.4);text-decoration:none;transition:color 0.2s;}
+.footer-col ul li a:hover{color:var(--brass-lt);}
+.footer-bottom{padding-top:2rem;border-top:1px solid rgba(184,149,42,0.1);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;}
+.footer-copy{font-size:0.72rem;color:rgba(255,255,255,0.25);}
+.footer-legal{display:flex;gap:2rem;}
+.footer-legal a{font-size:0.72rem;color:rgba(255,255,255,0.25);text-decoration:none;transition:color 0.2s;}
+.footer-legal a:hover{color:var(--brass);}
+
+/* ANIMATIONS */
+.fade-up{opacity:0;transform:translateY(30px);transition:opacity 0.7s ease,transform 0.7s ease;}
+.fade-up.visible{opacity:1;transform:translateY(0);}
+
+/* ── MOBILE ── */
+@media(max-width:900px){
+  nav{padding:0.8rem 1.5rem;}
+  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:rgba(11,35,24,0.98);flex-direction:column;align-items:flex-start;padding:1.5rem;gap:1.2rem;border-top:1px solid rgba(184,149,42,0.2);}
+  .nav-links.open{display:flex;}
+  .nav-links .lang-toggle{margin-top:0.5rem;}
+  .lang-toggle-desktop{display:none;}
+  .hamburger{display:flex;}
+  #hero{grid-template-columns:1fr;min-height:auto;}
+  .hero-left{padding:6rem 1.5rem 3rem;}
+  .hero-right{display:none;}
+  .hero-scroll{left:1.5rem;}
+  .section-inner{padding:0 1.5rem;}
+  .about-grid,.services-header,.why-grid,.contact-grid{grid-template-columns:1fr;gap:3rem;}
+  .steps-grid{grid-template-columns:1fr 1fr;}
+  .steps-grid::before{display:none;}
+  .sector-grid{grid-template-columns:repeat(2,1fr);}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+  .form-row{grid-template-columns:1fr;}
+  .services-grid{grid-template-columns:1fr;}
+  .tier-tabs{gap:0;}
+  .tier-tab{padding:0.7rem 1rem;font-size:0.68rem;}
+  .about-right{padding-top:0;}
+}
+@media(max-width:480px){
+  .steps-grid{grid-template-columns:1fr;}
+  .steps-grid .step-item{margin-bottom:2rem;}
+  .sector-grid{grid-template-columns:1fr 1fr;}
+  .footer-grid{grid-template-columns:1fr;}
+  .tier-tab{padding:0.6rem 0.8rem;font-size:0.65rem;}
+  .stat-grid{grid-template-columns:1fr 1fr;}
+}
 </style>
 </head>
-<body>
+<body class="en">
 
 <!-- NAV -->
 <nav id="mainNav">
   <a href="#" class="nav-logo">
-    <img src="/logo.png" alt="OME Advisory" style="height:250px; width:auto; display:inline-block; vertical-align:middle;">
+    <img src="/logo.png" alt="OME Advisory" style="height:55px;width:auto;display:inline-block;vertical-align:middle;">
   </a>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#approach">Approach</a></li>
-    <li><a href="#why">Why Us</a></li>
-    <li><a href="#contact" class="nav-cta">Get in Touch</a></li>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about"><span class="lang-en">About</span><span class="lang-de">Über uns</span></a></li>
+    <li><a href="#services"><span class="lang-en">Services</span><span class="lang-de">Leistungen</span></a></li>
+    <li><a href="#approach"><span class="lang-en">Approach</span><span class="lang-de">Vorgehen</span></a></li>
+    <li><a href="#why"><span class="lang-en">Why Us</span><span class="lang-de">Warum wir</span></a></li>
+    <li class="lang-toggle">
+      <button class="lang-btn active" data-lang="en" onclick="setLang('en')">EN</button>
+      <span class="lang-sep">|</span>
+      <button class="lang-btn" data-lang="de" onclick="setLang('de')">DE</button>
+    </li>
+    <li><a href="#contact" class="nav-cta"><span class="lang-en">Get in Touch</span><span class="lang-de">Kontakt</span></a></li>
   </ul>
+  <div class="nav-right">
+    <div class="lang-toggle lang-toggle-desktop">
+      <button class="lang-btn active" data-lang="en" onclick="setLang('en')">EN</button>
+      <span class="lang-sep">|</span>
+      <button class="lang-btn" data-lang="de" onclick="setLang('de')">DE</button>
+    </div>
+    <button class="hamburger" id="hamburger" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </nav>
 
 <!-- HERO -->
@@ -270,12 +298,20 @@
   <div class="hero-bg-pattern"></div>
   <div class="hero-grid"></div>
   <div class="hero-left">
-    <div class="hero-eyebrow"><span class="eyebrow">ESG · Climate · Carbon Markets</span></div>
-   <h1 class="hero-h1">Clarity in a <em>complex world.</em></h1>
-   <p class="hero-tagline" id="hero-tagline">OME Advisory delivers rigorous, evidence-based ESG strategy, regulatory compliance, and carbon market intelligence — built by practitioners who have led from the inside.</p>
+    <div class="hero-eyebrow">
+      <span class="eyebrow lang-en">ESG · Climate · Carbon Markets</span>
+      <span class="eyebrow lang-de">ESG · Klima · Kohlenstoffmärkte</span>
+    </div>
+    <h1 class="hero-h1">
+      <span class="lang-en">Clarity in a <em>complex world.</em></span>
+      <span class="lang-de">Klarheit in einer <em>komplexen Welt.</em></span>
+    </h1>
+    <p class="hero-tagline" id="hero-tagline">Sustainability made real. Strategy to implementation, start to finish.</p>
     <div class="hero-actions">
-      <a href="#services" class="btn-primary">Explore Services</a>
-      <a href="#about" class="btn-ghost">Our credentials <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="#services" class="btn-primary lang-en">Explore Services</a>
+      <a href="#services" class="btn-primary lang-de">Leistungen entdecken</a>
+      <a href="#about" class="btn-ghost lang-en">Our credentials <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="#about" class="btn-ghost lang-de">Unsere Referenzen <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     </div>
   </div>
   <div class="hero-right">
@@ -287,7 +323,7 @@
         <div class="hvc-bar"><div class="hvc-bar-fill" style="width:94%"></div></div>
       </div>
       <div class="hero-visual-card hvc-2">
-        <div class="hvc-label">Scope 3 Categories Mapped</div>
+        <div class="hvc-label">Scope 3 Categories</div>
         <div class="hvc-value">15</div>
         <div class="hvc-sub">Full GHG Protocol coverage</div>
         <div class="hvc-bar"><div class="hvc-bar-fill" style="width:100%;animation-delay:0.5s"></div></div>
@@ -308,24 +344,24 @@
   <div class="marquee-track">
     <div class="marquee-item"><span class="marquee-dot"></span>ISO 14001 &amp; 14064</div>
     <div class="marquee-item"><span class="marquee-dot"></span>CSRD / ESRS</div>
-    <div class="marquee-item"><span class="marquee-dot"></span>SBTi Target Setting</div>
-    <div class="marquee-item"><span class="marquee-dot"></span>LkSG Compliance</div>
-    <div class="marquee-item"><span class="marquee-dot"></span>CSDDD Implementation</div>
-    <div class="marquee-item"><span class="marquee-dot"></span>EU Taxonomy</div>
-    <div class="marquee-item"><span class="marquee-dot"></span>Article 6 / Carbon Markets</div>
-    <div class="marquee-item"><span class="marquee-dot"></span>ESG Ratings Advisory</div>
-    <div class="marquee-item"><span class="marquee-dot"></span>GHG Scope 1–3 Inventory</div>
-    <div class="marquee-item"><span class="marquee-dot"></span>Decarbonisation Roadmaps</div>
+    <div class="marquee-item"><span class="marquee-dot"></span><span class="lang-en">SBTi Target Setting</span><span class="lang-de">SBTi-Zielentwicklung</span></div>
+    <div class="marquee-item"><span class="marquee-dot"></span>LkSG</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>CSDDD</div>
+    <div class="marquee-item"><span class="marquee-dot"></span><span class="lang-en">EU Taxonomy</span><span class="lang-de">EU-Taxonomie</span></div>
+    <div class="marquee-item"><span class="marquee-dot"></span><span class="lang-en">Article 6 / Carbon Markets</span><span class="lang-de">Artikel 6 / Kohlenstoffmärkte</span></div>
+    <div class="marquee-item"><span class="marquee-dot"></span>ESG Ratings</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>GHG Scope 1–3</div>
+    <div class="marquee-item"><span class="marquee-dot"></span><span class="lang-en">Decarbonisation</span><span class="lang-de">Dekarbonisierung</span></div>
     <div class="marquee-item"><span class="marquee-dot"></span>ISO 14001 &amp; 14064</div>
     <div class="marquee-item"><span class="marquee-dot"></span>CSRD / ESRS</div>
-    <div class="marquee-item"><span class="marquee-dot"></span>SBTi Target Setting</div>
-    <div class="marquee-item"><span class="marquee-dot"></span>LkSG Compliance</div>
-    <div class="marquee-item"><span class="marquee-dot"></span>CSDDD Implementation</div>
-    <div class="marquee-item"><span class="marquee-dot"></span>EU Taxonomy</div>
-    <div class="marquee-item"><span class="marquee-dot"></span>Article 6 / Carbon Markets</div>
-    <div class="marquee-item"><span class="marquee-dot"></span>ESG Ratings Advisory</div>
-    <div class="marquee-item"><span class="marquee-dot"></span>GHG Scope 1–3 Inventory</div>
-    <div class="marquee-item"><span class="marquee-dot"></span>Decarbonisation Roadmaps</div>
+    <div class="marquee-item"><span class="marquee-dot"></span><span class="lang-en">SBTi Target Setting</span><span class="lang-de">SBTi-Zielentwicklung</span></div>
+    <div class="marquee-item"><span class="marquee-dot"></span>LkSG</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>CSDDD</div>
+    <div class="marquee-item"><span class="marquee-dot"></span><span class="lang-en">EU Taxonomy</span><span class="lang-de">EU-Taxonomie</span></div>
+    <div class="marquee-item"><span class="marquee-dot"></span><span class="lang-en">Article 6 / Carbon Markets</span><span class="lang-de">Artikel 6 / Kohlenstoffmärkte</span></div>
+    <div class="marquee-item"><span class="marquee-dot"></span>ESG Ratings</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>GHG Scope 1–3</div>
+    <div class="marquee-item"><span class="marquee-dot"></span><span class="lang-en">Decarbonisation</span><span class="lang-de">Dekarbonisierung</span></div>
   </div>
 </div>
 
@@ -334,47 +370,57 @@
   <div class="section-inner">
     <div class="about-grid">
       <div class="about-left fade-up">
-        <span class="eyebrow">About OME Advisory</span>
-        <h2>Practitioner knowledge,<br><em>no intermediary.</em></h2>
-        <p>OME Advisory was founded to close the gap between regulatory complexity and corporate action. We don't offer frameworks for frameworks — we deliver implementation-ready strategy grounded in 15+ years of first-hand experience across the full ESG ecosystem.</p>
-        <p>Our founder brings a uniquely three-sided perspective: as a carbon project proponent, a DOE Lead Auditor, and a former UNFCCC Secretariat official — combined with senior roles at MSCI ESG Ratings, Uniper, and General Electric.</p>
+        <span class="eyebrow lang-en">About OME Advisory</span>
+        <span class="eyebrow lang-de">Über OME Advisory</span>
+        <h2>
+          <span class="lang-en">Practitioner knowledge,<br><em>no intermediary.</em></span>
+          <span class="lang-de">Praxiswissen.<br><em>Direkt. Ohne Umwege.</em></span>
+        </h2>
+        <p class="lang-en">OME Advisory was founded to close the gap between regulatory complexity and corporate action. We deliver implementation-ready strategy grounded in 15+ years of first-hand experience across the full ESG ecosystem.</p>
+        <p class="lang-de">OME Advisory wurde gegründet, um die Lücke zwischen regulatorischer Komplexität und unternehmerischem Handeln zu schließen. Wir liefern umsetzungsfertige Strategie auf Basis von über 15 Jahren Praxiserfahrung.</p>
+        <p class="lang-en">Our founder brings a uniquely three-sided perspective: as a carbon project proponent, a DOE Lead Auditor, and a former UNFCCC Secretariat official — combined with senior roles at MSCI ESG Ratings, Uniper, and General Electric.</p>
+        <p class="lang-de">Unser Gründer bringt eine einzigartige Drei-Seiten-Perspektive: als Kohlenstoffprojektentwickler, DOE-Leitauditor und ehemaliger UNFCCC-Sekretariatsmitarbeiter — kombiniert mit Führungsrollen bei MSCI, Uniper und General Electric.</p>
         <div class="creds-list">
           <div class="cred-item"><svg class="cred-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4M5 10a5 5 0 1010 0 5 5 0 00-10 0" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="cred-text"><strong>MSCI Inc.</strong> — Research Lead, Climate &amp; ESG Ratings, Hamburg</div></div>
           <div class="cred-item"><svg class="cred-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4M5 10a5 5 0 1010 0 5 5 0 00-10 0" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="cred-text"><strong>UNFCCC Secretariat</strong> — P-4 level, carbon market oversight</div></div>
-          <div class="cred-item"><svg class="cred-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4M5 10a5 5 0 1010 0 5 5 0 00-10 0" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="cred-text"><strong>Uniper SE · General Electric · SGS India</strong> — Corporate sustainability leadership</div></div>
-          <div class="cred-item"><svg class="cred-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4M5 10a5 5 0 1010 0 5 5 0 00-10 0" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="cred-text"><strong>ISO 14001/14064 Certified Lead Auditor</strong> · CPEM · Oxford Sustainable Finance · IESE</div></div>
-          <div class="cred-item"><svg class="cred-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4M5 10a5 5 0 1010 0 5 5 0 00-10 0" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="cred-text"><strong>M.Sc. Chemical Engineering, IIT Roorkee</strong> — technical rigour at the core</div></div>
+          <div class="cred-item"><svg class="cred-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4M5 10a5 5 0 1010 0 5 5 0 00-10 0" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="cred-text"><strong>Uniper SE · General Electric · SGS India</strong></div></div>
+          <div class="cred-item"><svg class="cred-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4M5 10a5 5 0 1010 0 5 5 0 00-10 0" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="cred-text"><strong>ISO 14001/14064 Lead Auditor</strong> · CPEM · Oxford · IESE</div></div>
+          <div class="cred-item"><svg class="cred-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4M5 10a5 5 0 1010 0 5 5 0 00-10 0" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="cred-text"><strong>M.Sc. Chemical Engineering, IIT Roorkee</strong></div></div>
         </div>
       </div>
       <div class="about-right fade-up">
         <div class="stat-grid">
-          <div class="stat-box"><div class="stat-num">15<span>+</span></div><div class="stat-label">Years ESG Experience</div></div>
-          <div class="stat-box"><div class="stat-num">3</div><div class="stat-label">Ecosystem Vantage Points</div></div>
-          <div class="stat-box"><div class="stat-num">12<span>+</span></div><div class="stat-label">Service Disciplines</div></div>
-          <div class="stat-box"><div class="stat-num">DE</div><div class="stat-label">Hamburg-based, EU-reach</div></div>
+          <div class="stat-box"><div class="stat-num">15<span>+</span></div><div class="stat-label lang-en">Years ESG Experience</div><div class="stat-label lang-de">Jahre ESG-Erfahrung</div></div>
+          <div class="stat-box"><div class="stat-num">3</div><div class="stat-label lang-en">Ecosystem Vantage Points</div><div class="stat-label lang-de">Ökosystem-Perspektiven</div></div>
+          <div class="stat-box"><div class="stat-num">12<span>+</span></div><div class="stat-label lang-en">Service Disciplines</div><div class="stat-label lang-de">Leistungsbereiche</div></div>
+          <div class="stat-box"><div class="stat-num">DE</div><div class="stat-label lang-en">Hamburg-based, EU-reach</div><div class="stat-label lang-de">Hamburg-ansässig, EU-Reichweite</div></div>
         </div>
         <div class="differentiator-block">
-          <p>"The rarest credential in ESG is having been on all sides of the table — project developer, verifier, and rule-maker. OME Advisory brings all three to every mandate."</p>
-          <cite>— Kunal Sharma, Founder &amp; Principal Advisor</cite>
+          <p class="lang-en">"The rarest credential in ESG is having been on all sides of the table — project developer, verifier, and rule-maker. OME Advisory brings all three to every mandate."</p>
+          <p class="lang-de">"Das seltenste Merkmal in ESG ist, auf allen Seiten des Tisches gesessen zu haben — als Projektentwickler, Prüfer und Regelsetzer. OME Advisory bringt alle drei in jedes Mandat ein."</p>
+          <cite>— Kunal Sharma, <span class="lang-en">Founder &amp; Principal Advisor</span><span class="lang-de">Gründer &amp; Hauptberater</span></cite>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SERVICES — rendered dynamically from /data/content.json -->
+<!-- SERVICES -->
 <section id="services">
   <div class="section-inner">
     <div class="services-header fade-up">
       <div>
-        <span class="eyebrow">Service Portfolio</span>
-        <h2>Structured for<br><em>every stage.</em></h2>
+        <span class="eyebrow lang-en">Service Portfolio</span>
+        <span class="eyebrow lang-de">Leistungsportfolio</span>
+        <h2>
+          <span class="lang-en">Structured for<br><em>every stage.</em></span>
+          <span class="lang-de">Strukturiert für<br><em>jede Phase.</em></span>
+        </h2>
       </div>
-      <p>Our service portfolio is organised into three tiers — from rapid audit and compliance work, through core strategic mandates, to high-value specialised advisory. Engagements are scoped precisely to your stage, sector, and regulatory exposure.</p>
+      <p class="lang-en">Our service portfolio covers ISO certification, sustainability strategy, carbon markets, and training — scoped precisely to your stage, sector, and regulatory exposure.</p>
+      <p class="lang-de">Unser Leistungsportfolio umfasst ISO-Zertifizierung, Nachhaltigkeitsstrategie, Kohlenstoffmärkte und Schulungen — präzise zugeschnitten auf Ihren Bedarf, Sektor und regulatorische Exposition.</p>
     </div>
-    <div class="tier-tabs" id="tier-tabs">
-      <div class="services-loading">Loading services…</div>
-    </div>
+    <div class="tier-tabs" id="tier-tabs"><div class="services-loading">Loading...</div></div>
     <div id="tier-panels"></div>
   </div>
 </section>
@@ -383,15 +429,44 @@
 <section id="approach">
   <div class="section-inner">
     <div class="approach-header fade-up">
-      <span class="eyebrow">How We Work</span>
-      <h2>A rigorous process, every time.</h2>
-      <p>From first conversation to final deliverable, OME Advisory applies the same structured methodology that governs international standards bodies and tier-one consultancies.</p>
+      <span class="eyebrow lang-en">How We Work</span>
+      <span class="eyebrow lang-de">Unser Vorgehen</span>
+      <h2>
+        <span class="lang-en">A rigorous process, every time.</span>
+        <span class="lang-de">Ein rigoroser Prozess. Jedes Mal.</span>
+      </h2>
+      <p class="lang-en">From first conversation to final deliverable, OME Advisory applies the same structured methodology that governs international standards bodies and tier-one consultancies.</p>
+      <p class="lang-de">Von der ersten Besprechung bis zum finalen Ergebnis wendet OME Advisory dieselbe strukturierte Methodik an wie internationale Normungsgremien und Erstklassenberatungen.</p>
     </div>
     <div class="steps-grid">
-      <div class="step-item fade-up"><div class="step-num">01</div><div class="step-title">Diagnostic</div><div class="step-desc">Structured intake to map your regulatory exposure, maturity gaps, stakeholder landscape, and commercial timeline constraints.</div></div>
-      <div class="step-item fade-up"><div class="step-num">02</div><div class="step-title">Scoping</div><div class="step-desc">Fixed-fee or day-rate proposal with clear deliverables, milestones, and escalation protocols. No scope creep.</div></div>
-      <div class="step-item fade-up"><div class="step-num">03</div><div class="step-title">Execution</div><div class="step-desc">Deep technical work — GHG modelling, regulatory mapping, policy drafting — with regular client touchpoints and draft reviews.</div></div>
-      <div class="step-item fade-up"><div class="step-num">04</div><div class="step-title">Handover</div><div class="step-desc">Board-ready deliverables with implementation guidance, staff briefings, and 30-day post-project support as standard.</div></div>
+      <div class="step-item fade-up">
+        <div class="step-num">01</div>
+        <div class="step-title lang-en">Diagnostic</div>
+        <div class="step-title lang-de">Analyse</div>
+        <div class="step-desc lang-en">Structured intake to map your regulatory exposure, maturity gaps, and commercial timeline constraints.</div>
+        <div class="step-desc lang-de">Strukturierte Aufnahme Ihrer regulatorischen Exposition, Reifegrad-Lücken und kommerziellen Zeitplanung.</div>
+      </div>
+      <div class="step-item fade-up">
+        <div class="step-num">02</div>
+        <div class="step-title lang-en">Scoping</div>
+        <div class="step-title lang-de">Umfangsbestimmung</div>
+        <div class="step-desc lang-en">Fixed-fee proposal with clear deliverables, milestones, and escalation protocols. No scope creep.</div>
+        <div class="step-desc lang-de">Festpreisangebot mit klaren Lieferobjekten und Meilensteinen. Kein unkontrolliertes Anwachsen des Projektumfangs.</div>
+      </div>
+      <div class="step-item fade-up">
+        <div class="step-num">03</div>
+        <div class="step-title lang-en">Execution</div>
+        <div class="step-title lang-de">Durchführung</div>
+        <div class="step-desc lang-en">Deep technical work — GHG modelling, regulatory mapping, policy drafting — with regular client touchpoints.</div>
+        <div class="step-desc lang-de">Tiefgreifende technische Arbeit — THG-Modellierung, regulatorisches Mapping, Richtlinienerstellung — mit regelmäßigen Kundenterminen.</div>
+      </div>
+      <div class="step-item fade-up">
+        <div class="step-num">04</div>
+        <div class="step-title lang-en">Handover</div>
+        <div class="step-title lang-de">Übergabe</div>
+        <div class="step-desc lang-en">Board-ready deliverables with implementation guidance and 30-day post-project support as standard.</div>
+        <div class="step-desc lang-de">Vorstandsreife Ergebnisse mit Umsetzungsleitfaden und 30-tägigem Nachprojekt-Support als Standard.</div>
+      </div>
     </div>
   </div>
 </section>
@@ -401,28 +476,51 @@
   <div class="section-inner">
     <div class="why-grid">
       <div class="why-left fade-up">
-        <span class="eyebrow">Our Differentiation</span>
-        <h2>Why the <em>inside view</em><br>changes everything.</h2>
-        <p>Most ESG consultants advise from one side of the regulatory fence. OME Advisory brings direct experience as a rule-maker (UNFCCC), a standards verifier (SGS, TÜV network), and a corporate practitioner (MSCI, Uniper, GE).</p>
-        <p>That three-sided perspective means we understand not just what the regulations say — but how they were written, where they flex, and how they will be enforced.</p>
+        <span class="eyebrow lang-en">Our Differentiation</span>
+        <span class="eyebrow lang-de">Unser Alleinstellungsmerkmal</span>
+        <h2>
+          <span class="lang-en">Why the <em>inside view</em><br>changes everything.</span>
+          <span class="lang-de">Warum die <em>Innenperspektive</em><br>alles verändert.</span>
+        </h2>
+        <p class="lang-en">Most ESG consultants advise from one side of the regulatory fence. OME Advisory brings direct experience as a rule-maker (UNFCCC), verifier (SGS, TÜV), and corporate practitioner (MSCI, Uniper, GE).</p>
+        <p class="lang-de">Die meisten ESG-Berater beraten von einer Seite des regulatorischen Zauns. OME Advisory bringt direkte Erfahrung als Regelsetzer (UNFCCC), Prüfer (SGS, TÜV) und Unternehmensverantwortlicher (MSCI, Uniper, GE).</p>
         <div class="pillars">
-          <div class="pillar"><div class="pillar-icon"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 2L3 7v6c0 3.3 3 6 7 6s7-2.7 7-6V7l-7-5z" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="pillar-body"><h4>Regulatory Insider Knowledge</h4><p>Former UNFCCC P-4 experience means we've read the negotiating text, not just the summary.</p></div></div>
-          <div class="pillar"><div class="pillar-icon"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 3H5a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V9M15 3l2 2-8 8H7v-2l8-8z" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="pillar-body"><h4>ESG Ratings Methodology Fluency</h4><p>As former MSCI ESG Research Lead, we know exactly how raters assess what companies disclose — and what they don't.</p></div></div>
-          <div class="pillar"><div class="pillar-icon"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zM10 6v4l3 3" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="pillar-body"><h4>Implementation-First Delivery</h4><p>Every engagement delivers board-ready outputs — not strategy frameworks that require another consultant to action.</p></div></div>
-          <div class="pillar"><div class="pillar-icon"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="pillar-body"><h4>Hamburg-Based, European Scope</h4><p>Deep familiarity with German Mittelstand context, EU regulatory timelines, and cross-border compliance complexity.</p></div></div>
+          <div class="pillar"><div class="pillar-icon"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 2L3 7v6c0 3.3 3 6 7 6s7-2.7 7-6V7l-7-5z" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="pillar-body">
+              <h4 class="lang-en">Regulatory Insider Knowledge</h4><h4 class="lang-de">Regulatorisches Insiderwissen</h4>
+              <p class="lang-en">Former UNFCCC P-4 experience means we have read the negotiating text, not just the summary.</p>
+              <p class="lang-de">Ehemalige UNFCCC P-4-Erfahrung bedeutet, dass wir den Verhandlungstext gelesen haben, nicht nur die Zusammenfassung.</p>
+            </div>
+          </div>
+          <div class="pillar"><div class="pillar-icon"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 3H5a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V9M15 3l2 2-8 8H7v-2l8-8z" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="pillar-body">
+              <h4 class="lang-en">ESG Ratings Methodology Fluency</h4><h4 class="lang-de">ESG-Ratings-Methodologiekenntnisse</h4>
+              <p class="lang-en">As former MSCI ESG Research Lead, we know how raters assess disclosures — and what they don't.</p>
+              <p class="lang-de">Als ehemaliger MSCI ESG Research Lead wissen wir, wie Ratingagenturen Offenlegungen bewerten — und was sie nicht tun.</p>
+            </div>
+          </div>
+          <div class="pillar"><div class="pillar-icon"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zM10 6v4l3 3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="pillar-body">
+              <h4 class="lang-en">Implementation-First Delivery</h4><h4 class="lang-de">Umsetzungsorientierte Lieferung</h4>
+              <p class="lang-en">Every engagement delivers board-ready outputs — not strategy frameworks requiring another consultant.</p>
+              <p class="lang-de">Jedes Mandat liefert vorstandsreife Ergebnisse — keine Strategie-Frameworks, die einen weiteren Berater erfordern.</p>
+            </div>
+          </div>
         </div>
       </div>
       <div class="why-right fade-up">
         <div class="ecosystem-visual">
-          <div class="eco-title">The Three-Sided Ecosystem Advantage</div>
-          <div class="eco-node"><div class="eco-node-dot"></div><div class="eco-node-text"><strong style="color:var(--brass-lt)">Rule-Maker</strong> — UNFCCC Secretariat, carbon market governance, Paris Agreement Article 6</div></div>
+          <div class="eco-title lang-en">The Three-Sided Ecosystem Advantage</div>
+          <div class="eco-title lang-de">Der Drei-Seiten-Ökosystem-Vorteil</div>
+          <div class="eco-node"><div class="eco-node-dot"></div><div class="eco-node-text"><strong style="color:var(--brass-lt)"><span class="lang-en">Rule-Maker</span><span class="lang-de">Regelsetzer</span></strong> — UNFCCC Secretariat, Paris Agreement Article 6</div></div>
           <div class="eco-connector"></div>
-          <div class="eco-node"><div class="eco-node-dot"></div><div class="eco-node-text"><strong style="color:var(--brass-lt)">Verifier/Auditor</strong> — DOE Lead Auditor, ISO 14064-3, SGS network, certification body relationships</div></div>
+          <div class="eco-node"><div class="eco-node-dot"></div><div class="eco-node-text"><strong style="color:var(--brass-lt)"><span class="lang-en">Verifier/Auditor</span><span class="lang-de">Prüfer/Auditor</span></strong> — DOE Lead Auditor, ISO 14064-3, SGS network</div></div>
           <div class="eco-connector"></div>
-          <div class="eco-node"><div class="eco-node-dot"></div><div class="eco-node-text"><strong style="color:var(--brass-lt)">Corporate Practitioner</strong> — MSCI ESG Ratings, Uniper energy transition, GE operational sustainability</div></div>
+          <div class="eco-node"><div class="eco-node-dot"></div><div class="eco-node-text"><strong style="color:var(--brass-lt)"><span class="lang-en">Corporate Practitioner</span><span class="lang-de">Unternehmenspraktiker</span></strong> — MSCI ESG Ratings, Uniper, GE</div></div>
           <div class="eco-connector"></div>
-          <div class="eco-node"><div class="eco-node-dot"></div><div class="eco-node-text"><strong style="color:var(--brass-lt)">Project Proponent</strong> — Carbon project development, Scope 3 methodology, GHG inventory design</div></div>
-          <div class="eco-badge">No other boutique advisory practice in the DACH region combines all four vantage points. This is the OME Advisory differentiator — and it cannot be replicated by a generalist firm.</div>
+          <div class="eco-node"><div class="eco-node-dot"></div><div class="eco-node-text"><strong style="color:var(--brass-lt)"><span class="lang-en">Project Proponent</span><span class="lang-de">Projektentwickler</span></strong> — Carbon project development, Scope 3 methodology</div></div>
+          <div class="eco-badge lang-en">No other boutique advisory practice in the DACH region combines all four vantage points.</div>
+          <div class="eco-badge lang-de">Keine andere Boutique-Beratung in der DACH-Region vereint alle vier Perspektiven.</div>
         </div>
       </div>
     </div>
@@ -432,13 +530,20 @@
 <!-- CLIENTS -->
 <section id="clients">
   <div class="section-inner">
-    <div class="clients-header fade-up"><span class="eyebrow">Who We Serve</span><h2>Sectors where the stakes are highest.</h2></div>
+    <div class="clients-header fade-up">
+      <span class="eyebrow lang-en">Who We Serve</span>
+      <span class="eyebrow lang-de">Wen wir beraten</span>
+      <h2>
+        <span class="lang-en">Sectors where the stakes are highest.</span>
+        <span class="lang-de">Branchen mit dem größten Handlungsbedarf.</span>
+      </h2>
+    </div>
     <div class="sector-grid">
-      <div class="sector-item fade-up"><span class="sector-icon">⚙️</span><div class="sector-name">Industrials &amp; Manufacturing</div><div class="sector-desc">Energy-intensive sectors facing CSDDD, SBTi, and decarbonisation mandates</div></div>
-      <div class="sector-item fade-up"><span class="sector-icon">🌾</span><div class="sector-name">Food, Agri &amp; Packaging</div><div class="sector-desc">FLAG emissions, Scope 3 inventories, SBTi FLAG guidance alignment</div></div>
-      <div class="sector-item fade-up"><span class="sector-icon">🏦</span><div class="sector-name">Financial Institutions</div><div class="sector-desc">SFDR, EU Taxonomy, portfolio ESG rating analysis, financed emissions</div></div>
-      <div class="sector-item fade-up"><span class="sector-icon">⚡</span><div class="sector-name">Energy &amp; Utilities</div><div class="sector-desc">Carbon market strategy, Article 6 advisory, decarbonisation roadmaps</div></div>
-      <div class="sector-item fade-up"><span class="sector-icon">🏗️</span><div class="sector-name">Real Assets &amp; Infrastructure</div><div class="sector-desc">EU Taxonomy alignment, DNSH, physical climate risk, green finance</div></div>
+      <div class="sector-item fade-up"><span class="sector-icon">⚙️</span><div class="sector-name lang-en">Industrials &amp; Manufacturing</div><div class="sector-name lang-de">Industrie &amp; Fertigung</div><div class="sector-desc lang-en">CSDDD, SBTi, decarbonisation mandates</div><div class="sector-desc lang-de">CSDDD, SBTi, Dekarbonisierungsmandate</div></div>
+      <div class="sector-item fade-up"><span class="sector-icon">🌾</span><div class="sector-name lang-en">Food, Agri &amp; Packaging</div><div class="sector-name lang-de">Lebensmittel, Agrar &amp; Verpackung</div><div class="sector-desc lang-en">FLAG emissions, Scope 3, SBTi alignment</div><div class="sector-desc lang-de">FLAG-Emissionen, Scope 3, SBTi-Ausrichtung</div></div>
+      <div class="sector-item fade-up"><span class="sector-icon">🏦</span><div class="sector-name lang-en">Financial Institutions</div><div class="sector-name lang-de">Finanzinstitute</div><div class="sector-desc lang-en">SFDR, EU Taxonomy, portfolio ESG ratings</div><div class="sector-desc lang-de">SFDR, EU-Taxonomie, Portfolio-ESG-Ratings</div></div>
+      <div class="sector-item fade-up"><span class="sector-icon">⚡</span><div class="sector-name lang-en">Energy &amp; Utilities</div><div class="sector-name lang-de">Energie &amp; Versorger</div><div class="sector-desc lang-en">Carbon market strategy, Article 6 advisory</div><div class="sector-desc lang-de">Kohlenstoffmarktstrategie, Artikel-6-Beratung</div></div>
+      <div class="sector-item fade-up"><span class="sector-icon">🏗️</span><div class="sector-name lang-en">Real Assets &amp; Infrastructure</div><div class="sector-name lang-de">Immobilien &amp; Infrastruktur</div><div class="sector-desc lang-en">EU Taxonomy, DNSH, green finance</div><div class="sector-desc lang-de">EU-Taxonomie, DNSH, grüne Finanzierung</div></div>
     </div>
   </div>
 </section>
@@ -448,30 +553,35 @@
   <div class="section-inner">
     <div class="contact-grid">
       <div class="contact-left fade-up">
-        <span class="eyebrow">Get in Touch</span>
-        <h2>Start a<br><em>conversation.</em></h2>
-        <p>Whether you're facing an imminent CSRD deadline, exploring SBTi target-setting, or looking for a retained ESG advisor — let's talk. Initial consultations are complimentary and without obligation.</p>
+        <span class="eyebrow lang-en">Get in Touch</span>
+        <span class="eyebrow lang-de">Kontakt aufnehmen</span>
+        <h2>
+          <span class="lang-en">Start a<br><em>conversation.</em></span>
+          <span class="lang-de">Sprechen wir<br><em>miteinander.</em></span>
+        </h2>
+        <p class="lang-en">Whether you face an imminent CSRD deadline, are exploring SBTi target-setting, or looking for a retained ESG advisor — let us talk. Initial consultations are complimentary and without obligation.</p>
+        <p class="lang-de">Ob bevorstehende CSRD-Deadline, SBTi-Zielentwicklung oder dauerhafter ESG-Berater — lassen Sie uns sprechen. Erstgespräche sind kostenlos und unverbindlich.</p>
         <div class="contact-detail"><svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l7-5 7 5v9a1 1 0 01-1 1H4a1 1 0 01-1-1V8z" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 18v-6h4v6" stroke-linecap="round" stroke-linejoin="round"/></svg>Hamburg, Germany</div>
         <div class="contact-detail"><svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg><a href="mailto:hello@omeadvisory.com" id="contact-email">hello@omeadvisory.com</a></div>
-        <div class="contact-detail"><svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8c0 4-6 10-6 10S4 12 4 8a6 6 0 0112 0z" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="8" r="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Serving clients across DACH, EU, and internationally</div>
-        <div class="contact-detail"><svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 2a8 8 0 100 16A8 8 0 0010 2z" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 6v4l3 2" stroke-linecap="round" stroke-linejoin="round"/></svg>Response within 1 business day</div>
+        <div class="contact-detail"><svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 2a8 8 0 100 16A8 8 0 0010 2z" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 6v4l3 2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="lang-en">Response within 1 business day</span><span class="lang-de">Antwort innerhalb eines Werktages</span></div>
       </div>
       <div class="contact-right fade-up">
         <form class="contact-form" onsubmit="handleSubmit(event)">
           <div class="form-row">
-            <div class="form-group"><label>First name</label><input type="text" placeholder="Jana"></div>
-            <div class="form-group"><label>Last name</label><input type="text" placeholder="Müller"></div>
+            <div class="form-group"><label><span class="lang-en">First name</span><span class="lang-de">Vorname</span></label><input type="text" id="f-fn" placeholder="Jana"></div>
+            <div class="form-group"><label><span class="lang-en">Last name</span><span class="lang-de">Nachname</span></label><input type="text" placeholder="Müller"></div>
           </div>
-          <div class="form-group"><label>Company</label><input type="text" placeholder="Your organisation"></div>
+          <div class="form-group"><label><span class="lang-en">Company</span><span class="lang-de">Unternehmen</span></label><input type="text" placeholder="Organisation"></div>
           <div class="form-group"><label>Email</label><input type="email" placeholder="jana@company.com"></div>
           <div class="form-group">
-            <label>Service of interest</label>
-            <select id="service-select"><option value="">Select a service area...</option></select>
+            <label><span class="lang-en">Service of interest</span><span class="lang-de">Gewünschte Leistung</span></label>
+            <select id="service-select"><option value=""><span class="lang-en">Select a service...</span></option></select>
           </div>
-          <div class="form-group"><label>Message</label><textarea rows="4" placeholder="Tell us about your situation, timeline, and any specific context..."></textarea></div>
+          <div class="form-group"><label><span class="lang-en">Message</span><span class="lang-de">Nachricht</span></label><textarea rows="4" placeholder="..."></textarea></div>
           <div class="form-submit">
-            <button type="submit" class="form-submit-btn">Send Enquiry</button>
-            <span class="form-note">We respond within 1 business day.</span>
+            <button type="submit" class="form-submit-btn"><span class="lang-en">Send Enquiry</span><span class="lang-de">Anfrage senden</span></button>
+            <span class="form-note lang-en">We respond within 1 business day.</span>
+            <span class="form-note lang-de">Wir antworten innerhalb eines Werktages.</span>
           </div>
         </form>
       </div>
@@ -484,145 +594,195 @@
   <div class="section-inner">
     <div class="footer-grid">
       <div>
-        <div class="footer-brand-wordmark"><span class="footer-brand-wordmark-om">OM</span><span class="footer-brand-wordmark-e">E</span><span class="footer-brand-wordmark-rest"> Advisory</span></div>
-        <div class="footer-brand-tagline">ESG · Climate · Carbon Markets</div>
-        <p class="footer-brand-desc">Evidence-based ESG strategy and regulatory advisory for European corporates. Hamburg-based, international reach.</p>
+        <div class="footer-brand-name">OME<span> Advisory</span></div>
+        <div class="footer-brand-tagline lang-en">ESG · Climate · Carbon Markets</div>
+        <div class="footer-brand-tagline lang-de">ESG · Klima · Kohlenstoffmärkte</div>
+        <p class="footer-brand-desc lang-en">Evidence-based ESG strategy and regulatory advisory for European corporates. Hamburg-based, international reach.</p>
+        <p class="footer-brand-desc lang-de">Evidenzbasierte ESG-Strategie und regulatorische Beratung für europäische Unternehmen. Hamburg-ansässig, internationale Reichweite.</p>
       </div>
-      <div class="footer-col"><h4>Services</h4><ul><li><a href="#services">CSRD Readiness</a></li><li><a href="#services">GHG Verification</a></li><li><a href="#services">SBTi Target Setting</a></li><li><a href="#services">LkSG / CSDDD</a></li><li><a href="#services">Carbon Markets</a></li><li><a href="#services">ESG Ratings Advisory</a></li></ul></div>
-      <div class="footer-col"><h4>Company</h4><ul><li><a href="#about">About</a></li><li><a href="#approach">Approach</a></li><li><a href="#why">Why OME</a></li><li><a href="#contact">Contact</a></li></ul></div>
-      <div class="footer-col"><h4>Connect</h4><ul><li><a href="https://www.linkedin.com/in/kunal-sharma-xx1234/" target="_blank">LinkedIn</a></li><li><a href="mailto:hello@omeadvisory.com">Email Us</a></li><li><a href="#contact">Book a Call</a></li></ul></div>
+      <div class="footer-col">
+        <h4><span class="lang-en">Services</span><span class="lang-de">Leistungen</span></h4>
+        <ul>
+          <li><a href="#services">ISO Prep Audit</a></li>
+          <li><a href="#services"><span class="lang-en">Sustainability &amp; Climate</span><span class="lang-de">Nachhaltigkeit &amp; Klima</span></a></li>
+          <li><a href="#services"><span class="lang-en">Carbon Market</span><span class="lang-de">Kohlenstoffmarkt</span></a></li>
+          <li><a href="#services"><span class="lang-en">Training</span><span class="lang-de">Schulungen</span></a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4><span class="lang-en">Company</span><span class="lang-de">Unternehmen</span></h4>
+        <ul>
+          <li><a href="#about"><span class="lang-en">About</span><span class="lang-de">Über uns</span></a></li>
+          <li><a href="#approach"><span class="lang-en">Approach</span><span class="lang-de">Vorgehen</span></a></li>
+          <li><a href="#why"><span class="lang-en">Why OME</span><span class="lang-de">Warum OME</span></a></li>
+          <li><a href="#contact"><span class="lang-en">Contact</span><span class="lang-de">Kontakt</span></a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4><span class="lang-en">Connect</span><span class="lang-de">Verbinden</span></h4>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/kunal-sharma-xx1234/" target="_blank">LinkedIn</a></li>
+          <li><a href="mailto:hello@omeadvisory.com">Email</a></li>
+          <li><a href="#contact"><span class="lang-en">Book a Call</span><span class="lang-de">Gespräch buchen</span></a></li>
+        </ul>
+      </div>
     </div>
     <div class="footer-bottom">
-      <div class="footer-copy">© 2025 OME Advisory. All rights reserved. Hamburg, Germany.</div>
-      <div class="footer-legal"><a href="#">Impressum</a><a href="#">Datenschutzerklärung</a><a href="#">Legal Notice</a></div>
+      <div class="footer-copy lang-en">© 2025 OME Advisory. All rights reserved. Hamburg, Germany.</div>
+      <div class="footer-copy lang-de">© 2025 OME Advisory. Alle Rechte vorbehalten. Hamburg, Deutschland.</div>
+      <div class="footer-legal"><a href="#">Impressum</a><a href="#">Datenschutz</a></div>
     </div>
   </div>
 </footer>
 
 <script>
-  // ── Netlify Identity redirect
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on('init', user => {
-      if (!user) {
-        window.netlifyIdentity.on('login', () => { document.location.href = '/admin/'; });
-      }
-    });
-  }
+if(window.netlifyIdentity){window.netlifyIdentity.on("init",u=>{if(!u)window.netlifyIdentity.on("login",()=>{document.location.href="/admin/";});});}
 
-  // ── Nav scroll
-  const nav = document.getElementById('mainNav');
-  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 60));
+// ── Lang switching
+let currentLang = localStorage.getItem("ome_lang") || "en";
 
-  // ── Scroll animations
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
-  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
-
-  // ── Load content from JSON and render services
-  async function loadContent() {
-    try {
-      const res = await fetch('/data/content.json?t=' + Date.now());
-      const data = await res.json();
-
-      // Update hero tagline
-      if (data.site && data.site.hero_tagline) {
-        document.getElementById('hero-tagline').textContent = data.site.hero_tagline;
-      }
-
-      // Update contact email
-      if (data.site && data.site.contact_email) {
-        const emailEl = document.getElementById('contact-email');
-        if (emailEl) { emailEl.textContent = data.site.contact_email; emailEl.href = 'mailto:' + data.site.contact_email; }
-      }
-
-      // Build tier tabs and panels — read keys dynamically, skip 'site'
-      const tiers = Object.entries(data).filter(([key]) => key !== 'site').map(([, val]) => val);
-      const tabsEl = document.getElementById('tier-tabs');
-      const panelsEl = document.getElementById('tier-panels');
-      tabsEl.innerHTML = '';
-      panelsEl.innerHTML = '';
-
-      // Populate service dropdown
-      const select = document.getElementById('service-select');
-      select.innerHTML = '<option value="">Select a service area...</option>';
-
-      tiers.forEach((tier, idx) => {
-        if (!tier) return;
-
-        // Tab
-        const tab = document.createElement('button');
-        tab.className = 'tier-tab' + (idx === 0 ? ' active' : '');
-        tab.textContent = tier.label;
-        tab.onclick = () => switchTier(idx);
-        tabsEl.appendChild(tab);
-
-        // Panel
-        const panel = document.createElement('div');
-        panel.className = 'tier-panel' + (idx === 0 ? ' active' : '');
-        panel.id = 'tier-' + idx;
-
-        let cardsHTML = '';
-        (tier.items || []).forEach((svc, i) => {
-          const num = (idx + 1) + '.' + String(i + 1).padStart(2, '0');
-          cardsHTML += `
-            <div class="service-card fade-up" style="transition-delay:${i * 0.08}s">
-              <div class="sc-number">T${num}</div>
-              <div class="sc-title">${svc.title}</div>
-              <div class="sc-scope">${svc.scope}</div>
-              <div class="sc-target-label">Target Client</div>
-              <div class="sc-target">${svc.target}</div>
-            </div>`;
-
-          // Add to dropdown
-          const opt = document.createElement('option');
-          opt.textContent = svc.title;
-          select.appendChild(opt);
-        });
-
-        panel.innerHTML = `
-          <div class="tier-intro">
-            <div class="tier-intro-badge">${tier.badge}</div>
-            <p>${tier.intro}</p>
-          </div>
-          <div class="services-grid">${cardsHTML}</div>`;
-
-        panelsEl.appendChild(panel);
-
-        // Observe new fade-up elements
-        panel.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
-      });
-
-    } catch (err) {
-      document.getElementById('tier-tabs').innerHTML = '<p style="color:rgba(255,255,255,0.4);padding:1rem;font-size:0.85rem;">Unable to load services. Please refresh.</p>';
-      console.error('Content load error:', err);
-    }
-  }
-
-  function switchTier(idx) {
-    document.querySelectorAll('.tier-tab').forEach((t, i) => t.classList.toggle('active', i === idx));
-    document.querySelectorAll('.tier-panel').forEach((p, i) => p.classList.toggle('active', i === idx));
-  }
-
-  // ── Smooth scroll
-  document.querySelectorAll('a[href^="#"]').forEach(a => {
-    a.addEventListener('click', e => {
-      const id = a.getAttribute('href').slice(1);
-      const el = document.getElementById(id);
-      if (el) { e.preventDefault(); el.scrollIntoView({ behavior: 'smooth' }); }
-    });
+function setLang(lang) {
+  currentLang = lang;
+  document.body.className = lang;
+  localStorage.setItem("ome_lang", lang);
+  document.querySelectorAll(".lang-btn").forEach(b => {
+    b.classList.toggle("active", b.dataset.lang === lang);
   });
-
-  // ── Form
-  function handleSubmit(e) {
-    e.preventDefault();
-    const btn = e.target.querySelector('.form-submit-btn');
-    btn.textContent = 'Sent ✓'; btn.style.background = '#2a7a4a'; btn.style.color = '#fff'; btn.disabled = true;
-    setTimeout(() => { btn.textContent = 'Send Enquiry'; btn.style.background = ''; btn.style.color = ''; btn.disabled = false; e.target.reset(); }, 3000);
+  // Re-render services in new language
+  if(window._siteData) renderServices(window._siteData, lang);
+  // Update hero tagline
+  const site = window._siteData && window._siteData.site;
+  if(site) {
+    const el = document.getElementById("hero-tagline");
+    if(el) el.textContent = (lang === "de" && site.hero_tagline_de) ? site.hero_tagline_de : site.hero_tagline;
   }
+}
 
-  // ── Init
-  loadContent();
+// Init lang on load
+document.body.className = currentLang;
+document.querySelectorAll(".lang-btn").forEach(b => {
+  b.classList.toggle("active", b.dataset.lang === currentLang);
+});
+
+// ── Mobile nav
+function toggleNav() {
+  const links = document.getElementById("navLinks");
+  const btn = document.getElementById("hamburger");
+  links.classList.toggle("open");
+  btn.classList.toggle("open");
+}
+
+// Close nav on link click
+document.querySelectorAll(".nav-links a").forEach(a => {
+  a.addEventListener("click", () => {
+    document.getElementById("navLinks").classList.remove("open");
+    document.getElementById("hamburger").classList.remove("open");
+  });
+});
+
+// ── Nav scroll
+const nav = document.getElementById("mainNav");
+window.addEventListener("scroll", () => nav.classList.toggle("scrolled", window.scrollY > 60));
+
+// ── Scroll animations
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add("visible"); observer.unobserve(e.target); }});
+}, {threshold:0.1,rootMargin:"0px 0px -40px 0px"});
+document.querySelectorAll(".fade-up").forEach(el => observer.observe(el));
+
+// ── Load + render services
+async function loadContent() {
+  try {
+    const res = await fetch("/data/content.json?t=" + Date.now());
+    const data = await res.json();
+    window._siteData = data;
+    // Hero tagline
+    const el = document.getElementById("hero-tagline");
+    if(el && data.site) {
+      el.textContent = (currentLang === "de" && data.site.hero_tagline_de) ? data.site.hero_tagline_de : data.site.hero_tagline;
+    }
+    renderServices(data, currentLang);
+  } catch(err) {
+    document.getElementById("tier-tabs").innerHTML = "<p style='color:rgba(255,255,255,0.4);padding:1rem;font-size:0.85rem;'>Unable to load services. Please refresh.</p>";
+  }
+}
+
+function renderServices(data, lang) {
+  const tiers = Object.entries(data).filter(([k]) => k !== "site").map(([,v]) => v);
+  const tabsEl = document.getElementById("tier-tabs");
+  const panelsEl = document.getElementById("tier-panels");
+  tabsEl.innerHTML = "";
+  panelsEl.innerHTML = "";
+  const select = document.getElementById("service-select");
+  select.innerHTML = "<option value=''>" + (lang === "de" ? "Leistung auswählen..." : "Select a service...") + "</option>";
+
+  tiers.forEach((tier, idx) => {
+    if(!tier) return;
+    const label = (lang === "de" && tier.label_de) ? tier.label_de : tier.label;
+    const badge = (lang === "de" && tier.badge_de) ? tier.badge_de : tier.badge;
+    const intro = (lang === "de" && tier.intro_de) ? tier.intro_de : tier.intro;
+
+    const tab = document.createElement("button");
+    tab.className = "tier-tab" + (idx === 0 ? " active" : "");
+    tab.textContent = label;
+    tab.onclick = () => switchTier(idx);
+    tabsEl.appendChild(tab);
+
+    let cardsHTML = "";
+    (tier.items || []).forEach((svc, i) => {
+      const num = (idx+1) + "." + String(i+1).padStart(2,"0");
+      const title = (lang === "de" && svc.title_de) ? svc.title_de : svc.title;
+      const scope = (lang === "de" && svc.scope_de) ? svc.scope_de : svc.scope;
+      const target = (lang === "de" && svc.target_de) ? svc.target_de : svc.target;
+      const tLabel = lang === "de" ? "Zielkunde" : "Target Client";
+      cardsHTML += "<div class='service-card fade-up' style='transition-delay:" + (i*0.08) + "s'>" +
+        "<div class='sc-number'>" + num + "</div>" +
+        "<div class='sc-title'>" + title + "</div>" +
+        "<div class='sc-scope'>" + scope + "</div>" +
+        "<div class='sc-target-label'>" + tLabel + "</div>" +
+        "<div class='sc-target'>" + target + "</div></div>";
+      const opt = document.createElement("option");
+      opt.textContent = title;
+      select.appendChild(opt);
+    });
+
+    const panel = document.createElement("div");
+    panel.className = "tier-panel" + (idx === 0 ? " active" : "");
+    panel.id = "tier-" + idx;
+    panel.innerHTML = "<div class='tier-intro'><div class='tier-intro-badge'>" + badge + "</div><p>" + intro + "</p></div><div class='services-grid'>" + cardsHTML + "</div>";
+    panelsEl.appendChild(panel);
+    panel.querySelectorAll(".fade-up").forEach(el => observer.observe(el));
+  });
+}
+
+function switchTier(idx) {
+  document.querySelectorAll(".tier-tab").forEach((t,i) => t.classList.toggle("active", i===idx));
+  document.querySelectorAll(".tier-panel").forEach((p,i) => p.classList.toggle("active", i===idx));
+}
+
+// ── Smooth scroll
+document.querySelectorAll("a[href^='#']").forEach(a => {
+  a.addEventListener("click", e => {
+    const id = a.getAttribute("href").slice(1);
+    const el = document.getElementById(id);
+    if(el){ e.preventDefault(); el.scrollIntoView({behavior:"smooth"}); }
+  });
+});
+
+// ── Form
+function handleSubmit(e) {
+  e.preventDefault();
+  const btn = e.target.querySelector(".form-submit-btn");
+  btn.innerHTML = currentLang === "de" ? "Gesendet ✓" : "Sent ✓";
+  btn.style.background = "#2a7a4a"; btn.style.color = "#fff"; btn.disabled = true;
+  setTimeout(() => {
+    btn.innerHTML = currentLang === "de" ? "<span class='lang-en'>Send Enquiry</span><span class='lang-de'>Anfrage senden</span>" : "<span class='lang-en'>Send Enquiry</span><span class='lang-de'>Anfrage senden</span>";
+    btn.style.background = ""; btn.style.color = ""; btn.disabled = false;
+    e.target.reset();
+  }, 3000);
+}
+
+loadContent();
 </script>
 </body>
 </html>
