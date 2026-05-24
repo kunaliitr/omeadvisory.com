@@ -5,7 +5,7 @@
     "hero_tagline": "OME Advisory delivers rigorous, evidence-based ESG strategy, regulatory compliance, and carbon market intelligence — built by practitioners who have led from the inside.",
     "contact_email": "hello@omeadvisory.com"
   },
-  "1": {
+  "ISO Services": {
     "label": "ISO Prep Audit",
     "badge": "ISO 14001/14064/50001 gap assessment",
     "intro": "Entry-point engagements for companies at the start of their compliance or certification journey. High-certainty mandates, rapid deployment.",
@@ -30,7 +30,7 @@
       }
     ]
   },
-  "2": {
+  "Sustainability Services": {
     "label": "Sustainability and Climate",
     "badge": "GHG accounting, CSRD, EU Taxonomy, CSDDD regulations",
     "intro": "Strategic mandates with substantive deliverables. Technically intensive, high-impact engagements that form the backbone of the advisory practice.",
@@ -67,7 +67,7 @@
       }
     ]
   },
-  "tier3": {
+  "Carbon Market Services": {
     "label": "Carbon Market",
     "badge": "Carbon Market (end to end consulting services)",
     "intro": "Complex, high-stakes mandates requiring deep technical specialism. Retained and project-based formats. The highest-value work in the portfolio. Provide services from project development to credit issuance stage",
