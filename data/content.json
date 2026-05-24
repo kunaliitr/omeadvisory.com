@@ -32,8 +32,8 @@
   },
   "Sustainability Services": {
     "label": "Sustainability & Climate",
-    "badge": "GHG Accounting · CSRD · EU Taxonomy · CSDDD",
-    "intro": "Strategic mandates with substantive deliverables. Technically intensive, high-impact engagements that form the backbone of the advisory practice.",
+    "badge": "GHG · CSRD · EU Taxonomy · CSDDD · ESG Ratings",
+    "intro": "Strategic sustainability mandates covering GHG accounting, regulatory compliance, ESG ratings improvement, and retained advisory. Technically intensive, high-impact engagements.",
     "items": [
       {
         "id": "01",
@@ -64,44 +64,23 @@
         "title": "ESG Ratings Advisory",
         "scope": "MSCI, Sustainalytics, and CDP score analysis; disclosure gap identification; improvement roadmap. Methodology-level insight from former ratings practitioners.",
         "target": "Listed companies; PE-backed companies pre-IPO or fundraising"
-      }
-    ]
-  },
-  "Carbon Market Services": {
-    "label": "Carbon Market",
-    "badge": "Carbon Market — End-to-End Consulting",
-    "intro": "Complex, high-stakes mandates requiring deep technical specialism. Retained and project-based formats. Services span from project development to credit issuance stage.",
-    "items": [
-      {
-        "id": "01",
-        "title": "Article 6 / Carbon Market Strategy",
-        "scope": "Paris Agreement Art. 6.2/6.4 advisory; host country agreement navigation; ITMOs strategy. Advisory grounded in direct UNFCCC secretariat experience.",
-        "target": "Energy/utility companies; carbon project developers; government agencies"
       },
       {
-        "id": "02",
-        "title": "Decarbonisation Roadmap",
-        "scope": "Technology pathway analysis, CAPEX/OPEX modelling, carbon abatement curves, 2030/2050 targets. Sector-calibrated for chemicals, cement, and steel.",
-        "target": "Industrial manufacturers; energy-intensive sectors (chemicals, cement, steel)"
-      },
-      {
-        "id": "03",
-        "title": "Retained ESG Advisor",
-        "scope": "Monthly retainer: board-level ESG strategy, regulator horizon scanning, peer benchmarking, ad hoc support. Your most stable and continuous advisory relationship.",
-        "target": "Mid-large corporates seeking continuous strategic ESG counsel"
-      },
-      {
-        "id": "04",
+        "id": "06",
         "title": "EU Taxonomy Alignment",
         "scope": "Technical Screening Criteria mapping, DNSH assessment, Minimum Social Safeguards review. Full eligibility and alignment analysis for disclosure and financing purposes.",
         "target": "Financial institutions (SFDR); infrastructure companies; real assets"
       },
       {
-        "id": "05",
-        "title": "Training Workshops",
-        "scope": "Half/full-day CSRD, LkSG, ISO 14064, or carbon market workshops for management teams. Tailored to sector and regulatory context.",
-        "target": "Industry associations; chambers of commerce (IHK Hamburg); corporate L&D teams"
+        "id": "07",
+        "title": "Retained ESG Advisor",
+        "scope": "Monthly retainer: board-level ESG strategy, regulator horizon scanning, peer benchmarking, ad hoc support. Your most stable and continuous advisory relationship.",
+        "target": "Mid-large corporates seeking continuous strategic ESG counsel"
       }
     ]
-  }
-}
+  },
+  "Carbon Market Services": {
+    "label": "Carbon Market",
+    "badge": "Article 6 · ITMOs · Decarbonisation — End-to-End",
+    "intro": "Specialised carbon market advisory grounded in direct UNFCCC Secretariat experience. From Paris Agreement Article 6 navigation to full decarbonisation roadmaps — the most differentiated service line in the portfolio.",
+    "items": [
