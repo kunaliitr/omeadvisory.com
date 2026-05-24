@@ -1,0 +1,73 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "services"
+    label: "Services"
+    files:
+
+      - name: "site_settings"
+        label: "Site Settings"
+        file: "data/content.json"
+        format: json
+        fields:
+          - label: "Site"
+            name: "site"
+            widget: "object"
+            fields:
+              - { label: "Company Name", name: "name", widget: "string" }
+              - { label: "Tagline (nav/marquee)", name: "tagline", widget: "string" }
+              - { label: "Hero Paragraph", name: "hero_tagline", widget: "text" }
+              - { label: "Contact Email", name: "contact_email", widget: "string" }
+          - label: "Tier 1 — Entry & Audit"
+            name: "tier1"
+            widget: "object"
+            fields:
+              - { label: "Tab Label", name: "label", widget: "string" }
+              - { label: "Badge Text", name: "badge", widget: "string" }
+              - { label: "Intro Text", name: "intro", widget: "text" }
+              - label: "Services"
+                name: "items"
+                widget: "list"
+                summary: "{{fields.title}}"
+                fields:
+                  - { label: "Service ID", name: "id", widget: "string" }
+                  - { label: "Service Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "scope", widget: "text" }
+                  - { label: "Target Client", name: "target", widget: "string" }
+          - label: "Tier 2 — Core Revenue"
+            name: "tier2"
+            widget: "object"
+            fields:
+              - { label: "Tab Label", name: "label", widget: "string" }
+              - { label: "Badge Text", name: "badge", widget: "string" }
+              - { label: "Intro Text", name: "intro", widget: "text" }
+              - label: "Services"
+                name: "items"
+                widget: "list"
+                summary: "{{fields.title}}"
+                fields:
+                  - { label: "Service ID", name: "id", widget: "string" }
+                  - { label: "Service Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "scope", widget: "text" }
+                  - { label: "Target Client", name: "target", widget: "string" }
+          - label: "Tier 3 — High-Value / Specialised"
+            name: "tier3"
+            widget: "object"
+            fields:
+              - { label: "Tab Label", name: "label", widget: "string" }
+              - { label: "Badge Text", name: "badge", widget: "string" }
+              - { label: "Intro Text", name: "intro", widget: "text" }
+              - label: "Services"
+                name: "items"
+                widget: "list"
+                summary: "{{fields.title}}"
+                fields:
+                  - { label: "Service ID", name: "id", widget: "string" }
+                  - { label: "Service Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "scope", widget: "text" }
+                  - { label: "Target Client", name: "target", widget: "string" }
