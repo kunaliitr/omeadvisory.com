@@ -1,131 +1,193 @@
 {
   "site": {
     "name": "OME Advisory",
-    "tagline": "Your sustainability journey. Strategy to implementation.",
-    "hero_tagline": "OME Advisory delivers rigorous, evidence-based ESG strategy, regulatory compliance, and carbon market intelligence — built by practitioners who have led from the inside.",
+    "tagline": "ESG - Climate - Carbon Markets",
+    "tagline_de": "ESG - Klima - Kohlenstoffmärkte",
+    "hero_tagline": "Sustainability made real. Strategy to implementation, start to finish.",
+    "hero_tagline_de": "Nachhaltigkeit in die Praxis umgesetzt. Von der Strategie bis zur Umsetzung.",
     "contact_email": "hello@omeadvisory.com"
   },
   "ISO Services": {
     "label": "ISO Prep Audit",
+    "label_de": "ISO Audit-Vorbereitung",
     "badge": "ISO 14001 / 14064 / 50001 Gap Assessment",
+    "badge_de": "ISO 14001 / 14064 / 50001 Lückenanalyse",
     "intro": "Entry-point engagements for companies at the start of their compliance or certification journey. High-certainty mandates, rapid deployment.",
+    "intro_de": "Einstiegsmandate für Unternehmen am Beginn ihrer Compliance- oder Zertifizierungsreise. Planungssichere Mandate mit schneller Mobilisierung.",
     "items": [
       {
         "id": "01",
         "title": "ISO 14001 Certification Prep Audit",
-        "scope": "2–4 day gap assessment, written report, corrective action plan. Prepare for first certification or renewal against ISO 14001 EMS standard.",
-        "target": "SMEs seeking first certification; companies renewing"
+        "title_de": "ISO 14001 Zertifizierungs-Voraudit",
+        "scope": "2 to 4 day gap assessment, written report, corrective action plan. Prepare for first certification or renewal against ISO 14001 EMS standard.",
+        "scope_de": "2 bis 4 tägige Lückenanalyse, schriftlicher Bericht, Korrekturmaßnahmenplan. Vorbereitung auf die Erst- oder Rezertifizierung nach ISO 14001 UMS-Standard.",
+        "target": "SMEs seeking first certification; companies renewing",
+        "target_de": "KMU auf dem Weg zur Erstzertifizierung; Unternehmen bei der Rezertifizierung"
       },
       {
         "id": "02",
         "title": "GHG Verification based on ISO 14064-3",
+        "title_de": "THG-Verifizierung nach ISO 14064-3",
         "scope": "Third-party verification of corporate GHG inventory to ISO 14064-3 standard. Supports CSRD disclosure and investor-grade data assurance.",
-        "target": "Companies needing verified GHG data for CSRD or investor disclosure"
+        "scope_de": "Drittprüfung des unternehmensweiten THG-Inventars nach ISO 14064-3. Unterstützt die CSRD-Offenlegung und investorensichere Datenqualität.",
+        "target": "Companies needing verified GHG data for CSRD or investor disclosure",
+        "target_de": "Unternehmen, die verifizierte THG-Daten für CSRD oder Investoren benötigen"
       },
       {
         "id": "03",
         "title": "ISO 50001 Certification Prep Audit",
-        "scope": "2–3 day energy management gap assessment against ISO 50001 EnMS standard. Covers energy review, baseline establishment, performance indicators, objectives and targets, and corrective action plan for certification readiness.",
-        "target": "Energy-intensive manufacturers, industrial facilities, and large commercial buildings seeking first ISO 50001 certification or renewal"
+        "title_de": "ISO 50001 Zertifizierungs-Voraudit",
+        "scope": "2 to 3 day energy management gap assessment against ISO 50001 EnMS standard. Covers energy review, baseline establishment, performance indicators, objectives and targets.",
+        "scope_de": "2 bis 3 tägige Lückenanalyse des Energiemanagementsystems nach ISO 50001. Umfasst Energieüberprüfung, Baseline-Ermittlung, Leistungsindikatoren und Ziele.",
+        "target": "Energy-intensive manufacturers and industrial facilities seeking ISO 50001 certification",
+        "target_de": "Energieintensive Hersteller und Industriebetriebe auf dem Weg zur ISO 50001-Zertifizierung"
       }
     ]
   },
   "Sustainability Services": {
     "label": "Sustainability & Climate",
-    "badge": "GHG · CSRD · EU Taxonomy · CSDDD · ESG Ratings",
-    "intro": "Strategic sustainability mandates covering GHG accounting, regulatory compliance, ESG ratings improvement, and retained advisory. Technically intensive, high-impact engagements.",
+    "label_de": "Nachhaltigkeit & Klima",
+    "badge": "GHG - CSRD - EU Taxonomy - CSDDD - ESG Ratings",
+    "badge_de": "THG - CSRD - EU-Taxonomie - CSDDD - ESG-Ratings",
+    "intro": "Strategic sustainability mandates covering GHG accounting, regulatory compliance, ESG ratings improvement, and retained advisory.",
+    "intro_de": "Strategische Nachhaltigkeitsmandate zu THG-Bilanzierung, regulatorischer Compliance, ESG-Ratings-Verbesserung und dauerhafter Beratung.",
     "items": [
       {
         "id": "01",
         "title": "GHG Scope 3 Inventory",
+        "title_de": "THG Scope 3 Inventar",
         "scope": "Full Scope 3 category mapping, data collection protocol, inventory build and validation. FLAG emission categories addressed for food and agri sectors.",
-        "target": "Mid-market manufacturers; food/agri companies with FLAG exposure"
+        "scope_de": "Vollständige Scope-3-Kategorisierung, Datenerhebungsprotokoll, Inventaraufbau und Validierung. FLAG-Emissionskategorien für Lebensmittel- und Agrarbetriebe berücksichtigt.",
+        "target": "Mid-market manufacturers; food and agri companies with FLAG exposure",
+        "target_de": "Mittelständische Hersteller; Lebensmittel- und Agrarbetriebe mit FLAG-Exposition"
       },
       {
         "id": "02",
         "title": "SBTi Target Setting",
+        "title_de": "SBTi-Zielentwicklung",
         "scope": "Pathway selection, FLAG/non-FLAG split, target calculation, and SBTi submission support. Full alignment with SBTi Corporate Standard and FLAG Guidance v1.2.",
-        "target": "Companies with >50% FLAG emissions; food, packaging, chemicals, forestry"
+        "scope_de": "Pfadauswahl, FLAG/Nicht-FLAG-Aufteilung, Zielberechnung und SBTi-Einreichungsunterstützung. Vollständige Ausrichtung am SBTi Corporate Standard und FLAG Guidance v1.2.",
+        "target": "Companies with more than 50% FLAG emissions; food, packaging, chemicals, forestry",
+        "target_de": "Unternehmen mit mehr als 50% FLAG-Emissionen; Lebensmittel, Verpackung, Chemie, Forstwirtschaft"
       },
       {
         "id": "03",
         "title": "LkSG Compliance Programme",
+        "title_de": "LkSG-Compliance-Programm",
         "scope": "Risk analysis, policy development, grievance mechanism design, and first annual report. Full compliance architecture for German Supply Chain Act obligations.",
-        "target": "German companies with 1,000 or more employees; supply chain of large clients"
+        "scope_de": "Risikoanalyse, Richtlinienentwicklung, Beschwerdemechanismus-Design und erster Jahresbericht. Vollständige Compliance-Architektur für das Lieferkettensorgfaltspflichtengesetz.",
+        "target": "German companies with 1,000 or more employees; supply chain of large clients",
+        "target_de": "Deutsche Unternehmen ab 1.000 Mitarbeitern; Lieferkette von Großkunden"
       },
       {
         "id": "04",
         "title": "CSDDD Implementation",
+        "title_de": "CSDDD-Umsetzung",
         "scope": "Value chain due diligence framework, supplier risk tiering, remediation protocols. Preparation for the 2027 CSDDD transposition under Directive 2024/1760.",
-        "target": "Large German/EU companies preparing for 2027 transposition"
+        "scope_de": "Rahmenwerk für die Sorgfaltspflicht in der Wertschöpfungskette, Lieferanten-Risikoeinstufung, Abhilfemaßnahmen. Vorbereitung auf die CSDDD-Umsetzung 2027 gemäß Richtlinie 2024/1760.",
+        "target": "Large German and EU companies preparing for 2027 transposition",
+        "target_de": "Große deutsche und EU-Unternehmen zur Vorbereitung auf die Umsetzung 2027"
       },
       {
         "id": "05",
         "title": "ESG Ratings Advisory",
+        "title_de": "ESG-Ratings-Beratung",
         "scope": "MSCI, Sustainalytics, and CDP score analysis; disclosure gap identification; improvement roadmap. Methodology-level insight from former ratings practitioners.",
-        "target": "Listed companies; PE-backed companies pre-IPO or fundraising"
+        "scope_de": "MSCI-, Sustainalytics- und CDP-Score-Analyse; Identifizierung von Offenlegungslücken; Verbesserungs-Roadmap. Methodisches Insiderwissen ehemaliger Ratings-Praktiker.",
+        "target": "Listed companies; PE-backed companies pre-IPO or fundraising",
+        "target_de": "Börsennotierte Unternehmen; PE-gestützte Unternehmen vor IPO oder Finanzierungsrunden"
       },
       {
         "id": "06",
         "title": "EU Taxonomy Alignment",
-        "scope": "Technical Screening Criteria mapping, DNSH assessment, Minimum Social Safeguards review. Full eligibility and alignment analysis for disclosure and financing purposes.",
-        "target": "Financial institutions (SFDR); infrastructure companies; real assets"
+        "title_de": "EU-Taxonomie-Ausrichtung",
+        "scope": "Technical Screening Criteria mapping, DNSH assessment, Minimum Social Safeguards review. Full eligibility and alignment analysis for disclosure and financing.",
+        "scope_de": "Mapping der technischen Bewertungskriterien, DNSH-Beurteilung, Mindest-Sozialsicherheiten. Vollständige Förderfähigkeits- und Ausrichtungsanalyse für Offenlegung und Finanzierung.",
+        "target": "Financial institutions (SFDR); infrastructure companies; real assets",
+        "target_de": "Finanzinstitute (SFDR); Infrastrukturunternehmen; Sachwerte"
       },
       {
         "id": "07",
         "title": "Retained ESG Advisor",
+        "title_de": "Dauerhafter ESG-Berater",
         "scope": "Monthly retainer: board-level ESG strategy, regulator horizon scanning, peer benchmarking, ad hoc support. Your most stable and continuous advisory relationship.",
-        "target": "Mid-large corporates seeking continuous strategic ESG counsel"
+        "scope_de": "Monatliches Retainer-Modell: ESG-Strategie auf Vorstandsebene, regulatorisches Horizon-Scanning, Peer-Benchmarking, Ad-hoc-Unterstützung.",
+        "target": "Mid to large corporates seeking continuous strategic ESG counsel",
+        "target_de": "Mittelgroße bis große Unternehmen, die kontinuierliche strategische ESG-Beratung suchen"
       }
     ]
   },
   "Carbon Market Services": {
     "label": "Carbon Market",
-    "badge": "Article 6 · ITMOs · Decarbonisation — End-to-End",
-    "intro": "Specialised carbon market advisory grounded in direct UNFCCC Secretariat experience. From Paris Agreement Article 6 navigation to full decarbonisation roadmaps — the most differentiated service line in the portfolio.",
+    "label_de": "Kohlenstoffmarkt",
+    "badge": "Article 6 - ITMOs - Decarbonisation - End-to-End",
+    "badge_de": "Artikel 6 - ITMOs - Dekarbonisierung - End-to-End",
+    "intro": "Specialised carbon market advisory grounded in direct UNFCCC Secretariat experience. From Paris Agreement Article 6 to full decarbonisation roadmaps.",
+    "intro_de": "Spezialisierte Kohlenstoffmarkt-Beratung auf Basis direkter UNFCCC-Sekretariatserfahrung. Von Artikel 6 des Pariser Übereinkommens bis zu vollständigen Dekarbonisierungs-Roadmaps.",
     "items": [
       {
         "id": "01",
         "title": "Article 6 / Carbon Market Strategy",
+        "title_de": "Artikel-6-/Kohlenstoffmarktstrategie",
         "scope": "Paris Agreement Art. 6.2/6.4 advisory; host country agreement navigation; ITMOs strategy. Advisory grounded in direct UNFCCC secretariat experience from rule-making to implementation.",
-        "target": "Energy/utility companies; carbon project developers; government agencies"
+        "scope_de": "Beratung zu Pariser Übereinkommen Art. 6.2/6.4; Navigation von Gastlandabkommen; ITMOs-Strategie. Beratung auf Basis direkter UNFCCC-Sekretariatserfahrung von der Regelentwicklung bis zur Umsetzung.",
+        "target": "Energy and utility companies; carbon project developers; government agencies",
+        "target_de": "Energie- und Versorgungsunternehmen; Kohlenstoffprojektentwickler; Regierungsbehörden"
       },
       {
         "id": "02",
         "title": "Decarbonisation Roadmap",
+        "title_de": "Dekarbonisierungs-Roadmap",
         "scope": "Technology pathway analysis, CAPEX/OPEX modelling, carbon abatement curves, 2030/2050 targets. Sector-calibrated for chemicals, cement, and steel.",
-        "target": "Industrial manufacturers; energy-intensive sectors (chemicals, cement, steel)"
+        "scope_de": "Technologiepfadanalyse, CAPEX/OPEX-Modellierung, CO2-Minderungskurven, 2030/2050-Ziele. Sektorspezifisch kalibriert für Chemie, Zement und Stahl.",
+        "target": "Industrial manufacturers; energy-intensive sectors including chemicals, cement, and steel",
+        "target_de": "Industriehersteller; energieintensive Sektoren einschließlich Chemie, Zement und Stahl"
       }
     ]
   },
   "Training": {
     "label": "Training",
-    "badge": "Half-Day & Full-Day Workshops",
-    "intro": "Practical, management-level training on CSRD, LkSG, ISO 14064, and carbon markets. Delivered in-house or through industry associations. Tailored to sector, regulatory context, and audience seniority.",
+    "label_de": "Schulungen",
+    "badge": "Half-Day and Full-Day Workshops",
+    "badge_de": "Halbtages- und Ganztages-Workshops",
+    "intro": "Practical, management-level training on CSRD, LkSG, ISO 14064, and carbon markets. Tailored to sector, regulatory context, and audience seniority.",
+    "intro_de": "Praxisnahe Schulungen auf Managementebene zu CSRD, LkSG, ISO 14064 und Kohlenstoffmärkten. Zugeschnitten auf Sektor, regulatorischen Kontext und Teilnehmerexpertise.",
     "items": [
       {
         "id": "01",
-        "title": "CSRD & ESRS Reporting Workshop",
+        "title": "CSRD and ESRS Reporting Workshop",
+        "title_de": "CSRD- und ESRS-Berichtsworkshop",
         "scope": "Half or full-day workshop covering CSRD scope, double materiality, ESRS disclosure requirements, and reporting roadmap. Practical exercises with sector-specific examples.",
-        "target": "Sustainability teams, CFO offices, board members facing FY2025 reporting deadline"
+        "scope_de": "Halb- oder ganztägiger Workshop zu CSRD-Anwendungsbereich, doppelter Wesentlichkeit, ESRS-Offenlegungsanforderungen und Berichts-Roadmap. Praktische Übungen mit sektorspezifischen Beispielen.",
+        "target": "Sustainability teams, CFO offices, board members facing FY2025 reporting deadline",
+        "target_de": "Nachhaltigkeitsteams, CFO-Büros, Vorstandsmitglieder vor der FY2025-Berichtspflicht"
       },
       {
         "id": "02",
         "title": "LkSG Supply Chain Due Diligence Workshop",
+        "title_de": "LkSG-Lieferketten-Sorgfaltspflicht-Workshop",
         "scope": "Full-day training on German Supply Chain Act obligations, risk analysis methodology, grievance mechanisms, and annual reporting requirements.",
-        "target": "Procurement, legal, and sustainability teams at companies with 1,000+ employees"
+        "scope_de": "Ganztägiges Training zu LkSG-Pflichten, Risikoanalysemethodik, Beschwerdemechanismen und jährlichen Berichtspflichten.",
+        "target": "Procurement, legal, and sustainability teams at companies with 1,000 or more employees",
+        "target_de": "Einkauf, Rechtsabteilung und Nachhaltigkeitsteams in Unternehmen ab 1.000 Mitarbeitern"
       },
       {
         "id": "03",
-        "title": "GHG Accounting & ISO 14064 Workshop",
+        "title": "GHG Accounting and ISO 14064 Workshop",
+        "title_de": "THG-Bilanzierung und ISO 14064 Workshop",
         "scope": "Half or full-day workshop on GHG Protocol methodology, Scope 1/2/3 accounting, verification requirements under ISO 14064-3, and CSRD alignment.",
-        "target": "Corporate sustainability and finance teams; operations managers"
+        "scope_de": "Halb- oder ganztägiger Workshop zur GHG-Protokoll-Methodik, Scope-1/2/3-Bilanzierung, Verifizierungsanforderungen nach ISO 14064-3 und CSRD-Ausrichtung.",
+        "target": "Corporate sustainability and finance teams; operations managers",
+        "target_de": "Unternehmensweite Nachhaltigkeits- und Finanzteams; Betriebsleiter"
       },
       {
         "id": "04",
-        "title": "Carbon Markets & Article 6 Workshop",
+        "title": "Carbon Markets and Article 6 Workshop",
+        "title_de": "Kohlenstoffmärkte und Artikel-6-Workshop",
         "scope": "Full-day workshop on voluntary and compliance carbon markets, Paris Agreement Article 6 mechanics, ITMOs, carbon credit quality, and corporate offsetting strategy.",
-        "target": "Industry associations; chambers of commerce (IHK Hamburg); corporate strategy teams"
+        "scope_de": "Ganztägiger Workshop zu freiwilligen und regulatorischen Kohlenstoffmärkten, Artikel-6-Mechanismen, ITMOs, Qualität von Emissionsgutschriften und Unternehmens-Offsetting-Strategie.",
+        "target": "Industry associations; chambers of commerce (IHK Hamburg); corporate strategy teams",
+        "target_de": "Branchenverbände; Industrie- und Handelskammern (IHK Hamburg); Unternehmensstrategie-Teams"
       }
     ]
   }
