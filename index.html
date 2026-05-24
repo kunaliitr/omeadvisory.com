@@ -35,7 +35,7 @@ span.lang-en{display:inline;}
 /* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0.8rem 4rem;transition:background 0.4s,box-shadow 0.4s;}
 nav.scrolled{background:rgba(11,35,24,0.97);backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(184,149,42,0.2);}
-.nav-logo{text-decoration:none;display:flex;align-items:center;}
+.nav-logo{text-decoration:none;display:flex;align-items:center;flex-shrink:0;max-width:180px;overflow:hidden;}
 .nav-right{display:flex;align-items:center;gap:2rem;}
 .nav-links{display:flex;align-items:center;gap:2rem;list-style:none;}
 .nav-links a{font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.7);text-decoration:none;transition:color 0.2s;}
@@ -267,7 +267,7 @@ footer{background:var(--forest);border-top:1px solid rgba(184,149,42,0.15);paddi
 <!-- NAV -->
 <nav id="mainNav">
   <a href="#" class="nav-logo">
-    <img src="/logo.png" alt="OME Advisory" style="height:55px;width:auto;display:inline-block;vertical-align:middle;">
+    <img src="/logo.png" alt="OME Advisory" style="height:52px;width:auto;max-width:180px;object-fit:contain;object-position:left center;display:block;">
   </a>
   <ul class="nav-links" id="navLinks">
     <li><a href="#about"><span class="lang-en">About</span><span class="lang-de">Über uns</span></a></li>
