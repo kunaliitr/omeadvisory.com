@@ -5,68 +5,62 @@
     "hero_tagline": "OME Advisory delivers rigorous, evidence-based ESG strategy, regulatory compliance, and carbon market intelligence — built by practitioners who have led from the inside.",
     "contact_email": "hello@omeadvisory.com"
   },
-  "tier1": {
-    "label": "Tier 1 — Entry & Audit",
-    "badge": "Months 0–2 · Fast Mobilisation",
+  "1": {
+    "label": "ISO Prep Audit",
+    "badge": "ISO 14001/14064/50001 gap assessment",
     "intro": "Entry-point engagements for companies at the start of their compliance or certification journey. High-certainty mandates, rapid deployment.",
     "items": [
       {
-        "id": "t1-01",
+        "id": "01",
         "title": "ISO 14001 Certification Prep Audit",
         "scope": "2–4 day gap assessment, written report, corrective action plan. Prepare for first certification or renewal against ISO 14001 EMS standard.",
         "target": "SMEs seeking first certification; companies renewing"
       },
       {
-        "id": "t1-02",
-        "title": "ISO 14064-3 GHG Verification",
+        "id": "02",
+        "title": "GHG Verification based on ISO 14064-3",
         "scope": "Third-party verification of corporate GHG inventory to ISO 14064-3 standard. Supports CSRD disclosure and investor-grade data assurance.",
         "target": "Companies needing verified GHG data for CSRD or investor disclosure"
       },
       {
-        "id": "t1-03",
-        "title": "Contract Auditor Engagement",
-        "scope": "Day-rate audit and technical review for TÜV Rheinland, TÜV SÜD, Bureau Veritas, DNV, SGS, and LRQA. Leveraging established certification body relationships.",
-        "target": "Certification bodies requiring qualified lead auditors"
-      },
-      {
-        "id": "t1-04",
-        "title": "CSRD Readiness Assessment",
-        "scope": "Double materiality screening, ESRS gap analysis, reporting roadmap (3–5 days). Full readiness picture ahead of FY2025 reporting deadline.",
-        "target": "German Mittelstand (250+ employees), FY2025 deadline"
+        "id": "03",
+        "title": "ISO 50001 Certification Prep Audit",
+        "scope": "2–3 day energy management gap assessment against ISO 50001 EnMS standard. Covers energy review, baseline establishment, performance indicators, objectives and targets, and corrective action plan for certification readiness.",
+        "target": "Energy-intensive manufacturers, industrial facilities, and large commercial buildings seeking first ISO 50001 certification or renewal"
       }
     ]
   },
-  "tier2": {
-    "label": "Tier 2 — Core Revenue",
-    "badge": "Months 2–6 · Core Revenue",
+  "2": {
+    "label": "Sustainability and Climate",
+    "badge": "GHG accounting, CSRD, EU Taxonomy, CSDDD regulations",
     "intro": "Strategic mandates with substantive deliverables. Technically intensive, high-impact engagements that form the backbone of the advisory practice.",
     "items": [
       {
-        "id": "t2-01",
+        "id": "01",
         "title": "GHG Scope 3 Inventory",
         "scope": "Full Scope 3 category mapping, data collection protocol, inventory build and validation. FLAG emission categories addressed for food and agri sectors.",
         "target": "Mid-market manufacturers; food/agri companies with FLAG exposure"
       },
       {
-        "id": "t2-02",
+        "id": "02",
         "title": "SBTi Target Setting",
         "scope": "Pathway selection, FLAG/non-FLAG split, target calculation, and SBTi submission support. Full alignment with SBTi Corporate Standard and FLAG Guidance v1.2.",
         "target": "Companies with >50% FLAG emissions; food, packaging, chemicals, forestry"
       },
       {
-        "id": "t2-03",
+        "id": "03",
         "title": "LkSG Compliance Programme",
         "scope": "Risk analysis, policy development, grievance mechanism design, and first annual report. Full compliance architecture for German Supply Chain Act obligations.",
         "target": "German companies ≥1,000 employees; supply chain of large clients"
       },
       {
-        "id": "t2-04",
+        "id": "04",
         "title": "CSDDD Implementation",
         "scope": "Value chain due diligence framework, supplier risk tiering, remediation protocols. Preparation for the 2027 CSDDD transposition under Directive 2024/1760.",
         "target": "Large German/EU companies preparing for 2027 transposition"
       },
       {
-        "id": "t2-05",
+        "id": "05",
         "title": "ESG Ratings Advisory",
         "scope": "MSCI, Sustainalytics, and CDP score analysis; disclosure gap identification; improvement roadmap. Methodology-level insight from former ratings practitioners.",
         "target": "Listed companies; PE-backed companies pre-IPO or fundraising"
@@ -74,36 +68,36 @@
     ]
   },
   "tier3": {
-    "label": "Tier 3 — High-Value / Specialised",
-    "badge": "Months 3–12 · High-Value / Specialised",
-    "intro": "Complex, high-stakes mandates requiring deep technical specialism. Retained and project-based formats. The highest-value work in the portfolio.",
+    "label": "Carbon Market",
+    "badge": "Carbon Market (end to end consulting services)",
+    "intro": "Complex, high-stakes mandates requiring deep technical specialism. Retained and project-based formats. The highest-value work in the portfolio. Provide services from project development to credit issuance stage",
     "items": [
       {
-        "id": "t3-01",
+        "id": "01",
         "title": "Article 6 / Carbon Market Strategy",
         "scope": "Paris Agreement Art. 6.2/6.4 advisory; host country agreement navigation; ITMOs strategy. Advisory grounded in direct UNFCCC secretariat experience.",
         "target": "Energy/utility companies; carbon project developers; government agencies"
       },
       {
-        "id": "t3-02",
+        "id": "02",
         "title": "Decarbonisation Roadmap",
         "scope": "Technology pathway analysis, CAPEX/OPEX modelling, carbon abatement curves, 2030/2050 targets. Sector-calibrated for chemicals, cement, and steel.",
         "target": "Industrial manufacturers; energy-intensive sectors (chemicals, cement, steel)"
       },
       {
-        "id": "t3-03",
+        "id": "03",
         "title": "Retained ESG Advisor",
-        "scope": "Monthly retainer: board-level ESG strategy, regulator horizon scanning, peer benchmarking, ad hoc support. Your most stable and continuous advisory relationship.",
+        "scope": "Monthly retainer: board-level ESG strategy, regulator horizon scanning, peer benchmarking, ad hoc support.",
         "target": "Mid-large corporates seeking continuous strategic ESG counsel"
       },
       {
-        "id": "t3-04",
+        "id": "04",
         "title": "EU Taxonomy Alignment",
         "scope": "Technical Screening Criteria mapping, DNSH assessment, Minimum Social Safeguards review. Full eligibility and alignment analysis for disclosure and financing purposes.",
         "target": "Financial institutions (SFDR); infrastructure companies; real assets"
       },
       {
-        "id": "t3-05",
+        "id": "05",
         "title": "Training Workshops",
         "scope": "Half/full-day CSRD, LkSG, ISO 14064, or carbon market workshops for management teams. Tailored to sector and regulatory context.",
         "target": "Industry associations; chambers of commerce (IHK Hamburg); corporate L&D teams"
