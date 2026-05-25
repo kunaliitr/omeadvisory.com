@@ -3,265 +3,327 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OME Advisory — ESG & Climate Intelligence</title>
-<meta name="description" content="OME Advisory delivers rigorous ESG strategy, GHG verification, CSRD compliance, and carbon market advisory for European corporates.">
+<title>OME Advisory — ESG Operations Management</title>
+<meta name="description" content="OME Advisory delivers end-to-end ESG strategy, regulatory compliance, and carbon market advisory. Sustainability made real — strategy to implementation, start to finish.">
+<meta property="og:title" content="OME Advisory — ESG Operations Management">
+<meta property="og:description" content="Sustainability made real. Strategy to implementation, start to finish.">
+<meta property="og:url" content="https://omeadvisory.com">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@200;300;400;500;600&display=swap" rel="stylesheet">
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <style>
-:root{--forest:#0b2318;--emerald:#163d27;--mid:#1e5234;--brass:#b8952a;--brass-lt:#d4af5a;--cream:#f5f0e6;--cream-dk:#ede6d8;--white:#ffffff;--text:#1a1a1a;--text-mid:#4a4a4a;--text-lt:#7a7a7a;}
+:root{
+  --forest:#0b2318;--emerald:#163d27;--mid:#1e5234;--brass:#b8952a;--brass-lt:#d4af5a;
+  --cream:#f5f0e6;--cream-dk:#ede6d8;--white:#fff;--text:#1a1a1a;--text-mid:#4a4a4a;--text-lt:#7a7a7a;
+}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 html{scroll-behavior:smooth;font-size:16px;}
 body{background:var(--cream);color:var(--text);font-family:"DM Sans",sans-serif;font-weight:300;line-height:1.7;overflow-x:hidden;}
-body::before{content:"";position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:9999;opacity:0.5;}
-h1,h2,h3,h4{font-family:"Cormorant Garamond",serif;font-weight:500;line-height:1.15;letter-spacing:-0.01em;}
-.eyebrow{font-family:"DM Sans",sans-serif;font-size:0.7rem;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--brass);}
+h1,h2,h3,h4{font-family:"Cormorant Garamond",serif;font-weight:500;line-height:1.15;}
+.eyebrow{font-family:"DM Sans",sans-serif;font-size:0.68rem;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:var(--brass);}
 
-/* LANGUAGE SWITCHING */
-body.de .lang-en{display:none !important;}
-body.en .lang-de{display:none !important;}
-.lang-de{display:block;}
-span.lang-de{display:inline;}
-span.lang-en{display:inline;}
-
-/* Hide lang toggle inside nav-links on desktop — shown only in nav-right */
-.nav-links .lang-toggle{display:none;}
-
-/* LANGUAGE TOGGLE */
-.lang-toggle{display:flex;align-items:center;gap:0.4rem;}
-.lang-btn{background:none;border:none;cursor:pointer;font-family:"DM Sans",sans-serif;font-size:0.72rem;font-weight:500;letter-spacing:0.1em;color:rgba(255,255,255,0.4);padding:0.2rem 0.4rem;transition:color 0.2s;border-bottom:1px solid transparent;}
+/* ── LANGUAGE ── */
+body.de .lang-en{display:none!important;}
+body.en .lang-de{display:none!important;}
+.lang-btn{background:none;border:none;cursor:pointer;font-family:"DM Sans",sans-serif;font-size:0.7rem;font-weight:500;letter-spacing:0.1em;color:rgba(255,255,255,0.4);padding:0.2rem 0.4rem;border-bottom:1px solid transparent;transition:color 0.2s;}
 .lang-btn.active{color:var(--brass-lt);border-bottom-color:var(--brass);}
-.lang-btn:hover{color:rgba(255,255,255,0.8);}
 .lang-sep{color:rgba(255,255,255,0.2);font-size:0.75rem;}
+.lang-toggle{display:flex;align-items:center;gap:0.3rem;}
 
-/* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0.6rem 4rem;transition:background 0.4s,box-shadow 0.4s;}
-nav.scrolled{background:rgba(11,35,24,0.97);backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(184,149,42,0.2);}
-.nav-logo{text-decoration:none;display:flex;align-items:center;flex-shrink:0;max-width:180px;overflow:hidden;}
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 4rem;transition:all 0.4s;}
+nav.scrolled{background:rgba(11,35,24,0.96);backdrop-filter:blur(16px);box-shadow:0 1px 0 rgba(184,149,42,0.15);}
+.nav-wordmark{text-decoration:none;display:flex;align-items:baseline;gap:0.3rem;}
+.nav-wm-ome{font-family:"Cormorant Garamond",serif;font-size:1.55rem;font-weight:700;color:var(--brass-lt);letter-spacing:0.04em;line-height:1;}
+.nav-wm-adv{font-family:"DM Sans",sans-serif;font-size:0.75rem;font-weight:300;color:rgba(255,255,255,0.55);letter-spacing:0.18em;text-transform:uppercase;}
 .nav-right{display:flex;align-items:center;gap:2rem;}
 .nav-links{display:flex;align-items:center;gap:2rem;list-style:none;}
-.nav-links a{font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.7);text-decoration:none;transition:color 0.2s;}
+.nav-links a{font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.65);text-decoration:none;transition:color 0.2s;position:relative;}
+.nav-links a::after{content:"";position:absolute;bottom:-2px;left:0;width:0;height:1px;background:var(--brass);transition:width 0.3s;}
 .nav-links a:hover{color:var(--brass-lt);}
-.nav-cta{border:1px solid var(--brass);color:var(--brass-lt) !important;padding:0.5rem 1.2rem;border-radius:2px;transition:background 0.2s,color 0.2s !important;}
-.nav-cta:hover{background:var(--brass) !important;color:var(--forest) !important;}
-
-/* HAMBURGER */
+.nav-links a:hover::after{width:100%;}
+.nav-cta{border:1px solid rgba(184,149,42,0.5);color:var(--brass-lt)!important;padding:0.45rem 1.2rem;border-radius:1px;transition:all 0.2s!important;}
+.nav-cta:hover{background:var(--brass)!important;color:var(--forest)!important;border-color:var(--brass)!important;}
+.nav-cta::after{display:none!important;}
 .hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px;}
-.hamburger span{display:block;width:22px;height:2px;background:rgba(255,255,255,0.8);border-radius:2px;transition:all 0.3s;}
+.hamburger span{display:block;width:22px;height:1.5px;background:rgba(255,255,255,0.7);border-radius:2px;transition:all 0.3s;}
 .hamburger.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px);}
 .hamburger.open span:nth-child(2){opacity:0;}
 .hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px);}
 
-/* HERO */
-#hero{min-height:100vh;background:var(--forest);display:grid;grid-template-columns:1fr 1fr;position:relative;overflow:hidden;}
-.hero-bg-pattern{position:absolute;inset:0;background-image:radial-gradient(ellipse 60% 80% at 70% 50%,rgba(30,82,52,0.5) 0%,transparent 70%),radial-gradient(ellipse 40% 40% at 20% 80%,rgba(184,149,42,0.08) 0%,transparent 60%);}
-.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(184,149,42,0.06) 1px,transparent 1px),linear-gradient(90deg,rgba(184,149,42,0.06) 1px,transparent 1px);background-size:80px 80px;animation:gridShift 20s linear infinite;}
-@keyframes gridShift{0%{transform:translate(0,0)}100%{transform:translate(80px,80px)}}
-.hero-left{display:flex;flex-direction:column;justify-content:center;padding:8rem 4rem 5rem;position:relative;z-index:2;}
-.hero-eyebrow{margin-bottom:1.5rem;margin-top:2rem;display:flex;align-items:center;gap:1rem;}
-.hero-eyebrow::before{content:"";display:block;width:40px;height:1px;background:var(--brass);}
-.hero-h1{font-size:clamp(2rem,3.5vw,3.5rem);font-weight:300;color:var(--white);}
-.hero-h1 em{font-style:italic;color:var(--brass-lt);}
-.hero-tagline{font-family:"DM Sans",sans-serif;font-size:0.95rem;font-weight:300;color:rgba(255,255,255,0.6);max-width:420px;margin:1.5rem 0 3rem;line-height:1.8;}
+/* ── HERO ── */
+#hero{min-height:100vh;background:var(--forest);position:relative;display:flex;align-items:center;overflow:hidden;}
+.hero-bg-img{position:absolute;inset:0;background-image:url("https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=1800&q=80");background-size:cover;background-position:center;opacity:0.18;transform:scale(1.05);animation:heroZoom 20s ease-in-out infinite alternate;}
+@keyframes heroZoom{from{transform:scale(1.05)}to{transform:scale(1.12)}}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(11,35,24,0.95) 0%,rgba(11,35,24,0.7) 60%,rgba(11,35,24,0.4) 100%);}
+.hero-grid-lines{position:absolute;inset:0;background-image:linear-gradient(rgba(184,149,42,0.05) 1px,transparent 1px),linear-gradient(90deg,rgba(184,149,42,0.05) 1px,transparent 1px);background-size:80px 80px;}
+.hero-inner{position:relative;z-index:2;max-width:1200px;margin:0 auto;padding:0 4rem;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;padding-top:64px;}
+.hero-left{padding:3rem 0;}
+.hero-tag{display:inline-flex;align-items:center;gap:0.8rem;margin-bottom:2.5rem;}
+.hero-tag-line{width:32px;height:1px;background:var(--brass);}
+.hero-tag-text{font-size:0.68rem;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:var(--brass);}
+.hero-title{margin-bottom:1.5rem;}
+.hero-title-main{display:block;font-family:"Cormorant Garamond",serif;font-size:clamp(3rem,5vw,5.5rem);font-weight:300;color:var(--white);line-height:1.05;letter-spacing:-0.02em;}
+.hero-title-em{display:block;font-family:"Cormorant Garamond",serif;font-size:clamp(3rem,5vw,5.5rem);font-weight:300;font-style:italic;color:var(--brass-lt);line-height:1.05;letter-spacing:-0.02em;}
+.hero-sub{font-size:1rem;font-weight:300;color:rgba(255,255,255,0.55);line-height:1.85;max-width:400px;margin-bottom:3rem;}
 .hero-actions{display:flex;gap:1.2rem;align-items:center;flex-wrap:wrap;}
-.btn-primary{display:inline-block;background:var(--brass);color:var(--forest);padding:0.85rem 2.2rem;font-size:0.78rem;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;border-radius:2px;transition:background 0.2s,transform 0.2s;}
-.btn-primary:hover{background:var(--brass-lt);transform:translateY(-1px);}
-.btn-ghost{display:inline-flex;align-items:center;gap:0.5rem;color:rgba(255,255,255,0.6);font-size:0.78rem;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;transition:color 0.2s;}
-.btn-ghost:hover{color:var(--brass-lt);}
-.hero-right{position:relative;z-index:2;display:flex;align-items:flex-end;justify-content:center;padding:7rem 0 4rem;}
-.hero-visual{width:400px;height:460px;position:relative;}
-.hero-visual-card{position:absolute;background:rgba(22,61,39,0.85);border:1px solid rgba(184,149,42,0.2);backdrop-filter:blur(8px);border-radius:4px;padding:1.4rem 1.6rem;}
-.hvc-1{width:250px;top:40px;left:0}.hvc-2{width:210px;top:155px;right:0}.hvc-3{width:230px;bottom:60px;left:30px}
-.hvc-label{font-size:0.62rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--brass);margin-bottom:0.6rem;}
-.hvc-value{font-family:"Cormorant Garamond",serif;font-size:2rem;font-weight:600;color:var(--white);line-height:1;}
-.hvc-sub{font-size:0.7rem;color:rgba(255,255,255,0.45);margin-top:0.3rem;}
-.hvc-bar{height:3px;background:rgba(184,149,42,0.15);border-radius:2px;margin-top:0.8rem;overflow:hidden;}
-.hvc-bar-fill{height:100%;background:linear-gradient(90deg,var(--brass),var(--brass-lt));border-radius:2px;animation:barGrow 2.5s ease-out forwards;}
-@keyframes barGrow{from{width:0}}
-.hero-scroll{position:absolute;bottom:2.5rem;left:4rem;display:flex;align-items:center;gap:0.8rem;color:rgba(255,255,255,0.3);font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;z-index:2;}
-.scroll-line{width:40px;height:1px;background:rgba(255,255,255,0.2);position:relative;overflow:hidden;}
-.scroll-line::after{content:"";position:absolute;top:0;left:-100%;width:100%;height:100%;background:var(--brass);animation:scrollLine 2s ease-in-out infinite;}
-@keyframes scrollLine{0%,100%{left:-100%}50%{left:100%}}
+.btn-solid{display:inline-block;background:var(--brass);color:var(--forest);padding:0.9rem 2.5rem;font-size:0.75rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;border-radius:1px;transition:all 0.25s;}
+.btn-solid:hover{background:var(--brass-lt);transform:translateY(-2px);box-shadow:0 8px 24px rgba(184,149,42,0.3);}
+.btn-outline{display:inline-flex;align-items:center;gap:0.5rem;color:rgba(255,255,255,0.6);font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid rgba(255,255,255,0.2);padding-bottom:2px;transition:all 0.2s;}
+.btn-outline:hover{color:var(--brass-lt);border-bottom-color:var(--brass);}
+.hero-right{position:relative;height:480px;}
+.hero-stats{position:absolute;inset:0;display:flex;flex-direction:column;gap:1px;}
+.hero-stat-card{flex:1;background:rgba(255,255,255,0.03);border:1px solid rgba(184,149,42,0.12);backdrop-filter:blur(8px);padding:1.5rem 2rem;display:flex;align-items:center;gap:1.5rem;transition:all 0.3s;cursor:default;}
+.hero-stat-card:hover{background:rgba(255,255,255,0.06);border-color:rgba(184,149,42,0.25);transform:translateX(-4px);}
+.hsc-num{font-family:"Cormorant Garamond",serif;font-size:2.8rem;font-weight:600;color:var(--brass-lt);line-height:1;min-width:80px;}
+.hsc-num sup{font-size:1rem;color:var(--brass);}
+.hsc-body{}
+.hsc-label{font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--brass);margin-bottom:0.3rem;}
+.hsc-desc{font-size:0.8rem;color:rgba(255,255,255,0.45);line-height:1.5;}
+.hero-scroll-hint{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:0.5rem;color:rgba(255,255,255,0.3);font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;z-index:2;}
+.scroll-arrow{width:1px;height:40px;background:linear-gradient(to bottom,transparent,rgba(184,149,42,0.5));animation:scrollDrop 2s ease-in-out infinite;}
+@keyframes scrollDrop{0%,100%{opacity:0;transform:scaleY(0);transform-origin:top}50%{opacity:1;transform:scaleY(1)}}
 
-/* SHARED */
-section{position:relative;}
+/* ── IMPACT STRIP ── */
+.impact-strip{background:var(--emerald);border-top:1px solid rgba(184,149,42,0.15);border-bottom:1px solid rgba(184,149,42,0.15);padding:3rem 0;}
+.impact-inner{max-width:1200px;margin:0 auto;padding:0 4rem;display:grid;grid-template-columns:repeat(4,1fr);gap:0;}
+.impact-item{text-align:center;padding:1rem 2rem;border-right:1px solid rgba(184,149,42,0.12);}
+.impact-item:last-child{border-right:none;}
+.impact-num{font-family:"Cormorant Garamond",serif;font-size:3rem;font-weight:600;color:var(--brass-lt);line-height:1;display:block;}
+.impact-label{font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-top:0.4rem;display:block;}
+
+/* ── SHARED ── */
 .section-inner{max-width:1200px;margin:0 auto;padding:0 4rem;}
+section{position:relative;}
+.fade-up{opacity:0;transform:translateY(40px);transition:opacity 0.8s ease,transform 0.8s ease;}
+.fade-up.visible{opacity:1;transform:translateY(0);}
+.fade-left{opacity:0;transform:translateX(-40px);transition:opacity 0.8s ease,transform 0.8s ease;}
+.fade-left.visible{opacity:1;transform:translateX(0);}
+.fade-right{opacity:0;transform:translateX(40px);transition:opacity 0.8s ease,transform 0.8s ease;}
+.fade-right.visible{opacity:1;transform:translateX(0);}
 
-/* MARQUEE */
-.marquee-strip{background:var(--emerald);border-top:1px solid rgba(184,149,42,0.2);border-bottom:1px solid rgba(184,149,42,0.2);padding:0.9rem 0;overflow:hidden;}
-.marquee-track{display:flex;width:max-content;animation:marquee 30s linear infinite;}
+/* ── MARQUEE ── */
+.marquee-strip{background:var(--forest);padding:1rem 0;overflow:hidden;border-bottom:1px solid rgba(184,149,42,0.1);}
+.marquee-track{display:flex;width:max-content;animation:marquee 35s linear infinite;}
 @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-.marquee-item{display:flex;align-items:center;gap:1.5rem;padding:0 2.5rem;font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.5);white-space:nowrap;}
-.marquee-dot{width:4px;height:4px;background:var(--brass);border-radius:50%;}
+.marquee-item{display:flex;align-items:center;gap:1.5rem;padding:0 2.5rem;font-size:0.68rem;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.35);white-space:nowrap;}
+.marquee-dot{width:3px;height:3px;background:var(--brass);border-radius:50%;flex-shrink:0;}
 
-/* ABOUT */
-#about{padding:8rem 0;background:var(--cream);}
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:start;}
-.about-left h2{font-size:clamp(2.2rem,3vw,3.5rem);color:var(--forest);margin:1rem 0 1.5rem;line-height:1.1;}
-.about-left h2 em{color:var(--brass);font-style:italic;}
-.about-left p{color:var(--text-mid);font-size:0.92rem;line-height:1.85;margin-bottom:1.2rem;}
-.creds-list{margin-top:2.5rem;display:flex;flex-direction:column;gap:0.8rem;}
-.cred-item{display:flex;align-items:flex-start;gap:1rem;padding:1rem 1.2rem;background:var(--cream-dk);border-left:2px solid var(--brass);}
-.cred-icon{width:18px;height:18px;flex-shrink:0;margin-top:2px;color:var(--brass);}
-.cred-text{font-size:0.8rem;color:var(--text-mid);line-height:1.5;}
-.cred-text strong{color:var(--text);font-weight:500;}
-.about-right{padding-top:3.5rem;}
-.stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(184,149,42,0.15);margin-bottom:2.5rem;}
-.stat-box{background:var(--cream);padding:2rem;}
-.stat-num{font-family:"Cormorant Garamond",serif;font-size:3rem;font-weight:600;color:var(--forest);line-height:1;}
-.stat-num span{font-size:1.5rem;color:var(--brass);}
-.stat-label{font-size:0.72rem;color:var(--text-lt);letter-spacing:0.08em;margin-top:0.4rem;}
-.differentiator-block{background:var(--forest);padding:2rem 2.2rem;border-left:3px solid var(--brass);}
-.differentiator-block p{font-family:"Cormorant Garamond",serif;font-size:1.2rem;font-style:italic;color:rgba(255,255,255,0.85);line-height:1.6;}
-.differentiator-block cite{display:block;margin-top:0.8rem;font-style:normal;font-size:0.68rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--brass);font-family:"DM Sans",sans-serif;}
+/* ── ESG LANDSCAPE — photo + text ── */
+#landscape{padding:9rem 0;background:var(--cream);}
+.landscape-grid{display:grid;grid-template-columns:1fr 1fr;gap:8rem;align-items:center;}
+.landscape-img-wrap{position:relative;height:560px;overflow:hidden;}
+.landscape-img{width:100%;height:100%;object-fit:cover;transition:transform 8s ease;}
+.landscape-img-wrap:hover .landscape-img{transform:scale(1.04);}
+.landscape-img-accent{position:absolute;bottom:-20px;right:-20px;width:160px;height:160px;border:2px solid var(--brass);opacity:0.3;}
+.landscape-img-badge{position:absolute;bottom:2rem;left:2rem;background:rgba(11,35,24,0.92);border:1px solid rgba(184,149,42,0.25);padding:1.2rem 1.5rem;backdrop-filter:blur(8px);}
+.lib-num{font-family:"Cormorant Garamond",serif;font-size:2rem;font-weight:600;color:var(--brass-lt);}
+.lib-label{font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-top:0.2rem;}
+.landscape-text h2{font-size:clamp(2.2rem,3vw,3.5rem);color:var(--forest);margin:1rem 0 1.5rem;line-height:1.1;}
+.landscape-text h2 em{color:var(--brass);font-style:italic;}
+.landscape-text p{color:var(--text-mid);font-size:0.92rem;line-height:1.9;margin-bottom:1.2rem;}
+.landscape-pillars{margin-top:2.5rem;display:flex;flex-direction:column;gap:1px;}
+.lp-item{display:flex;align-items:flex-start;gap:1rem;padding:1.2rem 1.4rem;background:var(--cream-dk);border-left:2px solid transparent;transition:border-color 0.2s,background 0.2s;cursor:default;}
+.lp-item:hover{border-left-color:var(--brass);background:#e5dfd0;}
+.lp-icon{width:32px;height:32px;flex-shrink:0;background:rgba(184,149,42,0.1);border:1px solid rgba(184,149,42,0.2);display:flex;align-items:center;justify-content:center;color:var(--brass);}
+.lp-body h4{font-family:"DM Sans",sans-serif;font-size:0.82rem;font-weight:500;color:var(--text);margin-bottom:0.2rem;}
+.lp-body p{font-size:0.78rem;color:var(--text-lt);line-height:1.55;}
 
-/* SERVICES */
-#services{padding:8rem 0;background:var(--forest);}
-#services .eyebrow{color:var(--brass);}
-.services-header{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:end;margin-bottom:4rem;}
-.services-header h2{font-size:clamp(2.2rem,3vw,3.5rem);color:var(--white);margin-top:1rem;}
-.services-header h2 em{color:var(--brass-lt);font-style:italic;}
-.services-header p{color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.85;}
-.tier-tabs{display:flex;flex-wrap:wrap;border-bottom:1px solid rgba(184,149,42,0.2);margin-bottom:3rem;}
-.tier-tab{padding:0.8rem 1.5rem;background:none;border:none;cursor:pointer;font-family:"DM Sans",sans-serif;font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.4);border-bottom:2px solid transparent;margin-bottom:-1px;transition:color 0.2s,border-color 0.2s;}
-.tier-tab:hover{color:rgba(255,255,255,0.7);}
-.tier-tab.active{color:var(--brass-lt);border-bottom-color:var(--brass);}
+/* ── ABOUT ── */
+#about{padding:9rem 0;background:var(--forest);overflow:hidden;}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:8rem;align-items:center;}
+.about-left h2{font-size:clamp(2.2rem,3vw,3.5rem);color:var(--white);margin:1rem 0 1.5rem;line-height:1.1;}
+.about-left h2 em{color:var(--brass-lt);font-style:italic;}
+.about-left p{color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.9;margin-bottom:1.2rem;}
+.cred-list{margin-top:2.5rem;display:flex;flex-direction:column;gap:1px;}
+.cred-row{display:flex;align-items:flex-start;gap:1rem;padding:1rem 1.2rem;background:rgba(255,255,255,0.03);border-left:2px solid transparent;transition:all 0.2s;cursor:default;}
+.cred-row:hover{border-left-color:var(--brass);background:rgba(255,255,255,0.06);}
+.cred-dot{width:6px;height:6px;border-radius:50%;background:var(--brass);flex-shrink:0;margin-top:6px;}
+.cred-text{font-size:0.8rem;color:rgba(255,255,255,0.55);line-height:1.5;}
+.cred-text strong{color:rgba(255,255,255,0.85);font-weight:500;}
+.about-right-wrap{position:relative;}
+.about-photo{width:100%;height:520px;object-fit:cover;filter:brightness(0.75) saturate(0.9);}
+.about-photo-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(11,35,24,0.8) 0%,transparent 50%);}
+.about-quote{position:absolute;bottom:2rem;left:2rem;right:2rem;padding:1.8rem 2rem;background:rgba(11,35,24,0.9);border-left:3px solid var(--brass);backdrop-filter:blur(8px);}
+.aq-text{font-family:"Cormorant Garamond",serif;font-size:1.1rem;font-style:italic;color:rgba(255,255,255,0.85);line-height:1.6;}
+.aq-cite{display:block;margin-top:0.8rem;font-size:0.68rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--brass);font-family:"DM Sans",sans-serif;}
+
+/* ── SERVICES ── */
+#services{padding:9rem 0;background:var(--cream-dk);}
+.services-intro{text-align:center;max-width:640px;margin:0 auto 5rem;}
+.services-intro h2{font-size:clamp(2.2rem,3vw,3.5rem);color:var(--forest);margin:1rem 0 1.2rem;line-height:1.1;}
+.services-intro h2 em{color:var(--brass);font-style:italic;}
+.services-intro p{color:var(--text-lt);font-size:0.9rem;line-height:1.85;}
+.tier-tabs{display:flex;justify-content:center;gap:0;border-bottom:1px solid rgba(184,149,42,0.2);margin-bottom:4rem;flex-wrap:wrap;}
+.tier-tab{padding:0.9rem 2rem;background:none;border:none;cursor:pointer;font-family:"DM Sans",sans-serif;font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-lt);border-bottom:2px solid transparent;margin-bottom:-1px;transition:all 0.2s;}
+.tier-tab:hover{color:var(--text);}
+.tier-tab.active{color:var(--forest);border-bottom-color:var(--brass);font-weight:500;}
 .tier-panel{display:none;}
 .tier-panel.active{display:block;}
-.tier-intro{margin-bottom:2rem;padding-bottom:1.5rem;border-bottom:1px solid rgba(184,149,42,0.1);}
-.tier-intro-badge{display:inline-block;background:rgba(184,149,42,0.12);border:1px solid rgba(184,149,42,0.25);color:var(--brass-lt);font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;padding:0.3rem 0.8rem;border-radius:2px;margin-bottom:0.6rem;}
-.tier-intro p{color:rgba(255,255,255,0.45);font-size:0.85rem;}
-.services-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1px;background:rgba(184,149,42,0.1);}
-.service-card{background:rgba(22,61,39,0.6);padding:2rem;transition:background 0.2s;border:1px solid transparent;}
-.service-card:hover{background:rgba(30,82,52,0.9);border-color:rgba(184,149,42,0.25);}
-.sc-number{font-family:"Cormorant Garamond",serif;font-size:0.85rem;color:rgba(184,149,42,0.4);margin-bottom:1rem;}
-.sc-title{font-family:"Cormorant Garamond",serif;font-size:1.35rem;font-weight:500;color:var(--white);margin-bottom:0.8rem;line-height:1.2;}
-.sc-scope{font-size:0.8rem;color:rgba(255,255,255,0.5);line-height:1.75;margin-bottom:1rem;}
-.sc-target-label{font-size:0.62rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(184,149,42,0.5);margin-top:1.2rem;padding-top:1.2rem;border-top:1px solid rgba(184,149,42,0.1);margin-bottom:0.3rem;}
-.sc-target{font-size:0.78rem;color:rgba(255,255,255,0.38);line-height:1.5;}
-.services-loading{text-align:center;padding:3rem;color:rgba(255,255,255,0.3);font-size:0.85rem;}
+.tier-intro{margin-bottom:2.5rem;padding:1.5rem 2rem;background:var(--cream);border-left:3px solid var(--brass);}
+.tier-intro-badge{display:inline-block;font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--brass);margin-bottom:0.5rem;}
+.tier-intro p{font-size:0.85rem;color:var(--text-mid);line-height:1.7;}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:2px;background:rgba(184,149,42,0.08);}
+.service-card{background:var(--cream);padding:2.2rem;transition:all 0.3s;border:1px solid transparent;cursor:default;position:relative;overflow:hidden;}
+.service-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--brass);transform:scaleY(0);transform-origin:bottom;transition:transform 0.3s;}
+.service-card:hover{background:var(--white);border-color:rgba(184,149,42,0.2);transform:translateY(-2px);box-shadow:0 12px 40px rgba(0,0,0,0.08);}
+.service-card:hover::before{transform:scaleY(1);}
+.sc-num{font-family:"Cormorant Garamond",serif;font-size:0.8rem;color:rgba(184,149,42,0.4);margin-bottom:1rem;}
+.sc-title{font-family:"Cormorant Garamond",serif;font-size:1.4rem;font-weight:500;color:var(--forest);margin-bottom:0.8rem;line-height:1.2;}
+.sc-scope{font-size:0.8rem;color:var(--text-mid);line-height:1.75;}
+.sc-target-label{font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--brass);margin-top:1.5rem;padding-top:1.2rem;border-top:1px solid rgba(184,149,42,0.12);margin-bottom:0.3rem;}
+.sc-target{font-size:0.75rem;color:var(--text-lt);line-height:1.5;}
+.services-loading{text-align:center;padding:4rem;color:var(--text-lt);font-size:0.85rem;}
 
-/* APPROACH */
-#approach{padding:8rem 0;background:var(--cream-dk);}
-.approach-header{text-align:center;max-width:600px;margin:0 auto 5rem;}
-.approach-header h2{font-size:clamp(2rem,3vw,3rem);color:var(--forest);margin:0.8rem 0 1rem;}
+/* ── VIDEO SECTION ── */
+#esg-video{padding:0;background:var(--forest);position:relative;overflow:hidden;}
+.video-wrap{position:relative;width:100%;padding-bottom:42%;}
+.video-overlay{position:absolute;inset:0;background:linear-gradient(to right,rgba(11,35,24,0.85) 0%,rgba(11,35,24,0.3) 50%,rgba(11,35,24,0.1) 100%);z-index:1;pointer-events:none;}
+.video-content{position:absolute;top:50%;left:4rem;transform:translateY(-50%);z-index:2;max-width:500px;}
+.video-content .eyebrow{margin-bottom:1rem;}
+.video-content h2{font-size:clamp(2rem,3vw,3.2rem);color:var(--white);margin-bottom:1rem;line-height:1.1;}
+.video-content h2 em{color:var(--brass-lt);font-style:italic;}
+.video-content p{font-size:0.9rem;color:rgba(255,255,255,0.6);line-height:1.8;}
+.video-iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none;}
+
+/* ── APPROACH ── */
+#approach{padding:9rem 0;background:var(--cream);}
+.approach-header{text-align:center;max-width:600px;margin:0 auto 6rem;}
+.approach-header h2{font-size:clamp(2.2rem,3vw,3.5rem);color:var(--forest);margin:1rem 0 1rem;}
+.approach-header h2 em{color:var(--brass);font-style:italic;}
 .approach-header p{color:var(--text-lt);font-size:0.9rem;}
-.steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative;}
-.steps-grid::before{content:"";position:absolute;top:36px;left:12.5%;right:12.5%;height:1px;background:linear-gradient(90deg,transparent,var(--brass),var(--brass),transparent);opacity:0.3;}
+.steps-wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative;}
+.steps-connector{position:absolute;top:44px;left:calc(12.5% + 20px);right:calc(12.5% + 20px);height:1px;background:linear-gradient(90deg,var(--brass),var(--brass));opacity:0.2;}
 .step-item{text-align:center;padding:0 1.5rem;}
-.step-num{width:72px;height:72px;border-radius:50%;background:var(--cream);border:1px solid rgba(184,149,42,0.3);display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;font-family:"Cormorant Garamond",serif;font-size:1.5rem;font-weight:600;color:var(--brass);position:relative;z-index:1;}
+.step-num{width:88px;height:88px;border-radius:50%;background:var(--cream);border:1px solid rgba(184,149,42,0.25);display:flex;align-items:center;justify-content:center;margin:0 auto 2rem;position:relative;z-index:1;transition:all 0.3s;cursor:default;}
+.step-item:hover .step-num{background:var(--brass);border-color:var(--brass);}
+.step-item:hover .step-num-text{color:var(--forest);}
+.step-num-text{font-family:"Cormorant Garamond",serif;font-size:1.6rem;font-weight:600;color:var(--brass);transition:color 0.3s;}
 .step-title{font-family:"Cormorant Garamond",serif;font-size:1.2rem;font-weight:500;color:var(--forest);margin-bottom:0.6rem;}
-.step-desc{font-size:0.8rem;color:var(--text-lt);line-height:1.7;}
+.step-desc{font-size:0.78rem;color:var(--text-lt);line-height:1.7;}
 
-/* WHY */
-#why{padding:8rem 0;background:var(--forest);overflow:hidden;}
-.why-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:6rem;align-items:center;}
-.why-left h2{font-size:clamp(2.2rem,3vw,3.5rem);color:var(--white);margin:0.8rem 0 1.5rem;}
-.why-left h2 em{color:var(--brass-lt);font-style:italic;}
-.why-left p{color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.85;margin-bottom:1rem;}
-.pillars{display:flex;flex-direction:column;gap:1px;margin-top:3rem;}
-.pillar{display:flex;align-items:flex-start;gap:1.2rem;padding:1.4rem 1.6rem;background:rgba(22,61,39,0.5);border:1px solid transparent;transition:border-color 0.2s,background 0.2s;}
-.pillar:hover{border-color:rgba(184,149,42,0.2);background:rgba(30,82,52,0.6);}
-.pillar-icon{width:36px;height:36px;flex-shrink:0;background:rgba(184,149,42,0.1);border:1px solid rgba(184,149,42,0.2);border-radius:2px;display:flex;align-items:center;justify-content:center;color:var(--brass);}
-.pillar-body h4{font-family:"DM Sans",sans-serif;font-size:0.85rem;font-weight:500;color:var(--white);margin-bottom:0.3rem;}
-.pillar-body p{font-size:0.78rem;color:rgba(255,255,255,0.45);line-height:1.6;}
-.ecosystem-visual{background:rgba(22,61,39,0.4);border:1px solid rgba(184,149,42,0.15);padding:2.5rem;}
-.eco-title{font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--brass);margin-bottom:2rem;}
-.eco-node{display:flex;align-items:center;gap:1rem;padding:1rem;margin-bottom:0.5rem;background:rgba(11,35,24,0.6);border-left:2px solid transparent;transition:border-color 0.2s;}
-.eco-node:hover{border-left-color:var(--brass);}
-.eco-node-dot{width:8px;height:8px;border-radius:50%;background:var(--brass);flex-shrink:0;}
-.eco-node-text{font-size:0.8rem;color:rgba(255,255,255,0.7);}
-.eco-connector{width:1px;height:20px;background:rgba(184,149,42,0.2);margin-left:1.25rem;}
-.eco-badge{margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid rgba(184,149,42,0.15);font-size:0.72rem;color:rgba(255,255,255,0.35);line-height:1.6;}
+/* ── WHY ── */
+#why{padding:9rem 0;background:var(--forest);}
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:8rem;align-items:center;}
+.why-img-wrap{position:relative;height:560px;overflow:hidden;}
+.why-img{width:100%;height:100%;object-fit:cover;filter:brightness(0.65);}
+.why-img-badge{position:absolute;top:2rem;right:2rem;background:rgba(11,35,24,0.9);border:1px solid rgba(184,149,42,0.25);padding:1.5rem;backdrop-filter:blur(8px);max-width:220px;}
+.wib-num{font-family:"Cormorant Garamond",serif;font-size:2rem;font-weight:600;color:var(--brass-lt);}
+.wib-label{font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-top:0.2rem;}
+.why-text h2{font-size:clamp(2.2rem,3vw,3.5rem);color:var(--white);margin:1rem 0 1.5rem;line-height:1.1;}
+.why-text h2 em{color:var(--brass-lt);font-style:italic;}
+.why-text p{color:rgba(255,255,255,0.5);font-size:0.9rem;line-height:1.9;margin-bottom:1.2rem;}
+.pillars{display:flex;flex-direction:column;gap:1px;margin-top:2.5rem;}
+.pillar{display:flex;align-items:flex-start;gap:1.2rem;padding:1.4rem 1.6rem;background:rgba(255,255,255,0.03);border:1px solid transparent;transition:all 0.2s;cursor:default;}
+.pillar:hover{background:rgba(255,255,255,0.06);border-color:rgba(184,149,42,0.15);}
+.pillar-icon{width:36px;height:36px;flex-shrink:0;background:rgba(184,149,42,0.08);border:1px solid rgba(184,149,42,0.18);display:flex;align-items:center;justify-content:center;color:var(--brass);}
+.pillar-body h4{font-family:"DM Sans",sans-serif;font-size:0.83rem;font-weight:500;color:var(--white);margin-bottom:0.25rem;}
+.pillar-body p{font-size:0.77rem;color:rgba(255,255,255,0.4);line-height:1.6;}
 
-/* CLIENTS */
-#clients{padding:6rem 0;background:var(--cream);}
-.clients-header{text-align:center;margin-bottom:4rem;}
-.clients-header h2{font-size:clamp(1.8rem,2.5vw,2.8rem);color:var(--forest);margin:0.6rem 0;}
-.sector-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:rgba(184,149,42,0.12);}
-.sector-item{background:var(--cream);padding:2rem 1.5rem;text-align:center;transition:background 0.2s;}
-.sector-item:hover{background:var(--cream-dk);}
-.sector-icon{font-size:1.8rem;margin-bottom:0.8rem;display:block;}
-.sector-name{font-family:"Cormorant Garamond",serif;font-size:1rem;font-weight:500;color:var(--forest);margin-bottom:0.3rem;}
-.sector-desc{font-size:0.72rem;color:var(--text-lt);line-height:1.5;}
+/* ── SECTORS ── */
+#clients{padding:9rem 0;background:var(--cream);}
+.clients-header{text-align:center;margin-bottom:5rem;}
+.clients-header h2{font-size:clamp(2rem,2.8vw,3rem);color:var(--forest);margin:0.8rem 0 1rem;line-height:1.1;}
+.clients-header p{color:var(--text-lt);font-size:0.9rem;max-width:500px;margin:0 auto;}
+.sector-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:2px;background:rgba(184,149,42,0.1);}
+.sector-card{background:var(--cream);padding:2.5rem 1.5rem;text-align:center;transition:all 0.3s;cursor:default;position:relative;overflow:hidden;}
+.sector-card::after{content:"";position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--brass);transform:scaleX(0);transition:transform 0.3s;}
+.sector-card:hover{background:var(--white);transform:translateY(-3px);box-shadow:0 12px 30px rgba(0,0,0,0.08);}
+.sector-card:hover::after{transform:scaleX(1);}
+.sector-icon{font-size:2rem;margin-bottom:1rem;display:block;}
+.sector-name{font-family:"Cormorant Garamond",serif;font-size:1.05rem;font-weight:500;color:var(--forest);margin-bottom:0.4rem;}
+.sector-desc{font-size:0.72rem;color:var(--text-lt);line-height:1.55;}
 
-/* CONTACT */
-#contact{padding:8rem 0;background:var(--emerald);}
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:6rem;}
-.contact-left h2{font-size:clamp(2.2rem,3vw,3.5rem);color:var(--white);margin:0.8rem 0 1.5rem;}
+/* ── PHOTO GRID ── */
+#photo-grid{padding:0;background:var(--forest);}
+.pg-inner{display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:300px 300px;gap:2px;}
+.pg-cell{overflow:hidden;position:relative;}
+.pg-cell.tall{grid-row:span 2;}
+.pg-cell img{width:100%;height:100%;object-fit:cover;transition:transform 6s ease;filter:brightness(0.7) saturate(0.8);}
+.pg-cell:hover img{transform:scale(1.06);}
+.pg-cell-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(11,35,24,0.6) 0%,transparent 60%);pointer-events:none;}
+.pg-cell-label{position:absolute;bottom:1.2rem;left:1.5rem;font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.55);}
+
+/* ── CONTACT ── */
+#contact{padding:9rem 0;background:var(--emerald);}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:8rem;align-items:start;}
+.contact-left h2{font-size:clamp(2.2rem,3vw,3.5rem);color:var(--white);margin:1rem 0 1.5rem;line-height:1.1;}
 .contact-left h2 em{color:var(--brass-lt);font-style:italic;}
-.contact-left p{color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.85;margin-bottom:2rem;}
-.contact-detail{display:flex;align-items:center;gap:1rem;margin-bottom:1.2rem;color:rgba(255,255,255,0.7);font-size:0.85rem;}
+.contact-left p{color:rgba(255,255,255,0.5);font-size:0.9rem;line-height:1.9;margin-bottom:2rem;}
+.contact-detail{display:flex;align-items:center;gap:1rem;margin-bottom:1.2rem;color:rgba(255,255,255,0.6);font-size:0.83rem;}
 .contact-detail svg{color:var(--brass);flex-shrink:0;}
-.contact-detail a{color:rgba(255,255,255,0.7);text-decoration:none;}
+.contact-detail a{color:rgba(255,255,255,0.6);text-decoration:none;transition:color 0.2s;}
 .contact-detail a:hover{color:var(--brass-lt);}
 .contact-form{display:flex;flex-direction:column;gap:1.2rem;}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
 .form-group{display:flex;flex-direction:column;gap:0.4rem;}
-.form-group label{font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.45);}
-.form-group input,.form-group select,.form-group textarea{background:rgba(11,35,24,0.6);border:1px solid rgba(184,149,42,0.2);color:var(--white);padding:0.8rem 1rem;font-family:"DM Sans",sans-serif;font-size:0.85rem;border-radius:2px;outline:none;transition:border-color 0.2s;resize:vertical;}
-.form-group input::placeholder,.form-group textarea::placeholder{color:rgba(255,255,255,0.2);}
-.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:rgba(184,149,42,0.5);}
+.form-group label{font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.4);}
+.form-group input,.form-group select,.form-group textarea{background:rgba(11,35,24,0.5);border:1px solid rgba(184,149,42,0.15);color:var(--white);padding:0.85rem 1rem;font-family:"DM Sans",sans-serif;font-size:0.85rem;border-radius:1px;outline:none;transition:border-color 0.2s;resize:vertical;}
+.form-group input::placeholder,.form-group textarea::placeholder{color:rgba(255,255,255,0.18);}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:rgba(184,149,42,0.45);}
 .form-group select{cursor:pointer;}
 .form-group select option{background:var(--forest);}
 .form-submit{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;}
-.form-submit-btn{background:var(--brass);color:var(--forest);border:none;padding:0.9rem 2.5rem;font-family:"DM Sans",sans-serif;font-size:0.78rem;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;cursor:pointer;border-radius:2px;transition:background 0.2s,transform 0.2s;}
-.form-submit-btn:hover{background:var(--brass-lt);transform:translateY(-1px);}
-.form-note{font-size:0.72rem;color:rgba(255,255,255,0.3);}
+.form-submit-btn{background:var(--brass);color:var(--forest);border:none;padding:0.9rem 2.5rem;font-family:"DM Sans",sans-serif;font-size:0.75rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;cursor:pointer;border-radius:1px;transition:all 0.25s;}
+.form-submit-btn:hover{background:var(--brass-lt);transform:translateY(-2px);box-shadow:0 8px 24px rgba(184,149,42,0.25);}
+.form-note{font-size:0.7rem;color:rgba(255,255,255,0.25);}
 
-/* FOOTER */
-footer{background:var(--forest);border-top:1px solid rgba(184,149,42,0.15);padding:4rem 0 2.5rem;}
-.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem;}
-.footer-brand-name{font-family:"Cormorant Garamond",serif;font-size:1.6rem;font-weight:600;color:var(--white);margin-bottom:0.3rem;}
-.footer-brand-name span{color:var(--brass-lt);}
-.footer-brand-tagline{font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:1rem;}
-.footer-brand-desc{font-size:0.8rem;color:rgba(255,255,255,0.35);line-height:1.7;}
-.footer-col h4{font-family:"DM Sans",sans-serif;font-size:0.68rem;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:var(--brass);margin-bottom:1.2rem;}
-.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:0.6rem;}
-.footer-col ul li a{font-size:0.8rem;color:rgba(255,255,255,0.4);text-decoration:none;transition:color 0.2s;}
+/* ── FOOTER ── */
+footer{background:var(--forest);border-top:1px solid rgba(184,149,42,0.1);padding:5rem 0 3rem;}
+.footer-grid{display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:4rem;margin-bottom:4rem;}
+.footer-wm{display:flex;align-items:baseline;gap:0.3rem;margin-bottom:0.5rem;}
+.footer-wm-ome{font-family:"Cormorant Garamond",serif;font-size:1.8rem;font-weight:700;color:var(--brass-lt);}
+.footer-wm-adv{font-family:"DM Sans",sans-serif;font-size:0.75rem;font-weight:300;color:rgba(255,255,255,0.35);letter-spacing:0.18em;text-transform:uppercase;}
+.footer-tagline{font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.2);margin-bottom:1.2rem;}
+.footer-desc{font-size:0.78rem;color:rgba(255,255,255,0.3);line-height:1.7;}
+.footer-col h4{font-family:"DM Sans",sans-serif;font-size:0.65rem;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--brass);margin-bottom:1.4rem;}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:0.7rem;}
+.footer-col ul li a{font-size:0.78rem;color:rgba(255,255,255,0.35);text-decoration:none;transition:color 0.2s;}
 .footer-col ul li a:hover{color:var(--brass-lt);}
-.footer-bottom{padding-top:2rem;border-top:1px solid rgba(184,149,42,0.1);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;}
-.footer-copy{font-size:0.72rem;color:rgba(255,255,255,0.25);}
+.footer-bottom{padding-top:2.5rem;border-top:1px solid rgba(184,149,42,0.08);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;}
+.footer-copy{font-size:0.7rem;color:rgba(255,255,255,0.2);}
 .footer-legal{display:flex;gap:2rem;}
-.footer-legal a{font-size:0.72rem;color:rgba(255,255,255,0.25);text-decoration:none;transition:color 0.2s;}
+.footer-legal a{font-size:0.7rem;color:rgba(255,255,255,0.2);text-decoration:none;transition:color 0.2s;}
 .footer-legal a:hover{color:var(--brass);}
-
-/* ANIMATIONS */
-.fade-up{opacity:0;transform:translateY(30px);transition:opacity 0.7s ease,transform 0.7s ease;}
-.fade-up.visible{opacity:1;transform:translateY(0);}
 
 /* ── MOBILE ── */
 @media(max-width:900px){
-  nav{padding:0.6rem 1.5rem;}
-  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:rgba(11,35,24,0.98);flex-direction:column;align-items:flex-start;padding:1.5rem;gap:1.2rem;border-top:1px solid rgba(184,149,42,0.2);}
+  nav{padding:0 1.5rem;height:58px;}
+  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:rgba(11,35,24,0.98);flex-direction:column;align-items:flex-start;padding:1.5rem;gap:1.2rem;border-top:1px solid rgba(184,149,42,0.15);}
   .nav-links.open{display:flex;}
-  .nav-links .lang-toggle{display:flex;margin-top:0.5rem;}
-  .lang-toggle-desktop{display:none;}
+  .nav-right .lang-toggle{display:flex;}
   .hamburger{display:flex;}
-  #hero{grid-template-columns:1fr;min-height:auto;}
-  .hero-left{padding:6rem 1.5rem 3rem;}
+  .hero-inner{grid-template-columns:1fr;padding:0 1.5rem;padding-top:58px;}
   .hero-right{display:none;}
-  .hero-scroll{left:1.5rem;}
+  .hero-left{padding:3rem 0 2rem;}
+  .hero-scroll-hint{display:none;}
+  .impact-inner{grid-template-columns:1fr 1fr;}
+  .impact-item{border-right:none;border-bottom:1px solid rgba(184,149,42,0.12);}
   .section-inner{padding:0 1.5rem;}
-  .about-grid,.services-header,.why-grid,.contact-grid{grid-template-columns:1fr;gap:3rem;}
-  .steps-grid{grid-template-columns:1fr 1fr;}
-  .steps-grid::before{display:none;}
+  .landscape-grid,.about-grid,.why-grid,.contact-grid{grid-template-columns:1fr;gap:3rem;}
+  .landscape-img-wrap,.why-img-wrap,.about-photo{height:320px;}
+  .about-right-wrap{order:-1;}
+  .steps-wrap{grid-template-columns:1fr 1fr;}
+  .steps-connector{display:none;}
   .sector-grid{grid-template-columns:repeat(2,1fr);}
+  .pg-inner{grid-template-columns:1fr 1fr;grid-template-rows:220px 220px 220px;}
+  .pg-cell.tall{grid-row:span 1;}
   .footer-grid{grid-template-columns:1fr 1fr;}
   .form-row{grid-template-columns:1fr;}
   .services-grid{grid-template-columns:1fr;}
-  .tier-tabs{gap:0;}
-  .tier-tab{padding:0.7rem 1rem;font-size:0.68rem;}
-  .about-right{padding-top:0;}
+  .tier-tab{padding:0.7rem 1.2rem;font-size:0.68rem;}
+  .video-wrap{padding-bottom:56.25%;}
+  .video-content{left:1.5rem;right:1.5rem;max-width:100%;}
+  #landscape,#about,#services,#approach,#why,#clients,#contact{padding:6rem 0;}
 }
 @media(max-width:480px){
-  .steps-grid{grid-template-columns:1fr;}
-  .steps-grid .step-item{margin-bottom:2rem;}
+  .impact-inner{grid-template-columns:1fr;}
+  .steps-wrap{grid-template-columns:1fr;}
   .sector-grid{grid-template-columns:1fr 1fr;}
   .footer-grid{grid-template-columns:1fr;}
-  .tier-tab{padding:0.6rem 0.8rem;font-size:0.65rem;}
-  .stat-grid{grid-template-columns:1fr 1fr;}
+  .hero-title-main,.hero-title-em{font-size:2.6rem;}
+  .pg-inner{grid-template-columns:1fr;grid-template-rows:220px 220px 220px 220px;}
 }
 </style>
 </head>
@@ -269,23 +331,19 @@ footer{background:var(--forest);border-top:1px solid rgba(184,149,42,0.15);paddi
 
 <!-- NAV -->
 <nav id="mainNav">
-  <a href="#" class="nav-logo">
-    <img src="/logo.png" alt="OME Advisory" style="height:220px;width:auto;max-width:160px;object-fit:contain;object-position:left center;display:block;">
+  <a href="#" class="nav-wordmark">
+    <span class="nav-wm-ome">OME</span>
+    <span class="nav-wm-adv">Advisory</span>
   </a>
   <ul class="nav-links" id="navLinks">
+    <li><a href="#landscape"><span class="lang-en">ESG Today</span><span class="lang-de">ESG Heute</span></a></li>
     <li><a href="#about"><span class="lang-en">About</span><span class="lang-de">Über uns</span></a></li>
     <li><a href="#services"><span class="lang-en">Services</span><span class="lang-de">Leistungen</span></a></li>
     <li><a href="#approach"><span class="lang-en">Approach</span><span class="lang-de">Vorgehen</span></a></li>
-    <li><a href="#why"><span class="lang-en">Why Us</span><span class="lang-de">Warum wir</span></a></li>
-    <li class="lang-toggle">
-      <button class="lang-btn active" data-lang="en" onclick="setLang('en')">EN</button>
-      <span class="lang-sep">|</span>
-      <button class="lang-btn" data-lang="de" onclick="setLang('de')">DE</button>
-    </li>
     <li><a href="#contact" class="nav-cta"><span class="lang-en">Get in Touch</span><span class="lang-de">Kontakt</span></a></li>
   </ul>
   <div class="nav-right">
-    <div class="lang-toggle lang-toggle-desktop">
+    <div class="lang-toggle">
       <button class="lang-btn active" data-lang="en" onclick="setLang('en')">EN</button>
       <span class="lang-sep">|</span>
       <button class="lang-btn" data-lang="de" onclick="setLang('de')">DE</button>
@@ -298,110 +356,174 @@ footer{background:var(--forest);border-top:1px solid rgba(184,149,42,0.15);paddi
 
 <!-- HERO -->
 <section id="hero">
-  <div class="hero-bg-pattern"></div>
-  <div class="hero-grid"></div>
-  <div class="hero-left">
-    <div class="hero-eyebrow">
-      <span class="eyebrow lang-en">ESG · Climate · Carbon Markets</span>
-      <span class="eyebrow lang-de">ESG · Klima · Kohlenstoffmärkte</span>
+  <div class="hero-bg-img"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-grid-lines"></div>
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-tag"><div class="hero-tag-line"></div><span class="hero-tag-text lang-en">ESG Operations Management</span><span class="hero-tag-text lang-de">ESG-Betriebsmanagement</span></div>
+      <div class="hero-title">
+        <span class="hero-title-main lang-en">Sustainability</span>
+        <span class="hero-title-em lang-en">made real.</span>
+        <span class="hero-title-main lang-de">Nachhaltigkeit</span>
+        <span class="hero-title-em lang-de">in der Praxis.</span>
+      </div>
+      <p class="hero-sub lang-en">Strategy to implementation, start to finish. OME Advisory leads corporates through the full ESG journey — from regulatory compliance to carbon market strategy.</p>
+      <p class="hero-sub lang-de">Von der Strategie bis zur Umsetzung. OME Advisory begleitet Unternehmen auf ihrer gesamten ESG-Reise — von der regulatorischen Compliance bis zur Kohlenstoffmarktstrategie.</p>
+      <div class="hero-actions">
+        <a href="#services" class="btn-solid lang-en">Our Services</a>
+        <a href="#services" class="btn-solid lang-de">Unsere Leistungen</a>
+        <a href="#about" class="btn-outline lang-en">Our credentials →</a>
+        <a href="#about" class="btn-outline lang-de">Unsere Referenzen →</a>
+      </div>
     </div>
-    <h1 class="hero-h1">
-      <span class="lang-en">Clarity in a <em>complex world.</em></span>
-      <span class="lang-de">Klarheit in einer <em>komplexen Welt.</em></span>
-    </h1>
-    <p class="hero-tagline" id="hero-tagline">Sustainability made real. Strategy to implementation, start to finish.</p>
-    <div class="hero-actions">
-      <a href="#services" class="btn-primary lang-en">Explore Services</a>
-      <a href="#services" class="btn-primary lang-de">Leistungen entdecken</a>
-      <a href="#about" class="btn-ghost lang-en">Our credentials <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-      <a href="#about" class="btn-ghost lang-de">Unsere Referenzen <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <div class="hero-right">
+      <div class="hero-stats">
+        <div class="hero-stat-card">
+          <div class="hsc-num"><span class="counter" data-target="15">0</span><sup>+</sup></div>
+          <div class="hsc-body"><div class="hsc-label lang-en">Years Experience</div><div class="hsc-label lang-de">Jahre Erfahrung</div><div class="hsc-desc lang-en">Across UNFCCC, MSCI, GE, Uniper, SGS</div><div class="hsc-desc lang-de">Bei UNFCCC, MSCI, GE, Uniper, SGS</div></div>
+        </div>
+        <div class="hero-stat-card">
+          <div class="hsc-num"><span class="counter" data-target="12">0</span><sup>+</sup></div>
+          <div class="hsc-body"><div class="hsc-label lang-en">ESG Disciplines</div><div class="hsc-label lang-de">ESG-Disziplinen</div><div class="hsc-desc lang-en">ISO, CSRD, LkSG, CSDDD, SBTi, Taxonomy</div><div class="hsc-desc lang-de">ISO, CSRD, LkSG, CSDDD, SBTi, Taxonomie</div></div>
+        </div>
+        <div class="hero-stat-card">
+          <div class="hsc-num"><span>3</span></div>
+          <div class="hsc-body"><div class="hsc-label lang-en">Ecosystem Sides</div><div class="hsc-label lang-de">Ökosystem-Seiten</div><div class="hsc-desc lang-en">Rule-maker · Verifier · Corporate practitioner</div><div class="hsc-desc lang-de">Regelsetzer · Prüfer · Unternehmenspraktiker</div></div>
+        </div>
+        <div class="hero-stat-card">
+          <div class="hsc-num"><span>DE</span></div>
+          <div class="hsc-body"><div class="hsc-label">Hamburg</div><div class="hsc-desc lang-en">Based in Germany, serving DACH &amp; EU</div><div class="hsc-desc lang-de">In Deutschland ansässig, DACH &amp; EU</div></div>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="hero-right">
-    <div class="hero-visual">
-      <div class="hero-visual-card hvc-1">
-        <div class="hvc-label">CSRD Compliance Score</div>
-        <div class="hvc-value">94<span style="font-size:1rem;color:var(--brass-lt)">%</span></div>
-        <div class="hvc-sub">Post-engagement baseline improvement</div>
-        <div class="hvc-bar"><div class="hvc-bar-fill" style="width:94%"></div></div>
-      </div>
-      <div class="hero-visual-card hvc-2">
-        <div class="hvc-label">Scope 3 Categories</div>
-        <div class="hvc-value">15</div>
-        <div class="hvc-sub">Full GHG Protocol coverage</div>
-        <div class="hvc-bar"><div class="hvc-bar-fill" style="width:100%;animation-delay:0.5s"></div></div>
-      </div>
-      <div class="hero-visual-card hvc-3">
-        <div class="hvc-label">Carbon Market Experience</div>
-        <div class="hvc-value">15<span style="font-size:1rem;color:var(--brass-lt)">+</span></div>
-        <div class="hvc-sub">Years across UNFCCC, voluntary &amp; compliance</div>
-        <div class="hvc-bar"><div class="hvc-bar-fill" style="width:82%;animation-delay:1s"></div></div>
-      </div>
-    </div>
-  </div>
-  <div class="hero-scroll"><div class="scroll-line"></div><span>Scroll</span></div>
+  <div class="hero-scroll-hint"><span>Scroll</span><div class="scroll-arrow"></div></div>
 </section>
+
+<!-- IMPACT STRIP -->
+<div class="impact-strip">
+  <div class="impact-inner">
+    <div class="impact-item">
+      <span class="impact-num">2027</span>
+      <span class="impact-label lang-en">CSDDD Transposition</span>
+      <span class="impact-label lang-de">CSDDD-Umsetzung</span>
+    </div>
+    <div class="impact-item">
+      <span class="impact-num">50K+</span>
+      <span class="impact-label lang-en">Companies under CSRD</span>
+      <span class="impact-label lang-de">Unternehmen unter CSRD</span>
+    </div>
+    <div class="impact-item">
+      <span class="impact-num">Art.6</span>
+      <span class="impact-label lang-en">Carbon Market Live</span>
+      <span class="impact-label lang-de">Kohlenstoffmarkt aktiv</span>
+    </div>
+    <div class="impact-item">
+      <span class="impact-num">€1T</span>
+      <span class="impact-label lang-en">EU Green Investment</span>
+      <span class="impact-label lang-de">EU-Grüninvestitionen</span>
+    </div>
+  </div>
+</div>
 
 <!-- MARQUEE -->
 <div class="marquee-strip">
   <div class="marquee-track">
-    <div class="marquee-item"><span class="marquee-dot"></span>ISO 14001 &amp; 14064</div>
     <div class="marquee-item"><span class="marquee-dot"></span>CSRD / ESRS</div>
-    <div class="marquee-item"><span class="marquee-dot"></span><span class="lang-en">SBTi Target Setting</span><span class="lang-de">SBTi-Zielentwicklung</span></div>
+    <div class="marquee-item"><span class="marquee-dot"></span>ISO 14001</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>ISO 14064-3</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>ISO 50001</div>
     <div class="marquee-item"><span class="marquee-dot"></span>LkSG</div>
-    <div class="marquee-item"><span class="marquee-dot"></span>CSDDD</div>
-    <div class="marquee-item"><span class="marquee-dot"></span><span class="lang-en">EU Taxonomy</span><span class="lang-de">EU-Taxonomie</span></div>
-    <div class="marquee-item"><span class="marquee-dot"></span><span class="lang-en">Article 6 / Carbon Markets</span><span class="lang-de">Artikel 6 / Kohlenstoffmärkte</span></div>
-    <div class="marquee-item"><span class="marquee-dot"></span>ESG Ratings</div>
-    <div class="marquee-item"><span class="marquee-dot"></span>GHG Scope 1–3</div>
-    <div class="marquee-item"><span class="marquee-dot"></span><span class="lang-en">Decarbonisation</span><span class="lang-de">Dekarbonisierung</span></div>
-    <div class="marquee-item"><span class="marquee-dot"></span>ISO 14001 &amp; 14064</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>CSDDD 2024/1760</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>SBTi FLAG v1.2</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>EU Taxonomy</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Article 6 ITMOs</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>SFDR</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>GHG Protocol</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Scope 3</div>
     <div class="marquee-item"><span class="marquee-dot"></span>CSRD / ESRS</div>
-    <div class="marquee-item"><span class="marquee-dot"></span><span class="lang-en">SBTi Target Setting</span><span class="lang-de">SBTi-Zielentwicklung</span></div>
+    <div class="marquee-item"><span class="marquee-dot"></span>ISO 14001</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>ISO 14064-3</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>ISO 50001</div>
     <div class="marquee-item"><span class="marquee-dot"></span>LkSG</div>
-    <div class="marquee-item"><span class="marquee-dot"></span>CSDDD</div>
-    <div class="marquee-item"><span class="marquee-dot"></span><span class="lang-en">EU Taxonomy</span><span class="lang-de">EU-Taxonomie</span></div>
-    <div class="marquee-item"><span class="marquee-dot"></span><span class="lang-en">Article 6 / Carbon Markets</span><span class="lang-de">Artikel 6 / Kohlenstoffmärkte</span></div>
-    <div class="marquee-item"><span class="marquee-dot"></span>ESG Ratings</div>
-    <div class="marquee-item"><span class="marquee-dot"></span>GHG Scope 1–3</div>
-    <div class="marquee-item"><span class="marquee-dot"></span><span class="lang-en">Decarbonisation</span><span class="lang-de">Dekarbonisierung</span></div>
+    <div class="marquee-item"><span class="marquee-dot"></span>CSDDD 2024/1760</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>SBTi FLAG v1.2</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>EU Taxonomy</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Article 6 ITMOs</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>SFDR</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>GHG Protocol</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Scope 3</div>
   </div>
 </div>
+
+<!-- ESG LANDSCAPE -->
+<section id="landscape">
+  <div class="section-inner">
+    <div class="landscape-grid">
+      <div class="landscape-img-wrap fade-left">
+        <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=900&q=80" alt="Solar energy farm" class="landscape-img" loading="lazy">
+        <div class="landscape-img-accent"></div>
+        <div class="landscape-img-badge">
+          <div class="lib-num">2025</div>
+          <div class="lib-label lang-en">The ESG turning point</div>
+          <div class="lib-label lang-de">Der ESG-Wendepunkt</div>
+        </div>
+      </div>
+      <div class="landscape-text fade-right">
+        <span class="eyebrow lang-en">The ESG Landscape</span>
+        <span class="eyebrow lang-de">Die ESG-Landschaft</span>
+        <h2><span class="lang-en">Regulation is no longer<br><em>optional.</em></span><span class="lang-de">Regulierung ist nicht mehr<br><em>optional.</em></span></h2>
+        <p class="lang-en">The regulatory wave hitting European corporates is unprecedented. CSRD mandates sustainability reporting for 50,000+ companies. CSDDD requires supply chain due diligence by 2027. LkSG is already in force. The EU Taxonomy is redefining capital allocation.</p>
+        <p class="lang-de">Die regulatorische Welle, die europäische Unternehmen trifft, ist beispiellos. CSRD verpflichtet 50.000+ Unternehmen zur Nachhaltigkeitsberichterstattung. CSDDD erfordert Lieferketten-Sorgfaltspflicht bis 2027. LkSG ist bereits in Kraft.</p>
+        <p class="lang-en">Companies that navigate this landscape strategically will build competitive advantage. Those that don't face fines, exclusion from financing, and reputational damage.</p>
+        <p class="lang-de">Unternehmen, die diese Landschaft strategisch navigieren, bauen Wettbewerbsvorteile auf. Andere riskieren Bußgelder, Finanzierungsausschluss und Reputationsschäden.</p>
+        <div class="landscape-pillars">
+          <div class="lp-item">
+            <div class="lp-icon"><svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4M5 10a5 5 0 1010 0 5 5 0 00-10 0" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="lp-body"><h4 class="lang-en">CSRD — Reporting deadline now</h4><h4 class="lang-de">CSRD — Berichtspflicht jetzt</h4><p class="lang-en">Double materiality, ESRS standards, mandatory assurance for 250+ employee companies</p><p class="lang-de">Doppelte Wesentlichkeit, ESRS-Standards, obligatorische Prüfung für Unternehmen ab 250 Mitarbeitern</p></div>
+          </div>
+          <div class="lp-item">
+            <div class="lp-icon"><svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l7 4.5-7 4.5z" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="lp-body"><h4 class="lang-en">Carbon Markets — Article 6 live</h4><h4 class="lang-de">Kohlenstoffmärkte — Artikel 6 aktiv</h4><p class="lang-en">Paris Agreement Article 6.2/6.4 mechanisms now operational. ITMOs creating new market opportunities</p><p class="lang-de">Pariser Übereinkommen Artikel 6.2/6.4 nun operativ. ITMOs schaffen neue Marktchancen</p></div>
+          </div>
+          <div class="lp-item">
+            <div class="lp-icon"><svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="lp-body"><h4 class="lang-en">Supply Chain — LkSG &amp; CSDDD</h4><h4 class="lang-de">Lieferkette — LkSG &amp; CSDDD</h4><p class="lang-en">Human rights and environmental due diligence now mandatory across value chains</p><p class="lang-de">Menschenrechts- und Umwelt-Sorgfaltspflicht nun in der gesamten Wertschöpfungskette verpflichtend</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- ABOUT -->
 <section id="about">
   <div class="section-inner">
     <div class="about-grid">
-      <div class="about-left fade-up">
+      <div class="about-left fade-left">
         <span class="eyebrow lang-en">About OME Advisory</span>
         <span class="eyebrow lang-de">Über OME Advisory</span>
-        <h2>
-          <span class="lang-en">Practitioner knowledge,<br><em>no intermediary.</em></span>
-          <span class="lang-de">Praxiswissen.<br><em>Direkt. Ohne Umwege.</em></span>
-        </h2>
-        <p class="lang-en">OME Advisory was founded to close the gap between regulatory complexity and corporate action. We deliver implementation-ready strategy grounded in 15+ years of first-hand experience across the full ESG ecosystem.</p>
-        <p class="lang-de">OME Advisory wurde gegründet, um die Lücke zwischen regulatorischer Komplexität und unternehmerischem Handeln zu schließen. Wir liefern umsetzungsfertige Strategie auf Basis von über 15 Jahren Praxiserfahrung.</p>
-        <p class="lang-en">Our founder brings a uniquely three-sided perspective: as a carbon project proponent, a DOE Lead Auditor, and a former UNFCCC Secretariat official — combined with senior roles at MSCI ESG Ratings, Uniper, and General Electric.</p>
-        <p class="lang-de">Unser Gründer bringt eine einzigartige Drei-Seiten-Perspektive: als Kohlenstoffprojektentwickler, DOE-Leitauditor und ehemaliger UNFCCC-Sekretariatsmitarbeiter — kombiniert mit Führungsrollen bei MSCI, Uniper und General Electric.</p>
-        <div class="creds-list">
-          <div class="cred-item"><svg class="cred-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4M5 10a5 5 0 1010 0 5 5 0 00-10 0" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="cred-text"><strong>MSCI Inc.</strong> — Research Lead, Climate &amp; ESG Ratings, Hamburg</div></div>
-          <div class="cred-item"><svg class="cred-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4M5 10a5 5 0 1010 0 5 5 0 00-10 0" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="cred-text"><strong>UNFCCC Secretariat</strong> — P-4 level, carbon market oversight</div></div>
-          <div class="cred-item"><svg class="cred-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4M5 10a5 5 0 1010 0 5 5 0 00-10 0" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="cred-text"><strong>Uniper SE · General Electric · SGS India</strong></div></div>
-          <div class="cred-item"><svg class="cred-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4M5 10a5 5 0 1010 0 5 5 0 00-10 0" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="cred-text"><strong>ISO 14001/14064 Lead Auditor</strong> · CPEM · Oxford · IESE</div></div>
-          <div class="cred-item"><svg class="cred-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4M5 10a5 5 0 1010 0 5 5 0 00-10 0" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="cred-text"><strong>M.Sc. Chemical Engineering, IIT Roorkee</strong></div></div>
+        <h2><span class="lang-en">Practitioner knowledge,<br><em>no intermediary.</em></span><span class="lang-de">Praxiswissen,<br><em>direkt.</em></span></h2>
+        <p class="lang-en">OME Advisory was founded to close the gap between regulatory complexity and corporate action. We deliver implementation-ready ESG strategy built on 15+ years of first-hand experience on all sides of the ecosystem.</p>
+        <p class="lang-de">OME Advisory wurde gegründet, um die Lücke zwischen regulatorischer Komplexität und unternehmerischem Handeln zu schließen. Wir liefern umsetzungsfertige ESG-Strategie auf Basis von über 15 Jahren Praxiserfahrung.</p>
+        <p class="lang-en">What sets us apart is a perspective no other boutique advisory in DACH can replicate — we have been the rule-maker, the verifier, and the corporate practitioner.</p>
+        <p class="lang-de">Was uns auszeichnet, ist eine Perspektive, die keine andere Boutique-Beratung in der DACH-Region replizieren kann — wir waren Regelsetzer, Prüfer und Unternehmenspraktiker.</p>
+        <div class="cred-list">
+          <div class="cred-row"><div class="cred-dot"></div><div class="cred-text"><strong>MSCI Inc.</strong> — Research Lead, Climate &amp; ESG Ratings, Hamburg</div></div>
+          <div class="cred-row"><div class="cred-dot"></div><div class="cred-text"><strong>UNFCCC Secretariat</strong> — P-4 level, carbon market governance</div></div>
+          <div class="cred-row"><div class="cred-dot"></div><div class="cred-text"><strong>Uniper SE · General Electric · SGS India</strong> — Corporate sustainability leadership</div></div>
+          <div class="cred-row"><div class="cred-dot"></div><div class="cred-text"><strong>ISO 14001/14064 Certified Lead Auditor</strong> · CPEM · Oxford Sustainable Finance · IESE</div></div>
+          <div class="cred-row"><div class="cred-dot"></div><div class="cred-text"><strong>M.Sc. Chemical Engineering, IIT Roorkee</strong> — technical rigour at the foundation</div></div>
         </div>
       </div>
-      <div class="about-right fade-up">
-        <div class="stat-grid">
-          <div class="stat-box"><div class="stat-num">15<span>+</span></div><div class="stat-label lang-en">Years ESG Experience</div><div class="stat-label lang-de">Jahre ESG-Erfahrung</div></div>
-          <div class="stat-box"><div class="stat-num">3</div><div class="stat-label lang-en">Ecosystem Vantage Points</div><div class="stat-label lang-de">Ökosystem-Perspektiven</div></div>
-          <div class="stat-box"><div class="stat-num">12<span>+</span></div><div class="stat-label lang-en">Service Disciplines</div><div class="stat-label lang-de">Leistungsbereiche</div></div>
-          <div class="stat-box"><div class="stat-num">DE</div><div class="stat-label lang-en">Hamburg-based, EU-reach</div><div class="stat-label lang-de">Hamburg-ansässig, EU-Reichweite</div></div>
-        </div>
-        <div class="differentiator-block">
-          <p class="lang-en">"The rarest credential in ESG is having been on all sides of the table — project developer, verifier, and rule-maker. OME Advisory brings all three to every mandate."</p>
-          <p class="lang-de">"Das seltenste Merkmal in ESG ist, auf allen Seiten des Tisches gesessen zu haben — als Projektentwickler, Prüfer und Regelsetzer. OME Advisory bringt alle drei in jedes Mandat ein."</p>
-          <cite>— Kunal Sharma, <span class="lang-en">Founder &amp; Principal Advisor</span><span class="lang-de">Gründer &amp; Hauptberater</span></cite>
+      <div class="about-right-wrap fade-right">
+        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80" alt="ESG data and strategy" class="about-photo" loading="lazy">
+        <div class="about-photo-overlay"></div>
+        <div class="about-quote">
+          <p class="aq-text lang-en">"The rarest credential in ESG is having been on all sides of the table — project developer, verifier, and rule-maker. OME Advisory brings all three."</p>
+          <p class="aq-text lang-de">"Das seltenste Merkmal in ESG ist es, auf allen Seiten gesessen zu haben — als Projektentwickler, Prüfer und Regelsetzer. OME Advisory bringt alle drei."</p>
+          <cite class="aq-cite">— Kunal Sharma, <span class="lang-en">Founder</span><span class="lang-de">Gründer</span></cite>
         </div>
       </div>
     </div>
@@ -411,20 +533,30 @@ footer{background:var(--forest);border-top:1px solid rgba(184,149,42,0.15);paddi
 <!-- SERVICES -->
 <section id="services">
   <div class="section-inner">
-    <div class="services-header fade-up">
-      <div>
-        <span class="eyebrow lang-en">Service Portfolio</span>
-        <span class="eyebrow lang-de">Leistungsportfolio</span>
-        <h2>
-          <span class="lang-en">Structured for<br><em>every stage.</em></span>
-          <span class="lang-de">Strukturiert für<br><em>jede Phase.</em></span>
-        </h2>
-      </div>
-      <p class="lang-en">Our service portfolio covers ISO certification, sustainability strategy, carbon markets, and training — scoped precisely to your stage, sector, and regulatory exposure.</p>
-      <p class="lang-de">Unser Leistungsportfolio umfasst ISO-Zertifizierung, Nachhaltigkeitsstrategie, Kohlenstoffmärkte und Schulungen — präzise zugeschnitten auf Ihren Bedarf, Sektor und regulatorische Exposition.</p>
+    <div class="services-intro fade-up">
+      <span class="eyebrow lang-en">Service Portfolio</span>
+      <span class="eyebrow lang-de">Leistungsportfolio</span>
+      <h2><span class="lang-en">Your ESG journey,<br><em>fully covered.</em></span><span class="lang-de">Ihre ESG-Reise,<br><em>vollständig begleitet.</em></span></h2>
+      <p class="lang-en">Four interconnected service lines covering the full spectrum — from ISO certification and sustainability strategy, through carbon market advisory, to practical training for your teams.</p>
+      <p class="lang-de">Vier miteinander verbundene Leistungslinien, die das gesamte Spektrum abdecken — von ISO-Zertifizierung und Nachhaltigkeitsstrategie über Kohlenstoffmarkt-Beratung bis hin zu praxisnahen Schulungen.</p>
     </div>
-    <div class="tier-tabs" id="tier-tabs"><div class="services-loading">Loading...</div></div>
+    <div class="tier-tabs" id="tier-tabs"><div class="services-loading">Loading services…</div></div>
     <div id="tier-panels"></div>
+  </div>
+</section>
+
+<!-- VIDEO -->
+<section id="esg-video">
+  <div class="video-wrap">
+    <iframe class="video-iframe" src="https://www.youtube.com/embed/vGCvWEGVzXk?autoplay=1&mute=1&loop=1&playlist=vGCvWEGVzXk&controls=0&showinfo=0&rel=0&modestbranding=1&start=10" title="ESG and Sustainability" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen loading="lazy"></iframe>
+    <div class="video-overlay"></div>
+    <div class="video-content fade-left">
+      <span class="eyebrow lang-en">The ESG Imperative</span>
+      <span class="eyebrow lang-de">Der ESG-Imperativ</span>
+      <h2><span class="lang-en">The decade of<br><em>climate action.</em></span><span class="lang-de">Das Jahrzehnt des<br><em>Klimahandelns.</em></span></h2>
+      <p class="lang-en">We are in the defining decade for corporate climate action. Regulations, investor expectations, and supply chain pressures are converging. The question is no longer whether — but how fast.</p>
+      <p class="lang-de">Wir befinden uns im entscheidenden Jahrzehnt für unternehmerisches Klimahandeln. Regulierung, Investorenerwartungen und Lieferkettendruck konvergieren. Die Frage ist nicht mehr ob — sondern wie schnell.</p>
+    </div>
   </div>
 </section>
 
@@ -434,119 +566,137 @@ footer{background:var(--forest);border-top:1px solid rgba(184,149,42,0.15);paddi
     <div class="approach-header fade-up">
       <span class="eyebrow lang-en">How We Work</span>
       <span class="eyebrow lang-de">Unser Vorgehen</span>
-      <h2>
-        <span class="lang-en">A rigorous process, every time.</span>
-        <span class="lang-de">Ein rigoroser Prozess. Jedes Mal.</span>
-      </h2>
-      <p class="lang-en">From first conversation to final deliverable, OME Advisory applies the same structured methodology that governs international standards bodies and tier-one consultancies.</p>
-      <p class="lang-de">Von der ersten Besprechung bis zum finalen Ergebnis wendet OME Advisory dieselbe strukturierte Methodik an wie internationale Normungsgremien und Erstklassenberatungen.</p>
+      <h2><span class="lang-en">Rigorous process,<br><em>real outcomes.</em></span><span class="lang-de">Rigoroser Prozess,<br><em>echte Ergebnisse.</em></span></h2>
+      <p class="lang-en">From first conversation to final deliverable, the same structured methodology that governs international standards bodies — applied to your business.</p>
+      <p class="lang-de">Vom ersten Gespräch bis zum finalen Ergebnis — dieselbe strukturierte Methodik, die internationale Normungsgremien anwenden — auf Ihr Unternehmen angewendet.</p>
     </div>
-    <div class="steps-grid">
+    <div class="steps-wrap">
+      <div class="steps-connector"></div>
       <div class="step-item fade-up">
-        <div class="step-num">01</div>
+        <div class="step-num"><span class="step-num-text">01</span></div>
         <div class="step-title lang-en">Diagnostic</div>
         <div class="step-title lang-de">Analyse</div>
-        <div class="step-desc lang-en">Structured intake to map your regulatory exposure, maturity gaps, and commercial timeline constraints.</div>
-        <div class="step-desc lang-de">Strukturierte Aufnahme Ihrer regulatorischen Exposition, Reifegrad-Lücken und kommerziellen Zeitplanung.</div>
+        <div class="step-desc lang-en">Map your regulatory exposure, maturity gaps, stakeholder landscape, and commercial deadlines.</div>
+        <div class="step-desc lang-de">Kartierung Ihrer regulatorischen Exposition, Reifegrad-Lücken und kommerziellen Fristen.</div>
       </div>
       <div class="step-item fade-up">
-        <div class="step-num">02</div>
+        <div class="step-num"><span class="step-num-text">02</span></div>
         <div class="step-title lang-en">Scoping</div>
-        <div class="step-title lang-de">Umfangsbestimmung</div>
-        <div class="step-desc lang-en">Fixed-fee proposal with clear deliverables, milestones, and escalation protocols. No scope creep.</div>
-        <div class="step-desc lang-de">Festpreisangebot mit klaren Lieferobjekten und Meilensteinen. Kein unkontrolliertes Anwachsen des Projektumfangs.</div>
+        <div class="step-title lang-de">Umfang</div>
+        <div class="step-desc lang-en">Fixed-fee proposal with precise deliverables, milestones, and escalation protocols. No surprises.</div>
+        <div class="step-desc lang-de">Festpreisangebot mit präzisen Lieferobjekten und Meilensteinen. Keine Überraschungen.</div>
       </div>
       <div class="step-item fade-up">
-        <div class="step-num">03</div>
+        <div class="step-num"><span class="step-num-text">03</span></div>
         <div class="step-title lang-en">Execution</div>
         <div class="step-title lang-de">Durchführung</div>
-        <div class="step-desc lang-en">Deep technical work — GHG modelling, regulatory mapping, policy drafting — with regular client touchpoints.</div>
-        <div class="step-desc lang-de">Tiefgreifende technische Arbeit — THG-Modellierung, regulatorisches Mapping, Richtlinienerstellung — mit regelmäßigen Kundenterminen.</div>
+        <div class="step-desc lang-en">Deep technical work — GHG modelling, regulatory mapping, policy drafting — with regular review touchpoints.</div>
+        <div class="step-desc lang-de">Tiefgreifende technische Arbeit mit regelmäßigen Überprüfungspunkten.</div>
       </div>
       <div class="step-item fade-up">
-        <div class="step-num">04</div>
+        <div class="step-num"><span class="step-num-text">04</span></div>
         <div class="step-title lang-en">Handover</div>
         <div class="step-title lang-de">Übergabe</div>
         <div class="step-desc lang-en">Board-ready deliverables with implementation guidance and 30-day post-project support as standard.</div>
-        <div class="step-desc lang-de">Vorstandsreife Ergebnisse mit Umsetzungsleitfaden und 30-tägigem Nachprojekt-Support als Standard.</div>
+        <div class="step-desc lang-de">Vorstandsreife Ergebnisse mit Umsetzungsleitfaden und 30-tägigem Nachprojekt-Support.</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- WHY -->
+<!-- WHY OME -->
 <section id="why">
   <div class="section-inner">
     <div class="why-grid">
-      <div class="why-left fade-up">
-        <span class="eyebrow lang-en">Our Differentiation</span>
-        <span class="eyebrow lang-de">Unser Alleinstellungsmerkmal</span>
-        <h2>
-          <span class="lang-en">Why the <em>inside view</em><br>changes everything.</span>
-          <span class="lang-de">Warum die <em>Innenperspektive</em><br>alles verändert.</span>
-        </h2>
-        <p class="lang-en">Most ESG consultants advise from one side of the regulatory fence. OME Advisory brings direct experience as a rule-maker (UNFCCC), verifier (SGS, TÜV), and corporate practitioner (MSCI, Uniper, GE).</p>
-        <p class="lang-de">Die meisten ESG-Berater beraten von einer Seite des regulatorischen Zauns. OME Advisory bringt direkte Erfahrung als Regelsetzer (UNFCCC), Prüfer (SGS, TÜV) und Unternehmensverantwortlicher (MSCI, Uniper, GE).</p>
-        <div class="pillars">
-          <div class="pillar"><div class="pillar-icon"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 2L3 7v6c0 3.3 3 6 7 6s7-2.7 7-6V7l-7-5z" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="pillar-body">
-              <h4 class="lang-en">Regulatory Insider Knowledge</h4><h4 class="lang-de">Regulatorisches Insiderwissen</h4>
-              <p class="lang-en">Former UNFCCC P-4 experience means we have read the negotiating text, not just the summary.</p>
-              <p class="lang-de">Ehemalige UNFCCC P-4-Erfahrung bedeutet, dass wir den Verhandlungstext gelesen haben, nicht nur die Zusammenfassung.</p>
-            </div>
-          </div>
-          <div class="pillar"><div class="pillar-icon"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 3H5a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V9M15 3l2 2-8 8H7v-2l8-8z" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="pillar-body">
-              <h4 class="lang-en">ESG Ratings Methodology Fluency</h4><h4 class="lang-de">ESG-Ratings-Methodologiekenntnisse</h4>
-              <p class="lang-en">As former MSCI ESG Research Lead, we know how raters assess disclosures — and what they don't.</p>
-              <p class="lang-de">Als ehemaliger MSCI ESG Research Lead wissen wir, wie Ratingagenturen Offenlegungen bewerten — und was sie nicht tun.</p>
-            </div>
-          </div>
-          <div class="pillar"><div class="pillar-icon"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zM10 6v4l3 3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="pillar-body">
-              <h4 class="lang-en">Implementation-First Delivery</h4><h4 class="lang-de">Umsetzungsorientierte Lieferung</h4>
-              <p class="lang-en">Every engagement delivers board-ready outputs — not strategy frameworks requiring another consultant.</p>
-              <p class="lang-de">Jedes Mandat liefert vorstandsreife Ergebnisse — keine Strategie-Frameworks, die einen weiteren Berater erfordern.</p>
-            </div>
-          </div>
+      <div class="why-img-wrap fade-left">
+        <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=800&q=80" alt="Forest sustainability" class="why-img" loading="lazy">
+        <div class="why-img-badge">
+          <div class="wib-num">4</div>
+          <div class="wib-label lang-en">Vantage points</div>
+          <div class="wib-label lang-de">Perspektiven</div>
         </div>
       </div>
-      <div class="why-right fade-up">
-        <div class="ecosystem-visual">
-          <div class="eco-title lang-en">The Three-Sided Ecosystem Advantage</div>
-          <div class="eco-title lang-de">Der Drei-Seiten-Ökosystem-Vorteil</div>
-          <div class="eco-node"><div class="eco-node-dot"></div><div class="eco-node-text"><strong style="color:var(--brass-lt)"><span class="lang-en">Rule-Maker</span><span class="lang-de">Regelsetzer</span></strong> — UNFCCC Secretariat, Paris Agreement Article 6</div></div>
-          <div class="eco-connector"></div>
-          <div class="eco-node"><div class="eco-node-dot"></div><div class="eco-node-text"><strong style="color:var(--brass-lt)"><span class="lang-en">Verifier/Auditor</span><span class="lang-de">Prüfer/Auditor</span></strong> — DOE Lead Auditor, ISO 14064-3, SGS network</div></div>
-          <div class="eco-connector"></div>
-          <div class="eco-node"><div class="eco-node-dot"></div><div class="eco-node-text"><strong style="color:var(--brass-lt)"><span class="lang-en">Corporate Practitioner</span><span class="lang-de">Unternehmenspraktiker</span></strong> — MSCI ESG Ratings, Uniper, GE</div></div>
-          <div class="eco-connector"></div>
-          <div class="eco-node"><div class="eco-node-dot"></div><div class="eco-node-text"><strong style="color:var(--brass-lt)"><span class="lang-en">Project Proponent</span><span class="lang-de">Projektentwickler</span></strong> — Carbon project development, Scope 3 methodology</div></div>
-          <div class="eco-badge lang-en">No other boutique advisory practice in the DACH region combines all four vantage points.</div>
-          <div class="eco-badge lang-de">Keine andere Boutique-Beratung in der DACH-Region vereint alle vier Perspektiven.</div>
+      <div class="why-text fade-right">
+        <span class="eyebrow lang-en">Our Differentiation</span>
+        <span class="eyebrow lang-de">Unser Alleinstellungsmerkmal</span>
+        <h2><span class="lang-en">The inside view<br><em>changes everything.</em></span><span class="lang-de">Die Innenperspektive<br><em>verändert alles.</em></span></h2>
+        <p class="lang-en">Most ESG consultants advise from one side of the regulatory fence. OME Advisory brings direct experience as rule-maker, verifier, and corporate practitioner simultaneously.</p>
+        <p class="lang-de">Die meisten ESG-Berater beraten von einer Seite. OME Advisory bringt direkte Erfahrung als Regelsetzer, Prüfer und Unternehmenspraktiker gleichzeitig.</p>
+        <div class="pillars">
+          <div class="pillar">
+            <div class="pillar-icon"><svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 2L3 7v6c0 3.3 3 6 7 6s7-2.7 7-6V7l-7-5z" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="pillar-body"><h4 class="lang-en">Regulatory insider knowledge</h4><h4 class="lang-de">Regulatorisches Insiderwissen</h4><p class="lang-en">Former UNFCCC P-4 — we wrote the rules, not just read them.</p><p class="lang-de">Ehemaliger UNFCCC P-4 — wir haben die Regeln geschrieben, nicht nur gelesen.</p></div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon"><svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 3H5a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V9M15 3l2 2-8 8H7v-2l8-8z" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="pillar-body"><h4 class="lang-en">ESG ratings methodology fluency</h4><h4 class="lang-de">ESG-Ratings-Methodologiekenntnisse</h4><p class="lang-en">Former MSCI ESG Research Lead — we know how every rater scores every disclosure.</p><p class="lang-de">Ehemaliger MSCI ESG Research Lead — wir kennen die Bewertungsmethodik jeder Ratingagentur.</p></div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon"><svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="pillar-body"><h4 class="lang-en">Implementation-first delivery</h4><h4 class="lang-de">Umsetzungsorientierte Lieferung</h4><p class="lang-en">Board-ready outputs — not frameworks that require another consultant to action.</p><p class="lang-de">Vorstandsreife Ergebnisse — keine Frameworks, die einen weiteren Berater erfordern.</p></div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon"><svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="pillar-body"><h4 class="lang-en">DACH market fluency</h4><h4 class="lang-de">DACH-Marktkenntnisse</h4><p class="lang-en">Hamburg-based, 14+ years in Germany — German Mittelstand and regulatory context are native territory.</p><p class="lang-de">Hamburg-ansässig, 14+ Jahre in Deutschland — Mittelstand und regulatorischer Kontext sind heimisches Terrain.</p></div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CLIENTS -->
+<!-- SECTORS -->
 <section id="clients">
   <div class="section-inner">
     <div class="clients-header fade-up">
       <span class="eyebrow lang-en">Who We Serve</span>
       <span class="eyebrow lang-de">Wen wir beraten</span>
-      <h2>
-        <span class="lang-en">Sectors where the stakes are highest.</span>
-        <span class="lang-de">Branchen mit dem größten Handlungsbedarf.</span>
-      </h2>
+      <h2><span class="lang-en">Sectors where ESG stakes are highest.</span><span class="lang-de">Branchen mit dem größten ESG-Handlungsbedarf.</span></h2>
+      <p class="lang-en">Our expertise is deepest where regulatory pressure, investor scrutiny, and operational complexity intersect.</p>
+      <p class="lang-de">Unsere Expertise ist dort am tiefsten, wo regulatorischer Druck, Investorenprüfung und operative Komplexität zusammentreffen.</p>
     </div>
     <div class="sector-grid">
-      <div class="sector-item fade-up"><span class="sector-icon">⚙️</span><div class="sector-name lang-en">Industrials &amp; Manufacturing</div><div class="sector-name lang-de">Industrie &amp; Fertigung</div><div class="sector-desc lang-en">CSDDD, SBTi, decarbonisation mandates</div><div class="sector-desc lang-de">CSDDD, SBTi, Dekarbonisierungsmandate</div></div>
-      <div class="sector-item fade-up"><span class="sector-icon">🌾</span><div class="sector-name lang-en">Food, Agri &amp; Packaging</div><div class="sector-name lang-de">Lebensmittel, Agrar &amp; Verpackung</div><div class="sector-desc lang-en">FLAG emissions, Scope 3, SBTi alignment</div><div class="sector-desc lang-de">FLAG-Emissionen, Scope 3, SBTi-Ausrichtung</div></div>
-      <div class="sector-item fade-up"><span class="sector-icon">🏦</span><div class="sector-name lang-en">Financial Institutions</div><div class="sector-name lang-de">Finanzinstitute</div><div class="sector-desc lang-en">SFDR, EU Taxonomy, portfolio ESG ratings</div><div class="sector-desc lang-de">SFDR, EU-Taxonomie, Portfolio-ESG-Ratings</div></div>
-      <div class="sector-item fade-up"><span class="sector-icon">⚡</span><div class="sector-name lang-en">Energy &amp; Utilities</div><div class="sector-name lang-de">Energie &amp; Versorger</div><div class="sector-desc lang-en">Carbon market strategy, Article 6 advisory</div><div class="sector-desc lang-de">Kohlenstoffmarktstrategie, Artikel-6-Beratung</div></div>
-      <div class="sector-item fade-up"><span class="sector-icon">🏗️</span><div class="sector-name lang-en">Real Assets &amp; Infrastructure</div><div class="sector-name lang-de">Immobilien &amp; Infrastruktur</div><div class="sector-desc lang-en">EU Taxonomy, DNSH, green finance</div><div class="sector-desc lang-de">EU-Taxonomie, DNSH, grüne Finanzierung</div></div>
+      <div class="sector-card fade-up"><span class="sector-icon">⚙️</span><div class="sector-name lang-en">Industrials &amp; Manufacturing</div><div class="sector-name lang-de">Industrie &amp; Fertigung</div><div class="sector-desc lang-en">CSDDD, SBTi, decarbonisation pathways</div><div class="sector-desc lang-de">CSDDD, SBTi, Dekarbonisierungspfade</div></div>
+      <div class="sector-card fade-up"><span class="sector-icon">🌾</span><div class="sector-name lang-en">Food, Agri &amp; Packaging</div><div class="sector-name lang-de">Lebensmittel &amp; Agrar</div><div class="sector-desc lang-en">FLAG emissions, Scope 3, SBTi FLAG</div><div class="sector-desc lang-de">FLAG-Emissionen, Scope 3, SBTi FLAG</div></div>
+      <div class="sector-card fade-up"><span class="sector-icon">🏦</span><div class="sector-name lang-en">Financial Institutions</div><div class="sector-name lang-de">Finanzinstitute</div><div class="sector-desc lang-en">SFDR, EU Taxonomy, ESG ratings</div><div class="sector-desc lang-de">SFDR, EU-Taxonomie, ESG-Ratings</div></div>
+      <div class="sector-card fade-up"><span class="sector-icon">⚡</span><div class="sector-name lang-en">Energy &amp; Utilities</div><div class="sector-name lang-de">Energie &amp; Versorger</div><div class="sector-desc lang-en">Article 6, carbon market, decarbonisation</div><div class="sector-desc lang-de">Artikel 6, Kohlenstoffmarkt, Dekarbonisierung</div></div>
+      <div class="sector-card fade-up"><span class="sector-icon">🏗️</span><div class="sector-name lang-en">Real Assets</div><div class="sector-name lang-de">Sachwerte</div><div class="sector-desc lang-en">EU Taxonomy, DNSH, green finance</div><div class="sector-desc lang-de">EU-Taxonomie, DNSH, grüne Finanzierung</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTO GRID -->
+<section id="photo-grid">
+  <div class="pg-inner">
+    <div class="pg-cell tall">
+      <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=800&q=80" alt="Wind turbines" loading="lazy">
+      <div class="pg-cell-overlay"></div>
+      <div class="pg-cell-label lang-en">Renewable Energy</div>
+      <div class="pg-cell-label lang-de">Erneuerbare Energie</div>
+    </div>
+    <div class="pg-cell">
+      <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80" alt="Green building" loading="lazy">
+      <div class="pg-cell-overlay"></div>
+      <div class="pg-cell-label lang-en">Sustainable Infrastructure</div>
+      <div class="pg-cell-label lang-de">Nachhaltige Infrastruktur</div>
+    </div>
+    <div class="pg-cell">
+      <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80" alt="Corporate ESG meeting" loading="lazy">
+      <div class="pg-cell-overlay"></div>
+      <div class="pg-cell-label lang-en">Board-Level Advisory</div>
+      <div class="pg-cell-label lang-de">Vorstandsberatung</div>
+    </div>
+    <div class="pg-cell">
+      <img src="https://images.unsplash.com/photo-1416169607655-0c2b3ce2e1cc?w=800&q=80" alt="Forest conservation" loading="lazy">
+      <div class="pg-cell-overlay"></div>
+      <div class="pg-cell-label lang-en">Carbon Markets</div>
+      <div class="pg-cell-label lang-de">Kohlenstoffmärkte</div>
+    </div>
+    <div class="pg-cell">
+      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80" alt="ESG strategy" loading="lazy">
+      <div class="pg-cell-overlay"></div>
+      <div class="pg-cell-label lang-en">ESG Strategy</div>
+      <div class="pg-cell-label lang-de">ESG-Strategie</div>
     </div>
   </div>
 </section>
@@ -555,36 +705,31 @@ footer{background:var(--forest);border-top:1px solid rgba(184,149,42,0.15);paddi
 <section id="contact">
   <div class="section-inner">
     <div class="contact-grid">
-      <div class="contact-left fade-up">
+      <div class="contact-left fade-left">
         <span class="eyebrow lang-en">Get in Touch</span>
-        <span class="eyebrow lang-de">Kontakt aufnehmen</span>
-        <h2>
-          <span class="lang-en">Start a<br><em>conversation.</em></span>
-          <span class="lang-de">Sprechen wir<br><em>miteinander.</em></span>
-        </h2>
-        <p class="lang-en">Whether you face an imminent CSRD deadline, are exploring SBTi target-setting, or looking for a retained ESG advisor — let us talk. Initial consultations are complimentary and without obligation.</p>
-        <p class="lang-de">Ob bevorstehende CSRD-Deadline, SBTi-Zielentwicklung oder dauerhafter ESG-Berater — lassen Sie uns sprechen. Erstgespräche sind kostenlos und unverbindlich.</p>
-        <div class="contact-detail"><svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l7-5 7 5v9a1 1 0 01-1 1H4a1 1 0 01-1-1V8z" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 18v-6h4v6" stroke-linecap="round" stroke-linejoin="round"/></svg>Hamburg, Germany</div>
-        <div class="contact-detail"><svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg><a href="mailto:hello@omeadvisory.com" id="contact-email">hello@omeadvisory.com</a></div>
-        <div class="contact-detail"><svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 2a8 8 0 100 16A8 8 0 0010 2z" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 6v4l3 2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="lang-en">Response within 1 business day</span><span class="lang-de">Antwort innerhalb eines Werktages</span></div>
+        <span class="eyebrow lang-de">Kontakt</span>
+        <h2><span class="lang-en">Start your<br><em>ESG journey.</em></span><span class="lang-de">Beginnen Sie Ihre<br><em>ESG-Reise.</em></span></h2>
+        <p class="lang-en">Whether you face an imminent CSRD deadline, need a GHG inventory, or are exploring carbon market strategy — let us talk. Initial consultations are complimentary.</p>
+        <p class="lang-de">Ob bevorstehende CSRD-Deadline, THG-Inventar oder Kohlenstoffmarktstrategie — lassen Sie uns sprechen. Erstgespräche sind kostenlos.</p>
+        <div class="contact-detail"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l7-5 7 5v9a1 1 0 01-1 1H4a1 1 0 01-1-1V8z" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 18v-6h4v6" stroke-linecap="round" stroke-linejoin="round"/></svg>Hamburg, Germany</div>
+        <div class="contact-detail"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg><a href="mailto:hello@omeadvisory.com">hello@omeadvisory.com</a></div>
+        <div class="contact-detail"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 2a8 8 0 100 16A8 8 0 0010 2z" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 6v4l3 2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="lang-en">Response within 1 business day</span><span class="lang-de">Antwort innerhalb eines Werktages</span></div>
       </div>
-      <div class="contact-right fade-up">
-        <form class="contact-form" onsubmit="handleSubmit(event)">
+      <div class="contact-right fade-right">
+        <form class="contact-form" name="contact" method="POST" data-netlify="true" onsubmit="handleSubmit(event)">
+          <input type="hidden" name="form-name" value="contact">
           <div class="form-row">
-            <div class="form-group"><label><span class="lang-en">First name</span><span class="lang-de">Vorname</span></label><input type="text" id="f-fn" placeholder="Jana"></div>
-            <div class="form-group"><label><span class="lang-en">Last name</span><span class="lang-de">Nachname</span></label><input type="text" placeholder="Müller"></div>
+            <div class="form-group"><label><span class="lang-en">First name</span><span class="lang-de">Vorname</span></label><input type="text" name="firstname" placeholder="Jana"></div>
+            <div class="form-group"><label><span class="lang-en">Last name</span><span class="lang-de">Nachname</span></label><input type="text" name="lastname" placeholder="Müller"></div>
           </div>
-          <div class="form-group"><label><span class="lang-en">Company</span><span class="lang-de">Unternehmen</span></label><input type="text" placeholder="Organisation"></div>
-          <div class="form-group"><label>Email</label><input type="email" placeholder="jana@company.com"></div>
-          <div class="form-group">
-            <label><span class="lang-en">Service of interest</span><span class="lang-de">Gewünschte Leistung</span></label>
-            <select id="service-select"><option value=""><span class="lang-en">Select a service...</span></option></select>
-          </div>
-          <div class="form-group"><label><span class="lang-en">Message</span><span class="lang-de">Nachricht</span></label><textarea rows="4" placeholder="..."></textarea></div>
+          <div class="form-group"><label><span class="lang-en">Company</span><span class="lang-de">Unternehmen</span></label><input type="text" name="company" placeholder="Organisation"></div>
+          <div class="form-group"><label>Email</label><input type="email" name="email" placeholder="jana@company.com"></div>
+          <div class="form-group"><label><span class="lang-en">Service of interest</span><span class="lang-de">Gewünschte Leistung</span></label><select name="service" id="service-select"><option value=""><span class="lang-en">Select...</span></option></select></div>
+          <div class="form-group"><label><span class="lang-en">Message</span><span class="lang-de">Nachricht</span></label><textarea rows="4" name="message" placeholder="Tell us about your situation and timeline..."></textarea></div>
           <div class="form-submit">
             <button type="submit" class="form-submit-btn"><span class="lang-en">Send Enquiry</span><span class="lang-de">Anfrage senden</span></button>
             <span class="form-note lang-en">We respond within 1 business day.</span>
-            <span class="form-note lang-de">Wir antworten innerhalb eines Werktages.</span>
+            <span class="form-note lang-de">Antwort innerhalb eines Werktages.</span>
           </div>
         </form>
       </div>
@@ -597,11 +742,11 @@ footer{background:var(--forest);border-top:1px solid rgba(184,149,42,0.15);paddi
   <div class="section-inner">
     <div class="footer-grid">
       <div>
-        <div class="footer-brand-name">OME<span> Advisory</span></div>
-        <div class="footer-brand-tagline lang-en">ESG · Climate · Carbon Markets</div>
-        <div class="footer-brand-tagline lang-de">ESG · Klima · Kohlenstoffmärkte</div>
-        <p class="footer-brand-desc lang-en">Evidence-based ESG strategy and regulatory advisory for European corporates. Hamburg-based, international reach.</p>
-        <p class="footer-brand-desc lang-de">Evidenzbasierte ESG-Strategie und regulatorische Beratung für europäische Unternehmen. Hamburg-ansässig, internationale Reichweite.</p>
+        <div class="footer-wm"><span class="footer-wm-ome">OME</span><span class="footer-wm-adv"> Advisory</span></div>
+        <div class="footer-tagline lang-en">ESG Operations Management</div>
+        <div class="footer-tagline lang-de">ESG-Betriebsmanagement</div>
+        <p class="footer-desc lang-en">Sustainability made real. Strategy to implementation, start to finish. Hamburg-based, serving DACH and EU corporates.</p>
+        <p class="footer-desc lang-de">Nachhaltigkeit in der Praxis. Von der Strategie bis zur Umsetzung. Hamburg-ansässig, DACH und EU.</p>
       </div>
       <div class="footer-col">
         <h4><span class="lang-en">Services</span><span class="lang-de">Leistungen</span></h4>
@@ -615,18 +760,18 @@ footer{background:var(--forest);border-top:1px solid rgba(184,149,42,0.15);paddi
       <div class="footer-col">
         <h4><span class="lang-en">Company</span><span class="lang-de">Unternehmen</span></h4>
         <ul>
+          <li><a href="#landscape"><span class="lang-en">ESG Today</span><span class="lang-de">ESG Heute</span></a></li>
           <li><a href="#about"><span class="lang-en">About</span><span class="lang-de">Über uns</span></a></li>
           <li><a href="#approach"><span class="lang-en">Approach</span><span class="lang-de">Vorgehen</span></a></li>
           <li><a href="#why"><span class="lang-en">Why OME</span><span class="lang-de">Warum OME</span></a></li>
-          <li><a href="#contact"><span class="lang-en">Contact</span><span class="lang-de">Kontakt</span></a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4><span class="lang-en">Connect</span><span class="lang-de">Verbinden</span></h4>
+        <h4><span class="lang-en">Connect</span><span class="lang-de">Kontakt</span></h4>
         <ul>
           <li><a href="https://www.linkedin.com/in/kunal-sharma-xx1234/" target="_blank">LinkedIn</a></li>
-          <li><a href="mailto:hello@omeadvisory.com">Email</a></li>
-          <li><a href="#contact"><span class="lang-en">Book a Call</span><span class="lang-de">Gespräch buchen</span></a></li>
+          <li><a href="mailto:hello@omeadvisory.com">hello@omeadvisory.com</a></li>
+          <li><a href="#contact"><span class="lang-en">Book a call</span><span class="lang-de">Gespräch buchen</span></a></li>
         </ul>
       </div>
     </div>
@@ -639,150 +784,101 @@ footer{background:var(--forest);border-top:1px solid rgba(184,149,42,0.15);paddi
 </footer>
 
 <script>
+// Netlify Identity
 if(window.netlifyIdentity){window.netlifyIdentity.on("init",u=>{if(!u)window.netlifyIdentity.on("login",()=>{document.location.href="/admin/";});});}
 
-// ── Lang switching
-let currentLang = localStorage.getItem("ome_lang") || "en";
+// Lang
+let currentLang=localStorage.getItem("ome_lang")||"en";
+function setLang(lang){
+  currentLang=lang;document.body.className=lang;localStorage.setItem("ome_lang",lang);
+  document.querySelectorAll(".lang-btn").forEach(b=>b.classList.toggle("active",b.dataset.lang===lang));
+  if(window._siteData)renderServices(window._siteData,lang);
+  const site=window._siteData&&window._siteData.site;
+  if(site){const el=document.getElementById("hero-tagline");if(el)el.textContent=(lang==="de"&&site.hero_tagline_de)?site.hero_tagline_de:site.hero_tagline;}
+}
+document.body.className=currentLang;
+document.querySelectorAll(".lang-btn").forEach(b=>b.classList.toggle("active",b.dataset.lang===currentLang));
 
-function setLang(lang) {
-  currentLang = lang;
-  document.body.className = lang;
-  localStorage.setItem("ome_lang", lang);
-  document.querySelectorAll(".lang-btn").forEach(b => {
-    b.classList.toggle("active", b.dataset.lang === lang);
-  });
-  // Re-render services in new language
-  if(window._siteData) renderServices(window._siteData, lang);
-  // Update hero tagline
-  const site = window._siteData && window._siteData.site;
-  if(site) {
-    const el = document.getElementById("hero-tagline");
-    if(el) el.textContent = (lang === "de" && site.hero_tagline_de) ? site.hero_tagline_de : site.hero_tagline;
-  }
+// Mobile nav
+function toggleNav(){const l=document.getElementById("navLinks"),b=document.getElementById("hamburger");l.classList.toggle("open");b.classList.toggle("open");}
+document.querySelectorAll(".nav-links a").forEach(a=>a.addEventListener("click",()=>{document.getElementById("navLinks").classList.remove("open");document.getElementById("hamburger").classList.remove("open");}));
+
+// Scroll nav
+const nav=document.getElementById("mainNav");
+window.addEventListener("scroll",()=>nav.classList.toggle("scrolled",window.scrollY>80));
+
+// Intersection observer
+const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("visible");observer.unobserve(e.target);}});},{threshold:0.1,rootMargin:"0px 0px -50px 0px"});
+function observe(){document.querySelectorAll(".fade-up,.fade-left,.fade-right").forEach(el=>observer.observe(el));}
+observe();
+
+// Counter animation
+function animateCounter(el){
+  const target=parseInt(el.dataset.target);let current=0;
+  const step=Math.ceil(target/40);
+  const timer=setInterval(()=>{current=Math.min(current+step,target);el.textContent=current;if(current>=target)clearInterval(timer);},40);
+}
+const counterObs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){animateCounter(e.target);counterObs.unobserve(e.target);}});},{threshold:0.5});
+document.querySelectorAll(".counter").forEach(el=>counterObs.observe(el));
+
+// Load services
+async function loadContent(){
+  try{
+    const res=await fetch("/data/content.json?t="+Date.now());
+    const data=await res.json();
+    window._siteData=data;
+    renderServices(data,currentLang);
+  }catch(err){document.getElementById("tier-tabs").innerHTML="<p style='color:var(--text-lt);padding:1rem;font-size:0.85rem;text-align:center;'>Unable to load services. Please refresh.</p>";}
 }
 
-// Init lang on load
-document.body.className = currentLang;
-document.querySelectorAll(".lang-btn").forEach(b => {
-  b.classList.toggle("active", b.dataset.lang === currentLang);
-});
-
-// ── Mobile nav
-function toggleNav() {
-  const links = document.getElementById("navLinks");
-  const btn = document.getElementById("hamburger");
-  links.classList.toggle("open");
-  btn.classList.toggle("open");
-}
-
-// Close nav on link click
-document.querySelectorAll(".nav-links a").forEach(a => {
-  a.addEventListener("click", () => {
-    document.getElementById("navLinks").classList.remove("open");
-    document.getElementById("hamburger").classList.remove("open");
-  });
-});
-
-// ── Nav scroll
-const nav = document.getElementById("mainNav");
-window.addEventListener("scroll", () => nav.classList.toggle("scrolled", window.scrollY > 60));
-
-// ── Scroll animations
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add("visible"); observer.unobserve(e.target); }});
-}, {threshold:0.1,rootMargin:"0px 0px -40px 0px"});
-document.querySelectorAll(".fade-up").forEach(el => observer.observe(el));
-
-// ── Load + render services
-async function loadContent() {
-  try {
-    const res = await fetch("/data/content.json?t=" + Date.now());
-    const data = await res.json();
-    window._siteData = data;
-    // Hero tagline
-    const el = document.getElementById("hero-tagline");
-    if(el && data.site) {
-      el.textContent = (currentLang === "de" && data.site.hero_tagline_de) ? data.site.hero_tagline_de : data.site.hero_tagline;
-    }
-    renderServices(data, currentLang);
-  } catch(err) {
-    document.getElementById("tier-tabs").innerHTML = "<p style='color:rgba(255,255,255,0.4);padding:1rem;font-size:0.85rem;'>Unable to load services. Please refresh.</p>";
-  }
-}
-
-function renderServices(data, lang) {
-  const tiers = Object.entries(data).filter(([k]) => k !== "site").map(([,v]) => v);
-  const tabsEl = document.getElementById("tier-tabs");
-  const panelsEl = document.getElementById("tier-panels");
-  tabsEl.innerHTML = "";
-  panelsEl.innerHTML = "";
-  const select = document.getElementById("service-select");
-  select.innerHTML = "<option value=''>" + (lang === "de" ? "Leistung auswählen..." : "Select a service...") + "</option>";
-
-  tiers.forEach((tier, idx) => {
-    if(!tier) return;
-    const label = (lang === "de" && tier.label_de) ? tier.label_de : tier.label;
-    const badge = (lang === "de" && tier.badge_de) ? tier.badge_de : tier.badge;
-    const intro = (lang === "de" && tier.intro_de) ? tier.intro_de : tier.intro;
-
-    const tab = document.createElement("button");
-    tab.className = "tier-tab" + (idx === 0 ? " active" : "");
-    tab.textContent = label;
-    tab.onclick = () => switchTier(idx);
+function renderServices(data,lang){
+  const tiers=Object.entries(data).filter(([k])=>k!=="site").map(([,v])=>v);
+  const tabsEl=document.getElementById("tier-tabs");
+  const panelsEl=document.getElementById("tier-panels");
+  tabsEl.innerHTML="";panelsEl.innerHTML="";
+  const select=document.getElementById("service-select");
+  select.innerHTML="<option value=''>"+(lang==="de"?"Leistung auswählen...":"Select a service...")+"</option>";
+  tiers.forEach((tier,idx)=>{
+    const label=(lang==="de"&&tier.label_de)?tier.label_de:tier.label;
+    const badge=(lang==="de"&&tier.badge_de)?tier.badge_de:tier.badge;
+    const intro=(lang==="de"&&tier.intro_de)?tier.intro_de:tier.intro;
+    const tab=document.createElement("button");
+    tab.className="tier-tab"+(idx===0?" active":"");
+    tab.textContent=label;tab.onclick=()=>switchTier(idx);
     tabsEl.appendChild(tab);
-
-    let cardsHTML = "";
-    (tier.items || []).forEach((svc, i) => {
-      const num = (idx+1) + "." + String(i+1).padStart(2,"0");
-      const title = (lang === "de" && svc.title_de) ? svc.title_de : svc.title;
-      const scope = (lang === "de" && svc.scope_de) ? svc.scope_de : svc.scope;
-      const target = (lang === "de" && svc.target_de) ? svc.target_de : svc.target;
-      const tLabel = lang === "de" ? "Zielkunde" : "Target Client";
-      cardsHTML += "<div class='service-card fade-up' style='transition-delay:" + (i*0.08) + "s'>" +
-        "<div class='sc-number'>" + num + "</div>" +
-        "<div class='sc-title'>" + title + "</div>" +
-        "<div class='sc-scope'>" + scope + "</div>" +
-        "<div class='sc-target-label'>" + tLabel + "</div>" +
-        "<div class='sc-target'>" + target + "</div></div>";
-      const opt = document.createElement("option");
-      opt.textContent = title;
-      select.appendChild(opt);
+    let cards="";
+    (tier.items||[]).forEach((svc,i)=>{
+      const num=(idx+1)+"."+String(i+1).padStart(2,"0");
+      const title=(lang==="de"&&svc.title_de)?svc.title_de:svc.title;
+      const scope=(lang==="de"&&svc.scope_de)?svc.scope_de:svc.scope;
+      const target=(lang==="de"&&svc.target_de)?svc.target_de:svc.target;
+      const tLabel=lang==="de"?"Zielkunde":"Target Client";
+      cards+="<div class='service-card fade-up' style='transition-delay:"+(i*0.1)+"s'><div class='sc-num'>"+num+"</div><div class='sc-title'>"+title+"</div><div class='sc-scope'>"+scope+"</div><div class='sc-target-label'>"+tLabel+"</div><div class='sc-target'>"+target+"</div></div>";
+      const opt=document.createElement("option");opt.textContent=title;select.appendChild(opt);
     });
-
-    const panel = document.createElement("div");
-    panel.className = "tier-panel" + (idx === 0 ? " active" : "");
-    panel.id = "tier-" + idx;
-    panel.innerHTML = "<div class='tier-intro'><div class='tier-intro-badge'>" + badge + "</div><p>" + intro + "</p></div><div class='services-grid'>" + cardsHTML + "</div>";
+    const panel=document.createElement("div");
+    panel.className="tier-panel"+(idx===0?" active":"");panel.id="tier-"+idx;
+    panel.innerHTML="<div class='tier-intro'><div class='tier-intro-badge'>"+badge+"</div><p>"+intro+"</p></div><div class='services-grid'>"+cards+"</div>";
     panelsEl.appendChild(panel);
-    panel.querySelectorAll(".fade-up").forEach(el => observer.observe(el));
+    panel.querySelectorAll(".fade-up").forEach(el=>observer.observe(el));
   });
 }
-
-function switchTier(idx) {
-  document.querySelectorAll(".tier-tab").forEach((t,i) => t.classList.toggle("active", i===idx));
-  document.querySelectorAll(".tier-panel").forEach((p,i) => p.classList.toggle("active", i===idx));
+function switchTier(idx){
+  document.querySelectorAll(".tier-tab").forEach((t,i)=>t.classList.toggle("active",i===idx));
+  document.querySelectorAll(".tier-panel").forEach((p,i)=>p.classList.toggle("active",i===idx));
 }
 
-// ── Smooth scroll
-document.querySelectorAll("a[href^='#']").forEach(a => {
-  a.addEventListener("click", e => {
-    const id = a.getAttribute("href").slice(1);
-    const el = document.getElementById(id);
-    if(el){ e.preventDefault(); el.scrollIntoView({behavior:"smooth"}); }
-  });
+// Smooth scroll
+document.querySelectorAll("a[href^='#']").forEach(a=>{
+  a.addEventListener("click",e=>{const id=a.getAttribute("href").slice(1);const el=document.getElementById(id);if(el){e.preventDefault();el.scrollIntoView({behavior:"smooth"});}});
 });
 
-// ── Form
-function handleSubmit(e) {
-  e.preventDefault();
-  const btn = e.target.querySelector(".form-submit-btn");
-  btn.innerHTML = currentLang === "de" ? "Gesendet ✓" : "Sent ✓";
-  btn.style.background = "#2a7a4a"; btn.style.color = "#fff"; btn.disabled = true;
-  setTimeout(() => {
-    btn.innerHTML = currentLang === "de" ? "<span class='lang-en'>Send Enquiry</span><span class='lang-de'>Anfrage senden</span>" : "<span class='lang-en'>Send Enquiry</span><span class='lang-de'>Anfrage senden</span>";
-    btn.style.background = ""; btn.style.color = ""; btn.disabled = false;
-    e.target.reset();
-  }, 3000);
+// Form
+function handleSubmit(e){
+  e.preventDefault();const btn=e.target.querySelector(".form-submit-btn");
+  btn.innerHTML=currentLang==="de"?"Gesendet ✓":"Sent ✓";
+  btn.style.background="#2a7a4a";btn.style.color="#fff";btn.disabled=true;
+  setTimeout(()=>{btn.innerHTML="<span class='lang-en'>Send Enquiry</span><span class='lang-de'>Anfrage senden</span>";btn.style.background="";btn.style.color="";btn.disabled=false;e.target.reset();},3000);
 }
 
 loadContent();
