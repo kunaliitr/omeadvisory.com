@@ -11,6 +11,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<!-- Favicons -->
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="alternate icon" href="/favicon.svg">
+<meta name="theme-color" content="#0b2318">
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <style>
 :root{
@@ -76,6 +80,7 @@ nav.scrolled{background:rgba(11,35,24,0.96);backdrop-filter:blur(16px);box-shado
 .hero-stats{position:absolute;inset:0;display:flex;flex-direction:column;gap:1px;}
 .hero-stat-card{flex:1;background:rgba(255,255,255,0.03);border:1px solid rgba(184,149,42,0.12);backdrop-filter:blur(8px);padding:1.5rem 2rem;display:flex;align-items:center;gap:1.5rem;transition:all 0.3s;cursor:default;}
 .hero-stat-card:hover{background:rgba(255,255,255,0.06);border-color:rgba(184,149,42,0.25);transform:translateX(-4px);}
+.hsc-icon{flex-shrink:0;width:44px;height:44px;background:rgba(184,149,42,0.08);border:1px solid rgba(184,149,42,0.2);display:flex;align-items:center;justify-content:center;}
 .hsc-num{font-family:"Cormorant Garamond",serif;font-size:2.8rem;font-weight:600;color:var(--brass-lt);line-height:1;min-width:80px;}
 .hsc-num sup{font-size:1rem;color:var(--brass);}
 .hsc-body{}
@@ -380,20 +385,20 @@ footer{background:var(--forest);border-top:1px solid rgba(184,149,42,0.1);paddin
     <div class="hero-right">
       <div class="hero-stats">
         <div class="hero-stat-card">
-          <div class="hsc-num"><span class="counter" data-target="15">0</span><sup>+</sup></div>
-          <div class="hsc-body"><div class="hsc-label lang-en">Years Experience</div><div class="hsc-label lang-de">Jahre Erfahrung</div><div class="hsc-desc lang-en">Across UNFCCC, MSCI, GE, Uniper, SGS</div><div class="hsc-desc lang-de">Bei UNFCCC, MSCI, GE, Uniper, SGS</div></div>
+          <div class="hsc-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8952a" stroke-width="1.5"><path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="hsc-body"><div class="hsc-label lang-en">Full-Spectrum ESG Coverage</div><div class="hsc-label lang-de">Vollständige ESG-Abdeckung</div><div class="hsc-desc lang-en">ISO audits, CSRD, LkSG, SBTi, EU Taxonomy and carbon markets — one firm, start to finish</div><div class="hsc-desc lang-de">ISO-Audits, CSRD, LkSG, SBTi, EU-Taxonomie und Kohlenstoffmärkte — eine Firma, von Anfang bis Ende</div></div>
         </div>
         <div class="hero-stat-card">
-          <div class="hsc-num"><span class="counter" data-target="12">0</span><sup>+</sup></div>
-          <div class="hsc-body"><div class="hsc-label lang-en">ESG Disciplines</div><div class="hsc-label lang-de">ESG-Disziplinen</div><div class="hsc-desc lang-en">ISO, CSRD, LkSG, CSDDD, SBTi, Taxonomy</div><div class="hsc-desc lang-de">ISO, CSRD, LkSG, CSDDD, SBTi, Taxonomie</div></div>
+          <div class="hsc-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8952a" stroke-width="1.5"><path d="M3 6l3 1m0 0l-3 9a5 5 0 006 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5 5 0 006 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="hsc-body"><div class="hsc-label lang-en">Regulatory Navigation</div><div class="hsc-label lang-de">Regulatorische Navigation</div><div class="hsc-desc lang-en">We turn complex EU regulations into clear compliance roadmaps your board can act on immediately</div><div class="hsc-desc lang-de">Wir wandeln komplexe EU-Vorschriften in klare Compliance-Roadmaps um, die Ihr Vorstand sofort umsetzen kann</div></div>
         </div>
         <div class="hero-stat-card">
-          <div class="hsc-num"><span>3</span></div>
-          <div class="hsc-body"><div class="hsc-label lang-en">Ecosystem Sides</div><div class="hsc-label lang-de">Ökosystem-Seiten</div><div class="hsc-desc lang-en">Rule-maker · Verifier · Corporate practitioner</div><div class="hsc-desc lang-de">Regelsetzer · Prüfer · Unternehmenspraktiker</div></div>
+          <div class="hsc-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8952a" stroke-width="1.5"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="hsc-body"><div class="hsc-label lang-en">Carbon Market Strategy</div><div class="hsc-label lang-de">Kohlenstoffmarktstrategie</div><div class="hsc-desc lang-en">Article 6 advisory, ITMOs, decarbonisation roadmaps — grounded in direct UN carbon market governance experience</div><div class="hsc-desc lang-de">Artikel-6-Beratung, ITMOs, Dekarbonisierungs-Roadmaps — basierend auf direkter UN-Kohlenstoffmarkt-Erfahrung</div></div>
         </div>
         <div class="hero-stat-card">
-          <div class="hsc-num"><span>DE</span></div>
-          <div class="hsc-body"><div class="hsc-label">Hamburg</div><div class="hsc-desc lang-en">Based in Germany, serving DACH &amp; EU</div><div class="hsc-desc lang-de">In Deutschland ansässig, DACH &amp; EU</div></div>
+          <div class="hsc-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8952a" stroke-width="1.5"><circle cx="12" cy="12" r="10" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 12h20M12 2a15 15 0 010 20M12 2a15 15 0 000 20" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="hsc-body"><div class="hsc-label lang-en">Global Reach</div><div class="hsc-label lang-de">Globale Reichweite</div><div class="hsc-desc lang-en">Delivered ESG mandates across EU, US, Latin America, South Asia, Asia Pacific, Africa and Middle East</div><div class="hsc-desc lang-de">ESG-Mandate in EU, USA, Lateinamerika, Südasien, Asien-Pazifik, Afrika und Nahost</div></div>
         </div>
       </div>
     </div>
@@ -462,7 +467,7 @@ footer{background:var(--forest);border-top:1px solid rgba(184,149,42,0.1);paddin
   <div class="section-inner">
     <div class="landscape-grid">
       <div class="landscape-img-wrap fade-left">
-        <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=900&q=80" alt="Solar energy farm" class="landscape-img" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=900&q=80" alt="Offshore wind farm" class="landscape-img" loading="lazy">
         <div class="landscape-img-accent"></div>
         <div class="landscape-img-badge">
           <div class="lib-num">2025</div>
@@ -505,20 +510,20 @@ footer{background:var(--forest);border-top:1px solid rgba(184,149,42,0.1);paddin
         <span class="eyebrow lang-en">About OME Advisory</span>
         <span class="eyebrow lang-de">Über OME Advisory</span>
         <h2><span class="lang-en">Practitioner knowledge,<br><em>no intermediary.</em></span><span class="lang-de">Praxiswissen,<br><em>direkt.</em></span></h2>
-        <p class="lang-en">OME Advisory was founded to close the gap between regulatory complexity and corporate action. We deliver implementation-ready ESG strategy built on 15+ years of first-hand experience on all sides of the ecosystem.</p>
-        <p class="lang-de">OME Advisory wurde gegründet, um die Lücke zwischen regulatorischer Komplexität und unternehmerischem Handeln zu schließen. Wir liefern umsetzungsfertige ESG-Strategie auf Basis von über 15 Jahren Praxiserfahrung.</p>
-        <p class="lang-en">What sets us apart is a perspective no other boutique advisory in DACH can replicate — we have been the rule-maker, the verifier, and the corporate practitioner.</p>
-        <p class="lang-de">Was uns auszeichnet, ist eine Perspektive, die keine andere Boutique-Beratung in der DACH-Region replizieren kann — wir waren Regelsetzer, Prüfer und Unternehmenspraktiker.</p>
+        <p class="lang-en">OME Advisory exists to make sustainability real for your organisation. We translate regulatory complexity into clear, actionable programmes — from initial gap assessment through to verified disclosure, board reporting, and carbon market positioning.</p>
+        <p class="lang-de">OME Advisory macht Nachhaltigkeit für Ihr Unternehmen real. Wir übersetzen regulatorische Komplexität in klare, umsetzbare Programme — von der ersten Lückenanalyse bis zur verifizierten Offenlegung und Kohlenstoffmarktstrategie.</p>
+        <p class="lang-en">Our team brings direct experience from UN climate bodies, Fortune 500 multinationals, and leading ESG ratings institutions — deployed across six global regions. That breadth means faster answers, fewer surprises, and outcomes that hold up under regulatory scrutiny.</p>
+        <p class="lang-de">Unser Team bringt direkte Erfahrung aus UN-Klimagremien, Fortune-500-Konzernen und führenden ESG-Ratinginstitutionen — eingesetzt in sechs globalen Regionen. Diese Breite bedeutet schnellere Antworten und Ergebnisse, die regulatorischer Prüfung standhalten.</p>
         <div class="cred-list">
-          <div class="cred-row"><div class="cred-dot"></div><div class="cred-text"><strong>MSCI Inc.</strong> — Research Lead, Climate &amp; ESG Ratings, Hamburg</div></div>
-          <div class="cred-row"><div class="cred-dot"></div><div class="cred-text"><strong>UNFCCC Secretariat</strong> — P-4 level, carbon market governance</div></div>
-          <div class="cred-row"><div class="cred-dot"></div><div class="cred-text"><strong>Uniper SE · General Electric · SGS India</strong> — Corporate sustainability leadership</div></div>
-          <div class="cred-row"><div class="cred-dot"></div><div class="cred-text"><strong>ISO 14001/14064 Certified Lead Auditor</strong> · CPEM · Oxford Sustainable Finance · IESE</div></div>
-          <div class="cred-row"><div class="cred-dot"></div><div class="cred-text"><strong>M.Sc. Chemical Engineering, IIT Roorkee</strong> — technical rigour at the foundation</div></div>
+          <div class="cred-row"><div class="cred-dot"></div><div class="cred-text"><strong class="lang-en">UN System &amp; Multilateral Institutions</strong><strong class="lang-de">UN-System &amp; Multilaterale Institutionen</strong><span class="lang-en"> — direct engagement in international climate policy, carbon market governance and rule-setting</span><span class="lang-de"> — direkte Beteiligung an internationaler Klimapolitik und Kohlenstoffmarkt-Governance</span></div></div>
+          <div class="cred-row"><div class="cred-dot"></div><div class="cred-text"><strong class="lang-en">Fortune 500 Corporations</strong><strong class="lang-de">Fortune-500-Konzerne</strong><span class="lang-en"> — senior sustainability roles in energy, industrial, and financial services multinationals</span><span class="lang-de"> — leitende Nachhaltigkeitsrollen in Energie-, Industrie- und Finanzdienstleistungskonzernen</span></div></div>
+          <div class="cred-row"><div class="cred-dot"></div><div class="cred-text"><strong class="lang-en">ESG Ratings &amp; Standards Bodies</strong><strong class="lang-de">ESG-Ratings &amp; Normungsgremien</strong><span class="lang-en"> — methodology-level expertise in major ESG rating frameworks and ISO management system standards</span><span class="lang-de"> — Methodikwissen in ESG-Rating-Frameworks und ISO-Managementsystemnormen</span></div></div>
+          <div class="cred-row"><div class="cred-dot"></div><div class="cred-text"><strong class="lang-en">Global Geographies Served</strong><strong class="lang-de">Bediente Regionen</strong><span class="lang-en"> — EU · United States · Latin America &amp; Caribbean · South Asia · Asia Pacific · Africa · Middle East</span><span class="lang-de"> — EU · USA · Lateinamerika &amp; Karibik · Südasien · Asien-Pazifik · Afrika · Nahost</span></div></div>
+          <div class="cred-row"><div class="cred-dot"></div><div class="cred-text"><strong class="lang-en">Certified Auditor &amp; Energy Manager</strong><strong class="lang-de">Zertifizierter Auditor &amp; Energiemanager</strong><span class="lang-en"> — ISO 14001/14064 Lead Auditor · CPEM · postgraduate training at Oxford and IESE</span><span class="lang-de"> — ISO 14001/14064 Lead Auditor · CPEM · postgraduale Ausbildung in Oxford und IESE</span></div></div>
         </div>
       </div>
       <div class="about-right-wrap fade-right">
-        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80" alt="ESG data and strategy" class="about-photo" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?w=800&q=80" alt="Sustainability strategy" class="about-photo" loading="lazy">
         <div class="about-photo-overlay"></div>
         <div class="about-quote">
           <p class="aq-text lang-en">"The rarest credential in ESG is having been on all sides of the table — project developer, verifier, and rule-maker. OME Advisory brings all three."</p>
@@ -545,17 +550,41 @@ footer{background:var(--forest);border-top:1px solid rgba(184,149,42,0.1);paddin
   </div>
 </section>
 
-<!-- VIDEO -->
-<section id="esg-video">
-  <div class="video-wrap">
-    <iframe class="video-iframe" src="https://www.youtube.com/embed/vGCvWEGVzXk?autoplay=1&mute=1&loop=1&playlist=vGCvWEGVzXk&controls=0&showinfo=0&rel=0&modestbranding=1&start=10" title="ESG and Sustainability" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen loading="lazy"></iframe>
-    <div class="video-overlay"></div>
-    <div class="video-content fade-left">
-      <span class="eyebrow lang-en">The ESG Imperative</span>
-      <span class="eyebrow lang-de">Der ESG-Imperativ</span>
-      <h2><span class="lang-en">The decade of<br><em>climate action.</em></span><span class="lang-de">Das Jahrzehnt des<br><em>Klimahandelns.</em></span></h2>
-      <p class="lang-en">We are in the defining decade for corporate climate action. Regulations, investor expectations, and supply chain pressures are converging. The question is no longer whether — but how fast.</p>
-      <p class="lang-de">Wir befinden uns im entscheidenden Jahrzehnt für unternehmerisches Klimahandeln. Regulierung, Investorenerwartungen und Lieferkettendruck konvergieren. Die Frage ist nicht mehr ob — sondern wie schnell.</p>
+<!-- ESG IMPERATIVE SECTION (replaces video) -->
+<section id="esg-video" style="position:relative;overflow:hidden;min-height:520px;display:flex;align-items:center;">
+  <div style="position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1800&q=80');background-size:cover;background-position:center;background-attachment:fixed;filter:brightness(0.35) saturate(0.8);"></div>
+  <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(11,35,24,0.92) 0%,rgba(11,35,24,0.5) 60%,rgba(11,35,24,0.15) 100%);"></div>
+  <div class="section-inner" style="position:relative;z-index:2;padding-top:5rem;padding-bottom:5rem;">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center;">
+      <div class="fade-left">
+        <span class="eyebrow lang-en">The ESG Imperative</span>
+        <span class="eyebrow lang-de">Der ESG-Imperativ</span>
+        <h2 style="font-size:clamp(2.2rem,3vw,3.5rem);color:var(--white);margin:1rem 0 1.5rem;line-height:1.1;">
+          <span class="lang-en">The decade of<br><em style="color:var(--brass-lt);font-style:italic;">climate action.</em></span>
+          <span class="lang-de">Das Jahrzehnt des<br><em style="color:var(--brass-lt);font-style:italic;">Klimahandelns.</em></span>
+        </h2>
+        <p style="color:rgba(255,255,255,0.6);font-size:0.92rem;line-height:1.85;margin-bottom:1.2rem;" class="lang-en">We are in the defining decade for corporate climate action. Regulations, investor expectations, and supply chain pressures are converging. The question is no longer whether — but how fast and how well.</p>
+        <p style="color:rgba(255,255,255,0.6);font-size:0.92rem;line-height:1.85;margin-bottom:1.2rem;" class="lang-de">Wir befinden uns im entscheidenden Jahrzehnt für unternehmerisches Klimahandeln. Regulierung, Investorenerwartungen und Lieferkettendruck konvergieren. Die Frage ist nicht mehr ob — sondern wie schnell.</p>
+        <a href="#services" class="btn-solid lang-en" style="display:inline-block;margin-top:1rem;">See How We Help</a>
+        <a href="#services" class="btn-solid lang-de" style="display:inline-block;margin-top:1rem;">So helfen wir</a>
+      </div>
+      <div class="fade-right" style="display:flex;flex-direction:column;gap:1px;">
+        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(184,149,42,0.15);padding:1.5rem 2rem;border-left:3px solid var(--brass);transition:all 0.2s;">
+          <div style="font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--brass);margin-bottom:0.5rem;">2025</div>
+          <div style="font-size:0.88rem;color:rgba(255,255,255,0.75);line-height:1.6;" class="lang-en">CSRD mandatory for 250+ employee companies. Double materiality reports due now.</div>
+          <div style="font-size:0.88rem;color:rgba(255,255,255,0.75);line-height:1.6;" class="lang-de">CSRD verpflichtend für Unternehmen ab 250 Mitarbeitern. Berichte mit doppelter Wesentlichkeit jetzt fällig.</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(184,149,42,0.15);padding:1.5rem 2rem;border-left:3px solid rgba(184,149,42,0.4);transition:all 0.2s;">
+          <div style="font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--brass);margin-bottom:0.5rem;">2026</div>
+          <div style="font-size:0.88rem;color:rgba(255,255,255,0.75);line-height:1.6;" class="lang-en">LkSG extended. SBTi FLAG guidance mandatory for food and agri sectors.</div>
+          <div style="font-size:0.88rem;color:rgba(255,255,255,0.75);line-height:1.6;" class="lang-de">LkSG ausgeweitet. SBTi FLAG-Leitlinien für Lebensmittel- und Agrarbetriebe verpflichtend.</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(184,149,42,0.15);padding:1.5rem 2rem;border-left:3px solid rgba(184,149,42,0.25);transition:all 0.2s;">
+          <div style="font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--brass);margin-bottom:0.5rem;">2027</div>
+          <div style="font-size:0.88rem;color:rgba(255,255,255,0.75);line-height:1.6;" class="lang-en">CSDDD transposition deadline. Value chain due diligence becomes legally enforceable across the EU.</div>
+          <div style="font-size:0.88rem;color:rgba(255,255,255,0.75);line-height:1.6;" class="lang-de">CSDDD-Umsetzungsfrist. Sorgfaltspflicht in der Wertschöpfungskette wird EU-weit rechtlich durchsetzbar.</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
