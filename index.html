@@ -947,10 +947,20 @@ document.querySelectorAll("a[href^='#']").forEach(a=>{
 
 // Form
 function handleSubmit(e){
-  e.preventDefault();const btn=e.target.querySelector(".form-submit-btn");
-  btn.innerHTML=currentLang==="de"?"Gesendet ✓":"Sent ✓";
-  btn.style.background="#2a7a4a";btn.style.color="#fff";btn.disabled=true;
-  setTimeout(()=>{btn.innerHTML="<span class='lang-en'>Send Enquiry</span><span class='lang-de'>Anfrage senden</span>";btn.style.background="";btn.style.color="";btn.disabled=false;e.target.reset();},3000);
+  e.preventDefault();const form=e.target;const btn=form.querySelector(".form-submit-btn");
+  btn.disabled=true;
+  fetch("/",{
+    method:"POST",
+    headers:{"Content-Type":"application/x-www-form-urlencoded"},
+    body:new URLSearchParams(new FormData(form)).toString()
+  }).then(res=>{
+    if(!res.ok)throw new Error("Submission failed");
+    btn.innerHTML=currentLang==="de"?"Gesendet ✓":"Sent ✓";
+    btn.style.background="#2a7a4a";btn.style.color="#fff";
+    setTimeout(()=>{btn.innerHTML="<span class='lang-en'>Send Enquiry</span><span class='lang-de'>Anfrage senden</span>";btn.style.background="";btn.style.color="";btn.disabled=false;form.reset();},3000);
+  }).catch(()=>{
+    btn.disabled=false;
+  });
 }
 
 loadContent();
