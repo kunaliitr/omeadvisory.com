@@ -788,8 +788,10 @@ footer{background:var(--forest);border-top:1px solid rgba(184,149,42,0.1);paddin
         <div class="contact-detail"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 2a8 8 0 100 16A8 8 0 0010 2z" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 6v4l3 2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="lang-en">Response within 1 business day</span><span class="lang-de">Antwort innerhalb eines Werktages</span></div>
       </div>
       <div class="contact-right fade-right">
-        <form class="contact-form" name="contact" method="POST" data-netlify="true" onsubmit="handleSubmit(event)">
+        <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="handleSubmit(event)">
           <input type="hidden" name="form-name" value="contact">
+          <input type="hidden" name="subject" value="New consultation enquiry from the OME Advisory website">
+          <p style="position:absolute;left:-9999px" aria-hidden="true"><label>Leave this field empty: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
           <div class="form-row">
             <div class="form-group"><label><span class="lang-en">First name</span><span class="lang-de">Vorname</span></label><input type="text" name="firstname" placeholder="Jana"></div>
             <div class="form-group"><label><span class="lang-en">Last name</span><span class="lang-de">Nachname</span></label><input type="text" name="lastname" placeholder="Müller"></div>
